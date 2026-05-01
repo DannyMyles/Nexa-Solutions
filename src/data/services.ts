@@ -1,0 +1,16 @@
+export const services = [
+  { value: "", label: "Select a service" },
+  { value: "implementation", label: "ERPNext Implementation" },
+  { value: "analysis", label: "Business Process Analysis" },
+  { value: "customization", label: "System Customization" },
+  { value: "integration", label: "Integration Services" },
+  { value: "migration", label: "Data Migration" },
+  { value: "automation", label: "Workflow Automation" },
+  { value: "reporting", label: "Reporting & Dashboards" },
+  { value: "training", label: "User Training" },
+  { value: "deployment", label: "Cloud / On-Premise Deployment" },
+  { value: "support", label: "Ongoing Support" },
+  { value: "maintenance", label: "Maintenance & Upgrades" },
+  { value: "ai", label: "AI & Data Analytics" },
+  { value: "other", label: "Other" },
+];

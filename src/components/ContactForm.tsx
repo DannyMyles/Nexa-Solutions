@@ -5,6 +5,7 @@ import {
   FaPaperPlane,
   FaCheck,
 } from "react-icons/fa";
+import { services } from "@/data/services";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -148,7 +149,7 @@ export default function ContactForm() {
               >
                 Service Interested In *
               </label>
-              <select
+<select
                 id="service"
                 name="service"
                 required
@@ -156,13 +157,11 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all text-gray-900"
               >
-                <option value="">Select a service</option>
-                <option value="implementation">ERPNext Implementation</option>
-                <option value="analysis">Business Process Analysis</option>
-                <option value="customization">System Customization</option>
-                <option value="integration">Integration Services</option>
-                <option value="support">Ongoing Support</option>
-                <option value="other">Other</option>
+                {services.map((service) => (
+                  <option key={service.value} value={service.value}>
+                    {service.label}
+                  </option>
+                ))}
               </select>
             </div>
 
