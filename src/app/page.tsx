@@ -114,16 +114,84 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Trust Indicators */}
-            <div className="mt-16 pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-4">Trusted by businesses across industries</p>
-              <div className="flex flex-wrap items-center justify-center gap-8">
-                {clients.map((client) => (
-                  <div key={client.name} className="text-center">
-                    <p className="text-lg font-semibold text-gray-900">{client.name}</p>
+{/* Trust Indicators - Improved Section */}
+            <div className="mt-20 pt-12 border-t border-gray-200">
+              <div className="text-center mb-10">
+                <p className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider mb-2">
+                  Trusted by businesses across industries
+                </p>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  Powering Growth for 10+ Companies
+                </h3>
+              </div>
+
+              {/* Industry Icons - Visual Coverage */}
+              <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+                {industries.map((industry, index) => (
+                  <div 
+                    key={industry.name}
+                    className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm hover:border-[#14B8A6] hover:shadow-md transition-all duration-300"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    <industry.icon className="w-4 h-4 text-[#14B8A6]" />
+                    <span className="text-sm font-medium text-gray-700">{industry.name}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Client Logos - Visual Cards with Hover Effects */}
+              <div className="flex flex-wrap items-center justify-center gap-6">
+                {clients.map((client, index) => (
+                  <div 
+                    key={client.name}
+                    className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
+                      {client.name}
+                    </p>
                     <p className="text-sm text-gray-500">{client.description}</p>
                   </div>
                 ))}
+                {/* Additional Placeholder Clients */}
+                <div className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
+                    TechFlow Africa
+                  </p>
+                  <p className="text-sm text-gray-500">Technology</p>
+                </div>
+                <div className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
+                    Kenya Logistics Co
+                  </p>
+                  <p className="text-sm text-gray-500">Logistics</p>
+                </div>
+                <div className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
+                    Metro Retail Group
+                  </p>
+                  <p className="text-sm text-gray-500">Retail</p>
+                </div>
+              </div>
+
+              {/* Stats Counter */}
+              <div className="flex flex-wrap items-center justify-center gap-8 mt-10 pt-8 border-t border-gray-100">
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-[#14B8A6]">10+</p>
+                  <p className="text-sm text-gray-500">Happy Clients</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-[#14B8A6]">10+</p>
+                  <p className="text-sm text-gray-500">Projects Completed</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-[#14B8A6]">5+</p>
+                  <p className="text-sm text-gray-500">Industries Served</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-[#14B8A6]">5+</p>
+                  <p className="text-sm text-gray-500">Years Experience</p>
+                </div>
               </div>
             </div>
           </div>
@@ -259,11 +327,11 @@ export default function Home() {
               <div className="relative bg-white rounded-3xl p-8 border border-gray-100 shadow-xl">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-6 bg-gray-50 rounded-2xl">
-                    <p className="text-4xl font-bold text-[#14B8A6]">50+</p>
+                    <p className="text-4xl font-bold text-[#14B8A6]">10+</p>
                     <p className="text-sm text-gray-600">Projects Completed</p>
                   </div>
                   <div className="text-center p-6 bg-gray-50 rounded-2xl">
-                    <p className="text-4xl font-bold text-[#14B8A6]">30+</p>
+                    <p className="text-4xl font-bold text-[#14B8A6]">5+</p>
                     <p className="text-sm text-gray-600">Happy Clients</p>
                   </div>
                   <div className="text-center p-6 bg-gray-50 rounded-2xl">
@@ -271,7 +339,7 @@ export default function Home() {
                     <p className="text-sm text-gray-600">Years Experience</p>
                   </div>
                   <div className="text-center p-6 bg-gray-50 rounded-2xl">
-                    <p className="text-4xl font-bold text-[#14B8A6]">10+</p>
+                    <p className="text-4xl font-bold text-[#14B8A6]">5+</p>
                     <p className="text-sm text-gray-600">Industries Served</p>
                   </div>
                 </div>

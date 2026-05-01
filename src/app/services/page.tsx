@@ -75,22 +75,28 @@ const services = [
       "Enhanced user experience",
     ],
   },
-  {
+{
     icon: FaPlug,
     title: "Integration Services",
     description: "Seamless integration of ERPNext with your existing systems, third-party applications, and APIs.",
     features: [
       "API development and integration",
+      "KRA Integration (eTIMS, iTax)",
+      "MPESA Payment Integration",
+      "eTIMS - Electronic Tax Invoice Management System",
       "Payment gateway integration",
       "E-commerce platform integration",
       "CRM and accounting integration",
       "Custom webhook setup",
+      "Custom API integrations",
     ],
     benefits: [
       "Unified business data",
       "Automated data flow",
       "Reduced duplicate entry",
       "Real-time synchronization",
+      "Tax compliance automation",
+      "Seamless payment processing",
     ],
   },
   {
