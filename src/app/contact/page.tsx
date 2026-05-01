@@ -25,7 +25,7 @@ export default function ContactPage() {
     {
       name: "James Satia",
       role: "Process Analyst",
-      email: "js@nexasolutions.com",
+      email: "sjm@nexasolutions.com",
       phone: "+254 708 355 982"
     },
   ];
