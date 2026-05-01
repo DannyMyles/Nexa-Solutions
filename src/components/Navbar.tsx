@@ -66,7 +66,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+{/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -97,33 +97,43 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+{/* Mobile Menu with Backdrop Overlay */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-3">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className={`text-base font-medium py-2 px-4 rounded-lg transition-colors ${
-                    pathname === link.href
-                      ? "bg-[#14B8A6]/10 text-[#14B8A6]"
-                      : "text-gray-700 hover:bg-gray-100"
-                  }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-              <Link
-                href="/contact"
-                className="px-5 py-2.5 bg-[#14B8A6] text-white text-base font-medium rounded-lg text-center hover:bg-[#0D9488] transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Get Started
-              </Link>
+          <>
+            {/* Backdrop Overlay */}
+            <div 
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            {/* Mobile Menu */}
+            <div className="md:hidden absolute top-full left-0 right-0 z-50">
+              <div className="bg-white mx-4 mt-4 p-4 rounded-2xl shadow-xl">
+                <div className="flex flex-col space-y-2">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      className={`text-base font-medium py-3 px-4 rounded-lg transition-colors ${
+                        pathname === link.href
+                          ? "bg-[#14B8A6]/10 text-[#14B8A6]"
+                          : "text-gray-700 hover:bg-gray-100"
+                      }`}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                  <Link
+                    href="/contact"
+                    className="px-5 py-3 bg-[#14B8A6] text-white text-base font-medium rounded-lg text-center hover:bg-[#0D9488] transition-colors mt-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Get Started
+                  </Link>
+                </div>
+              </div>
             </div>
-          </div>
+          </>
         )}
       </div>
     </nav>
