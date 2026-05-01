@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,9 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} font-sans antialiased`}>
-        <Navbar />
+<Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <WhatsAppWidget />
       </body>
     </html>
   );

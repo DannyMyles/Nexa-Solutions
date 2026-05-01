@@ -2,36 +2,9 @@
 
 import { useState } from "react";
 import {
-  FaMapMarkerAlt,
-  FaPhone,
-  FaEnvelope,
-  FaClock,
   FaPaperPlane,
   FaCheck,
 } from "react-icons/fa";
-
-const contactInfo = [
-  {
-    icon: FaMapMarkerAlt,
-    title: "Visit Us",
-    details: ["Riverside Drive, Kofisi", "Nairobi, Kenya"],
-  },
-  {
-    icon: FaPhone,
-    title: "Call Us",
-    details: ["+254 758 269 725", "+254 716 357 560"],
-  },
-  {
-    icon: FaEnvelope,
-    title: "Email Us",
-    details: ["info@nexasolutions.com", "support@nexasolutions.com"],
-  },
-  {
-    icon: FaClock,
-    title: "Working Hours",
-    details: ["Mon - Fri: 8:00 AM - 6:00 PM", "Sat: 9:00 AM - 1:00 PM"],
-  },
-];
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -252,53 +225,6 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* Contact Info */}
-      <div className="space-y-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {contactInfo.map((info) => (
-            <div key={info.title} className="p-6 bg-gray-50 rounded-xl">
-              <div className="w-12 h-12 bg-[#14B8A6]/10 rounded-xl flex items-center justify-center mb-4">
-                <info.icon className="w-6 h-6 text-[#14B8A6]" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
-                {info.title}
-              </h3>
-              {info.details.map((detail) => (
-                <p key={detail} className="text-gray-600 text-sm">
-                  {detail}
-                </p>
-              ))}
-            </div>
-          ))}
-        </div>
-
-        {/* Map */}
-        <div className="bg-gray-50 rounded-2xl p-6">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Our Location</h3>
-          <div className="w-full h-48 bg-gray-200 rounded-xl flex items-center justify-center">
-            <div className="text-center">
-              <FaMapMarkerAlt className="w-8 h-8 text-[#14B8A6] mx-auto mb-2" />
-              <p className="text-gray-600 text-sm">Riverside Drive, Kofisi</p>
-              <p className="text-gray-500 text-xs">Nairobi, Kenya</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Quick Contact */}
-        <div className="bg-gradient-to-br from-[#14B8A6] to-[#0D9488] rounded-2xl p-8 text-white">
-          <h3 className="text-xl font-bold mb-4">Prefer to talk directly?</h3>
-          <p className="text-white/90 mb-6">
-            Call us now to discuss your requirements with our team.
-          </p>
-          <a
-            href="tel:+254758269725"
-            className="inline-flex items-center justify-center w-full px-6 py-3 bg-white text-[#14B8A6] font-semibold rounded-xl hover:bg-gray-100 transition-colors"
-          >
-            <FaPhone className="w-4 h-4 mr-2" />
-            +254 758 269 725
-          </a>
-        </div>
-      </div>
-    </>
+</>
   );
 }
