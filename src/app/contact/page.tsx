@@ -86,23 +86,32 @@ export default function ContactPage() {
             {/* Contact Form - Left Column */}
             <ContactForm />
             
-            {/* Contact Info - Right Column */}
+{/* Contact Info - Right Column */}
             <div className="space-y-8">
-              <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-gray-900">
-                  Get In Touch
-                </h2>
-                <p className="text-gray-600">
-                  Have questions about ERPNext implementation? Our team is here to help you transform your business processes.
-                </p>
+              {/* Get In Touch - Enhanced Header */}
+              <div className="relative bg-gradient-to-br from-[#14B8A6] to-[#0D9488] rounded-2xl p-8 text-white overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+                <div className="relative">
+                  <h2 className="text-2xl font-bold mb-3">
+                    Get In Touch
+                  </h2>
+                  <p className="text-white/90 leading-relaxed">
+                    Have questions about ERPNext implementation? Our team is here to help you transform your business processes.
+                  </p>
+                </div>
               </div>
               
-              {/* Contact Info Cards */}
+              {/* Contact Info Cards - Modern Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {contactInfo.map((info) => (
-                  <div key={info.title} className="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-                    <div className="w-10 h-10 bg-[#14B8A6]/10 rounded-lg flex items-center justify-center mb-3">
-                      <info.icon className="w-5 h-5 text-[#14B8A6]" />
+                {contactInfo.map((info, index) => (
+                  <div 
+                    key={info.title} 
+                    className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 card-hover"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    <div className="w-10 h-10 bg-[#14B8A6]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-[#14B8A6] transition-colors">
+                      <info.icon className="w-5 h-5 text-[#14B8A6] group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="text-sm font-semibold text-gray-900 mb-1">
                       {info.title}
@@ -116,8 +125,8 @@ export default function ContactPage() {
                 ))}
               </div>
 
-{/* Map */}
-              <div className="relative h-[450px] w-full rounded-2xl overflow-hidden">
+{/* Map - Enhanced Section */}
+              <div className="relative h-[380px] w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 {/* Google Maps Embed */}
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8199999999997!2d36.835!3d-1.255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117e0e5e3a3b%3A0x1234567890abcdef!2sOccidental%20House%2C%20Baricho%20Road%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1699999999999!5m2!1sen!2ske"
@@ -132,32 +141,33 @@ export default function ContactPage() {
                 />
                 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white via-white/90 to-transparent pointer-events-none"></div>
                 
-                {/* Location Card Overlay */}
-                <div className="absolute bottom-6 left-6 right-6 md:left-8 md:w-96">
-                  <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/20">
-                    <div className="flex items-start gap-4">
-                      <div className="bg-gradient-to-br from-[#14B8A6] to-[#0D9488] p-3 rounded-xl text-white flex-shrink-0 shadow-lg">
-                        <FaMapPin size={24} />
+                {/* Location Card Overlay - Modern Design */}
+                <div className="absolute bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:w-80">
+                  <div className="bg-white rounded-2xl p-5 shadow-xl border border-gray-100">
+                    <div className="flex items-start gap-3">
+                      <div className="bg-[#14B8A6] p-2.5 rounded-xl text-white flex-shrink-0 shadow-md">
+                        <FaMapPin size={20} />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-lg font-bold text-gray-900 mb-1">
-                          Nexa Solutions Office
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base font-bold text-gray-900 mb-0.5">
+                          Nexa Solutions
                         </h3>
-                        <p className="text-gray-600 text-sm mb-4">
-                          Riverside Drive, Kofisi, Nairobi, Kenya
+                        <p className="text-gray-500 text-sm mb-3">
+                          Riverside Drive, Kofisi
                         </p>
                         <a 
                           href="https://maps.google.com/?q=Riverside+Drive+Kofisi+Nairobi+Kenya" 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 bg-gradient-to-r from-[#14B8A6] to-[#0D9488] px-5 py-2.5 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg text-sm text-white"
+                          className="inline-flex items-center gap-2 bg-[#14B8A6] hover:bg-[#0D9488] px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-sm text-white w-full sm:w-auto justify-center"
                         >
-                          Get Directions
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
+                          Get Directions
                         </a>
                       </div>
                     </div>
