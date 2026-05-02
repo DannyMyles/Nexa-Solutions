@@ -14,6 +14,7 @@ import {
   FaArrowRight
 } from "react-icons/fa";
 import Link from "next/link";
+import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
   title: "Services | Nexa Solutions",
@@ -150,8 +151,13 @@ const industries = [
 ];
 
 const clients = [
-  { name: "Creams on Cakes", description: "Bakery & Confectionery" },
-  { name: "Spices Restaurant", description: "Food & Beverage" },
+  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
+  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
+  { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
+  { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
+  { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
+  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
+  { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
 ];
 
 export default function ServicesPage() {
@@ -288,16 +294,8 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            {clients.map((client) => (
-              <div
-                key={client.name}
-                className="p-8 bg-gray-50 rounded-2xl text-center card-hover"
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-1">{client.name}</h3>
-                <p className="text-[#14B8A6]">{client.description}</p>
-              </div>
-            ))}
+          <div className="max-w-5xl mx-auto">
+            <ClientCarousel clients={clients} autoPlay={true} autoPlayInterval={4000} />
           </div>
         </div>
       </section>

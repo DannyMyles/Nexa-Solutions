@@ -15,6 +15,7 @@ import {
   FaHospital,
   FaHotel
 } from "react-icons/fa";
+import ClientCarousel from "@/components/ClientCarousel";
 
 const services = [
   {
@@ -54,8 +55,13 @@ const industries = [
 ];
 
 const clients = [
-  { name: "Creams on Cakes", description: "Bakery & Confectionery" },
-  { name: "Spices Restaurant", description: "Food & Beverage" },
+  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
+  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
+  { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
+  { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
+  { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
+  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
+  { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
 ];
 
 export default function Home() {
@@ -146,20 +152,9 @@ export default function Home() {
                 ))}
               </div>
 
-              {/* Client Logos - Visual Cards with Hover Effects */}
-              <div className="flex flex-wrap items-center justify-center gap-6">
-                {clients.map((client, index) => (
-                  <div 
-                    key={client.name}
-                    className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
-                      {client.name}
-                    </p>
-                    <p className="text-sm text-gray-500">{client.description}</p>
-                  </div>
-                ))}
+{/* Client Carousel */}
+              <div className="max-w-5xl mx-auto">
+                <ClientCarousel clients={clients} autoPlay={true} autoPlayInterval={4000} />
               </div>
 
               {/* Stats Counter */}
