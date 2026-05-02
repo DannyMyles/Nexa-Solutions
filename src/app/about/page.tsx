@@ -3,7 +3,7 @@ import { FaCheck, FaAward, FaUsers, FaRocket, FaBullseye } from "react-icons/fa"
 
 export const metadata: Metadata = {
   title: "About Us | Nexa Solutions",
-  description: "Learn about Nexa Solutions - your trusted ERPNext and Frappe implementors in Kenya. Discover our mission, team, and why choose us.",
+  description: "Learn about Nexa Solutions - your trusted ERPNext implementors in Kenya. Discover our mission, team, and why choose us.",
 };
 
 const team = [ 

@@ -91,7 +91,7 @@ export default function Home() {
 
             {/* Subheading */}
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Nexa Solutions is your trusted ERPNext and Frappe implementor. We deliver comprehensive 
+              Nexa Solutions is your trusted ERPNext implementor. We deliver comprehensive 
               ERP solutions that streamline operations, boost productivity, and drive growth for 
               businesses across Kenya and beyond.
             </p>
@@ -153,25 +153,6 @@ export default function Home() {
                     <p className="text-sm text-gray-500">{client.description}</p>
                   </div>
                 ))}
-                {/* Additional Placeholder Clients */}
-                <div className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
-                    TechFlow Africa
-                  </p>
-                  <p className="text-sm text-gray-500">Technology</p>
-                </div>
-                <div className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
-                    Kenya Logistics Co
-                  </p>
-                  <p className="text-sm text-gray-500">Logistics</p>
-                </div>
-                <div className="group bg-white rounded-xl px-6 py-4 border border-gray-200 hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <p className="text-lg font-bold text-gray-900 group-hover:text-[#14B8A6] transition-colors">
-                    Metro Retail Group
-                  </p>
-                  <p className="text-sm text-gray-500">Retail</p>
-                </div>
               </div>
 
               {/* Stats Counter */}

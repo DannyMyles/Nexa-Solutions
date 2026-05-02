@@ -110,11 +110,13 @@ const services = [
       "Security patches",
       "Backup and recovery",
     ],
-    benefits: [
+benefits: [
       "Peace of mind",
       "System reliability",
       "Security compliance",
       "Latest features access",
+      "No subscriptions or monthly fees",
+      "Perpetual license",
     ],
   },
 ];

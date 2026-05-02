@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Nexa Solutions</span>
             </div>
             <p className="text-sm leading-relaxed">
-              Your trusted ERPNext and Frappe implementors. We deliver comprehensive ERP 
+              Your trusted ERPNext implementors. We deliver comprehensive ERP 
               solutions to businesses across multiple industries, helping you transform 
               operations and achieve growth.
             </p>
