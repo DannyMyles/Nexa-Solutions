@@ -95,7 +95,7 @@ export default function Home() {
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
               {/* Badge */}
-              <div className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 bg-[#14B8A6]/10 rounded-full mb-5 md:mb-6">
+              <div className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 bg-[#14B8A6]/10 rounded-full mt-8 sm:mt-10 md:mt-12 mb-5 md:mb-6">
                 <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-[#14B8A6] rounded-full mr-2"></span>
                 <span className="text-[11px] sm:text-xs md:text-sm font-medium text-[#14B8A6] whitespace-nowrap">
                   ERPNext & Frappe Certified Partners
@@ -103,13 +103,13 @@ export default function Home() {
               </div>
 
               {/* Main Heading - Fixed for mobile */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 md:mb-6">
+              <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 md:mb-6">
                 Transform Your Business with
                 <span className="block text-[#14B8A6] mt-2 sm:mt-3"> Smart ERP Solutions</span>
               </h1>
 
               {/* Subheading - Fixed text wrapping */}
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 mb-6 md:mb-8 lg:mb-10 leading-relaxed px-2 sm:px-0">
+              <p className="text-md sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 mb-6 md:mb-8 lg:mb-10 leading-relaxed px-2 sm:px-0">
                 Nexa Solutions is your trusted ERPNext implementor. We deliver comprehensive 
                 ERP solutions that streamline operations, boost productivity, and drive growth for 
                 businesses across Kenya and beyond.
