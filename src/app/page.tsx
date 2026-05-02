@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { 
   FaTools, 
   FaChartLine, 
@@ -13,7 +14,12 @@ import {
   FaIndustry,
   FaTruck,
   FaHospital,
-  FaHotel
+  FaHotel,
+  FaWallet,
+  FaFileInvoice,
+  FaWarehouse,
+  FaUsers,
+  FaChartBar
 } from "react-icons/fa";
 import ClientCarousel from "@/components/ClientCarousel";
 
@@ -88,93 +94,117 @@ export default function Home() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-          <div className="text-center">
-            {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-[#14B8A6]/10 rounded-full mb-8">
-              <span className="w-2 h-2 bg-[#14B8A6] rounded-full mr-2"></span>
-              <span className="text-sm font-medium text-[#14B8A6]">ERPNext & Frappe Certified Partners</span>
+<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-center lg:text-left">
+              {/* Badge */}
+              <div className="inline-flex items-center px-4 py-2 bg-[#14B8A6]/10 rounded-full mb-8">
+                <span className="w-2 h-2 bg-[#14B8A6] rounded-full mr-2"></span>
+                <span className="text-sm font-medium text-[#14B8A6]">ERPNext & Frappe Certified Partners</span>
+              </div>
+
+              {/* Main Heading */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                Transform Your Business with
+                <span className="block_gradient-text"> Smart ERP Solutions</span>
+              </h1>
+
+              {/* Subheading */}
+              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto lg:mx-0 mb-10 leading-relaxed">
+                Nexa Solutions is your trusted ERPNext implementor. We deliver comprehensive 
+                ERP solutions that streamline operations, boost productivity, and drive growth for 
+                businesses across Kenya and beyond.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center px-8 py-4 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                >
+                  Get Started
+                  <FaArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+
+                <Link
+                  href="/services"
+                  className="inline-flex items-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-full border-2 border-gray-200 hover:border-[#14B8A6] hover:text-[#14B8A6] transition-all duration-300"
+                >
+                  Explore Services
+                </Link>
+              </div>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Transform Your Business with
-              <span className="block_gradient-text"> Smart ERP Solutions</span>
-            </h1>
+{/* Right Image Showcase - 3D Floating Dashboard */}
+            <div className="relative hidden lg:block">
+              <div className="relative" style={{ perspective: '1000px' }}>
+                {/* 3D Floating Dashboard Image */}
+                <div className="relative transform rotate-y-[-5deg] rotate-x-[2deg] transition-transform duration-500 hover:rotate-y-0 hover:rotate-x-0" style={{ transformStyle: 'preserve-3d' }}>
+                  <Image
+                    src="/images/web.webp"
+                    alt="ERPNext Dashboard"
+                    width={650}
+                    height={450}
+                    className="rounded-lg w-full h-auto drop-shadow-2xl"
+                    style={{ 
+                      filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.25))',
+                    }}
+                  />
+                </div>
+{/* 3D Shadow Effect */}
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-3/4 h-4 bg-gradient-to-r from-transparent via-gray-300/30 to-transparent blur-xl rounded-full"></div>
+              </div>
+            </div>
+          </div>
 
-            {/* Subheading */}
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Nexa Solutions is your trusted ERPNext implementor. We deliver comprehensive 
-              ERP solutions that streamline operations, boost productivity, and drive growth for 
-              businesses across Kenya and beyond.
-            </p>
-
-{/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center px-8 py-4 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
-              >
-                Get Started
-                <FaArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-
-              <Link
-                href="/services"
-                className="inline-flex items-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-full border-2 border-gray-200 hover:border-[#14B8A6] hover:text-[#14B8A6] transition-all duration-300"
-              >
-                Explore Services
-              </Link>
+{/* Trust Indicators */}
+          <div className="mt-20 pt-12 border-t border-gray-200">
+            <div className="text-center mb-10">
+              <p className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider mb-2">
+                Trusted by businesses across industries
+              </p>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                Powering Growth for 10+ Companies
+              </h3>
             </div>
 
-{/* Trust Indicators - Improved Section */}
-            <div className="mt-20 pt-12 border-t border-gray-200">
-              <div className="text-center mb-10">
-                <p className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider mb-2">
-                  Trusted by businesses across industries
-                </p>
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                  Powering Growth for 10+ Companies
-                </h3>
-              </div>
+            {/* Industry Icons */}
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+              {industries.map((industry, index) => (
+                <div 
+                  key={industry.name}
+                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm hover:border-[#14B8A6] hover:shadow-md transition-all duration-300"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <industry.icon className="w-4 h-4 text-[#14B8A6]" />
+                  <span className="text-sm font-medium text-gray-700">{industry.name}</span>
+                </div>
+              ))}
+            </div>
 
-              {/* Industry Icons - Visual Coverage */}
-              <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
-                {industries.map((industry, index) => (
-                  <div 
-                    key={industry.name}
-                    className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm hover:border-[#14B8A6] hover:shadow-md transition-all duration-300"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
-                    <industry.icon className="w-4 h-4 text-[#14B8A6]" />
-                    <span className="text-sm font-medium text-gray-700">{industry.name}</span>
-                  </div>
-                ))}
-              </div>
+            {/* Client Carousel */}
+            <div className="max-w-5xl mx-auto">
+              <ClientCarousel clients={clients} autoPlay={true} autoPlayInterval={4000} />
+            </div>
 
-{/* Client Carousel */}
-              <div className="max-w-5xl mx-auto">
-                <ClientCarousel clients={clients} autoPlay={true} autoPlayInterval={4000} />
+            {/* Stats Counter */}
+            <div className="flex flex-wrap items-center justify-center gap-8 mt-10 pt-8 border-t border-gray-100">
+              <div className="text-center">
+                <p className="text-3xl font-bold text-[#14B8A6]">10+</p>
+                <p className="text-sm text-gray-500">Happy Clients</p>
               </div>
-
-              {/* Stats Counter */}
-              <div className="flex flex-wrap items-center justify-center gap-8 mt-10 pt-8 border-t border-gray-100">
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-[#14B8A6]">10+</p>
-                  <p className="text-sm text-gray-500">Happy Clients</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-[#14B8A6]">10+</p>
-                  <p className="text-sm text-gray-500">Projects Completed</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-[#14B8A6]">5+</p>
-                  <p className="text-sm text-gray-500">Industries Served</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-[#14B8A6]">5+</p>
-                  <p className="text-sm text-gray-500">Years Experience</p>
-                </div>
+              <div className="text-center">
+                <p className="text-3xl font-bold text-[#14B8A6]">10+</p>
+                <p className="text-sm text-gray-500">Projects Completed</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl font-bold text-[#14B8A6]">5+</p>
+                <p className="text-sm text-gray-500">Industries Served</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl font-bold text-[#14B8A6]">5+</p>
+                <p className="text-sm text-gray-500">Years Experience</p>
               </div>
             </div>
           </div>
@@ -210,7 +240,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+<div className="text-center mt-12">
             <Link
               href="/services"
               className="inline-flex items-center text-[#14B8A6] font-semibold hover:text-[#0D9488] transition-colors"
@@ -222,7 +252,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industries Served Section */}
+{/* Industries Served Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

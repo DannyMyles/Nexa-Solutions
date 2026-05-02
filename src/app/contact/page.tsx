@@ -24,7 +24,7 @@ const team = [
   },
   {
     name: "James Satia",
-    role: "Process Analyst",
+    role: "Business Analyst",
     email: "sjm@nexasolutions.com",
     phone: "+254 708 355 982",
     initials: "JS"
