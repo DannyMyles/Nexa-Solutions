@@ -72,12 +72,44 @@ html {
   }
 }
 
+@keyframes floatSlow {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes floatSlower {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-10px, -18px, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .animate-fade-in {
   animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-float-slow {
+  animation: floatSlow 14s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: floatSlower 18s ease-in-out infinite;
 }
 
 /* Gradient text */

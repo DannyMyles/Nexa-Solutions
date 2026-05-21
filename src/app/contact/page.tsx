@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaWhatsapp, FaMapPin } from "react-icons/fa";
 import ContactForm from "@/components/ContactForm";
 
@@ -54,7 +55,24 @@ const contactInfo = [
   },
 ];
 
-export default function ContactPage() {
+export default function ContactPage({
+  searchParams,
+}: {
+  searchParams?: { intent?: string };
+}) {
+  const intent = searchParams?.intent;
+  const formTitle =
+    intent === "audit"
+      ? "Request for Audit"
+      : intent === "demo"
+        ? "Try Demo Account"
+        : "Send Us a Message";
+  const formDescription =
+    intent === "audit"
+      ? "Tell us what you want assessed and we'll come back with a clear scope, risks, and opportunities."
+      : intent === "demo"
+        ? "Tell us a bit about your team and we'll arrange a guided demo experience tailored to your workflow."
+        : "Fill out the form below and we'll get back to you as soon as possible.";
 
   return (
     <div className="flex flex-col">
@@ -82,10 +100,24 @@ export default function ContactPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
               Get in Touch
             </h1>
-<p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Ready to transform your business with ERPNext? We&apos;d love to hear from you. 
               Reach out to discuss how we can help your business grow.
             </p>
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                href="/contact?intent=audit"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm md:text-base"
+              >
+                Request for Audit
+              </Link>
+              <Link
+                href="/contact?intent=demo"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-700 font-semibold rounded-full border-2 border-gray-200 hover:border-[#14B8A6] hover:text-[#14B8A6] transition-all duration-300 w-full sm:w-auto text-sm md:text-base"
+              >
+                Try Demo Account
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -95,7 +127,24 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Contact Form - Left Column */}
-            <ContactForm />
+            <ContactForm
+              initialService={
+                intent === "audit"
+                  ? "audit"
+                  : intent === "demo"
+                    ? "demo"
+                    : ""
+              }
+              initialMessage={
+                intent === "audit"
+                  ? "Please review our current ERP or business setup and recommend what to improve."
+                  : intent === "demo"
+                    ? "We would like to see a guided demo and understand how the platform fits our workflow."
+                    : ""
+              }
+              title={formTitle}
+              description={formDescription}
+            />
             
 {/* Contact Info - Right Column */}
             <div className="space-y-8">
@@ -210,6 +259,34 @@ export default function ContactPage() {
                     WhatsApp
                   </a>
                 </div>
+              </div>
+
+              {/* Fast Track CTA */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link
+                  href="/contact?intent=audit"
+                  className="group p-5 rounded-2xl border border-gray-200 bg-white hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-[#14B8A6]/10 flex items-center justify-center mb-3 group-hover:bg-[#14B8A6] transition-colors">
+                    <FaMapPin className="text-[#14B8A6] group-hover:text-white" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-1">Request for Audit</h3>
+                  <p className="text-sm text-gray-600">
+                    Get a tailored assessment of your current setup.
+                  </p>
+                </Link>
+                <Link
+                  href="/contact?intent=demo"
+                  className="group p-5 rounded-2xl border border-gray-200 bg-white hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-[#14B8A6]/10 flex items-center justify-center mb-3 group-hover:bg-[#14B8A6] transition-colors">
+                    <FaWhatsapp className="text-[#14B8A6] group-hover:text-white" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-1">Try Demo Account</h3>
+                  <p className="text-sm text-gray-600">
+                    See the platform in action before you decide.
+                  </p>
+                </Link>
               </div>
             </div>
           </div>

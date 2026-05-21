@@ -286,10 +286,10 @@ export default function ServicesPage() {
           <div className="text-center mb-16">
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Clients</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-              Companies We've Helped
+              Companies We&apos;ve Helped
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We're proud to have worked with amazing businesses across various industries, 
+              We&apos;re proud to have worked with amazing businesses across various industries, 
               helping them achieve operational excellence with ERPNext.
             </p>
           </div>
@@ -334,25 +334,34 @@ export default function ServicesPage() {
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Ready to Get Started?
+            Ready to Scope the Right Solution?
           </h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Let's discuss how our ERPNext services can help transform your business operations.
+            Start with a tailored audit or see the platform in action, then we&apos;ll shape the engagement around
+            what your team actually needs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact?intent=audit"
               className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Contact Us
+              Request for Audit
               <FaArrowRight className="ml-2 w-4 h-4" />
             </Link>
 
             <Link
-              href="/about"
+              href="/contact?intent=demo"
               className="inline-flex items-center px-8 py-4 bg-white/20 text-white font-semibold rounded-full hover:bg-white/30 transition-all duration-300 hover:shadow-lg"
             >
-              Learn More About Us
+              Try Demo Account
+            </Link>
+
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300 hover:shadow-lg"
+            >
+              Contact Us
+              <FaArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </div>
         </div>

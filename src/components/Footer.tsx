@@ -88,6 +88,16 @@ export default function Footer() {
                   Ongoing Support
                 </Link>
               </li>
+              <li>
+                <Link href="/contact?intent=audit" className="text-sm hover:text-[#14B8A6] transition-colors">
+                  Request for Audit
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact?intent=demo" className="text-sm hover:text-[#14B8A6] transition-colors">
+                  Try Demo Account
+                </Link>
+              </li>
             </ul>
           </div>
 

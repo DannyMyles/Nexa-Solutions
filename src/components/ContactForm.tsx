@@ -7,14 +7,26 @@ import {
 } from "react-icons/fa";
 import { services } from "@/data/services";
 
-export default function ContactForm() {
+type ContactFormProps = {
+  initialService?: string;
+  initialMessage?: string;
+  title?: string;
+  description?: string;
+};
+
+export default function ContactForm({
+  initialService = "",
+  initialMessage = "",
+  title = "Send Us a Message",
+  description = "Fill out the form below and we'll get back to you as soon as possible.",
+}: ContactFormProps) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    service: "",
-    message: "",
+    service: initialService,
+    message: initialMessage,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -45,13 +57,8 @@ export default function ContactForm() {
     <>
       {/* Contact Form */}
       <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">
-          Send Us a Message
-        </h2>
-        <p className="text-gray-600 mb-8">
-          Fill out the form below and we&apos;ll get back to you as soon as
-          possible.
-        </p>
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
+        <p className="text-gray-600 mb-8">{description}</p>
 
         {isSubmitted ? (
           <div className="text-center py-12">

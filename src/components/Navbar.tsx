@@ -58,11 +58,17 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-<Link
-              href="/contact"
+            <Link
+              href="/contact?intent=audit"
               className="px-5 py-2.5 bg-[#14B8A6] text-white text-sm font-medium rounded-full hover:bg-[#0D9488] transition-all duration-300 hover:shadow-lg hover:shadow-[#14B8A6]/30"
             >
-              Get Started
+              Request Audit
+            </Link>
+            <Link
+              href="/contact?intent=demo"
+              className="px-5 py-2.5 bg-white text-[#14B8A6] text-sm font-medium rounded-full border border-[#14B8A6]/25 hover:border-[#14B8A6] transition-all duration-300"
+            >
+              Try Demo
             </Link>
           </div>
 
@@ -124,11 +130,18 @@ export default function Navbar() {
                     </Link>
                   ))}
                   <Link
-                    href="/contact"
+                    href="/contact?intent=audit"
                     className="px-5 py-3 bg-[#14B8A6] text-white text-base font-medium rounded-lg text-center hover:bg-[#0D9488] transition-colors mt-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Get Started
+                    Request Audit
+                  </Link>
+                  <Link
+                    href="/contact?intent=demo"
+                    className="px-5 py-3 bg-white text-[#14B8A6] text-base font-medium rounded-lg text-center border border-[#14B8A6]/25 hover:border-[#14B8A6] transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Try Demo
                   </Link>
                 </div>
               </div>

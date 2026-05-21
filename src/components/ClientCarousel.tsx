@@ -47,16 +47,21 @@ export default function ClientCarousel({
   useEffect(() => {
     if (!emblaApi) return;
 
-    onSelect();
+    const frame = requestAnimationFrame(onSelect);
     emblaApi.on("select", onSelect);
 
+    let interval: ReturnType<typeof setInterval> | undefined;
     if (autoPlay) {
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         emblaApi.scrollNext();
       }, autoPlayInterval);
-
-      return () => clearInterval(interval);
     }
+
+    return () => {
+      cancelAnimationFrame(frame);
+      emblaApi.off("select", onSelect);
+      if (interval) clearInterval(interval);
+    };
   }, [emblaApi, onSelect, autoPlay, autoPlayInterval]);
 
   return (
@@ -64,7 +69,7 @@ export default function ClientCarousel({
       {/* Carousel Container */}
       <div ref={emblaRef} className="overflow-hidden cursor-grab active:cursor-grabbing">
         <div className="flex">
-          {clients.map((client, index) => (
+          {clients.map((client) => (
             <div
               key={client.name}
               className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33%] min-w-0 px-3"

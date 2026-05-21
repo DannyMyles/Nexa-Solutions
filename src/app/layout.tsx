@@ -3,12 +3,15 @@ import "./fonts/montserrat.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingCtaWidget from "@/components/FloatingCtaWidget";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 
 export const metadata: Metadata = {
-  title: "Nexa Solutions | ERPNext & Frappe Implementors",
-  description: "Nexa Solutions - Your trusted ERPNext implementors. We deliver comprehensive ERP solutions to businesses across multiple industries, helping you transform operations and achieve growth.",
-  keywords: "ERPNext, Frappe, ERP solutions, business automation, Kenya, Nairobi",
+  title: "Nexa Solutions | ERPNext, Audit & Demo-Ready ERP Delivery",
+  description:
+    "Nexa Solutions helps Kenyan businesses implement ERPNext with clear service packages, tailored audits, demo experiences, and practical support.",
+  keywords:
+    "ERPNext, Frappe, ERP solutions, business automation, Kenya, Nairobi, audit, demo, ERP pricing",
 };
 
 export default function RootLayout({
@@ -22,6 +25,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <FloatingCtaWidget />
         <WhatsAppWidget />
       </body>
     </html>

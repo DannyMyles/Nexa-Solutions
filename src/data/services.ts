@@ -1,5 +1,7 @@
 export const services = [
   { value: "", label: "Select a service" },
+  { value: "audit", label: "Request for Audit" },
+  { value: "demo", label: "Try Demo Account" },
   { value: "implementation", label: "ERPNext Implementation" },
   { value: "analysis", label: "Business Process Analysis" },
   { value: "customization", label: "System Customization" },
