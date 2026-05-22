@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Metadata } from "next";
 import { 
   FaTools, 

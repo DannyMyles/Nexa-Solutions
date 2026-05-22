@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Metadata } from "next";
 import { FaCheck, FaAward, FaUsers, FaRocket, FaBullseye } from "react-icons/fa";
 
@@ -75,16 +76,26 @@ export default function AboutPage() {
         }}></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">About Us</span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-              Empowering Businesses with Smart ERP Solutions
-            </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Nexa Solutions is a leading ERPNext and Frappe implementation partner, dedicated to 
-              helping businesses across Kenya and East Africa transform their operations through 
-              intelligent ERP solutions.
-            </p>
+          <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] items-center">
+            <div>
+              <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">About Us</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
+                Empowering businesses with smart ERP solutions.
+              </h1>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Nexa Solutions is a trusted ERPNext and Frappe partner delivering practical systems and local expertise for businesses across Kenya, East Africa, and global teams.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 bg-white shadow-xl">
+              <Image
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                alt="Business team collaborating on ERP strategy"
+                width={1200}
+                height={800}
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

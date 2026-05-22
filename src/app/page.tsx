@@ -91,12 +91,12 @@ const valueProps = [
 
 
 const industries = [
-  { icon: FaBuilding, name: "Manufacturing" },
-  { icon: FaShoppingCart, name: "Retail & E-commerce" },
-  { icon: FaIndustry, name: "Distribution" },
-  { icon: FaTruck, name: "Logistics" },
-  { icon: FaHospital, name: "Healthcare" },
-  { icon: FaWarehouse, name: "Warehousing" },
+  { icon: FaBuilding, name: "Manufacturing", backgroundImage: "https://plus.unsplash.com/premium_photo-1681426730828-bfee2d13861d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { icon: FaShoppingCart, name: "Retail & E-commerce", backgroundImage: "https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?q=80&w=784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { icon: FaIndustry, name: "Distribution", backgroundImage: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { icon: FaTruck, name: "Logistics", backgroundImage: "https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { icon: FaHospital, name: "Healthcare", backgroundImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { icon: FaWarehouse, name: "Warehousing", backgroundImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 
 const clients = [
@@ -197,7 +197,7 @@ export default function Home() {
 
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
               Nexa Solutions helps businesses move from fragmented spreadsheets and manual follow-ups to a
-              cleaner operating system with ERPNext, tailored workflows, and support that keeps pace with growth.
+              smarter operating system with ERPNext, tailored workflows, and support that scales with your growth.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -205,22 +205,19 @@ export default function Home() {
                 href="/contact?intent=audit"
                 className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
               >
-                Request for Audit
-                {/* <FaClipboardCheck className="ml-2 h-4 w-4" /> */}
+                Request an Audit
               </Link>
               <Link
                 href="/contact?intent=demo"
                 className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#14B8A6] hover:text-[#14B8A6]"
               >
-                Try Demo Account
-                {/* <FaPlay className="ml-2 h-3.5 w-3.5" /> */}
+                Book a Guided Demo
               </Link>
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold text-gray-700 transition-colors hover:text-[#14B8A6]"
               >
                 Explore Services
-                {/* <FaArrowRight className="ml-2 h-4 w-4" /> */}
               </Link>
             </div>
 
@@ -248,9 +245,6 @@ export default function Home() {
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#14B8A6]">
                       Live Preview
                     </p>
-                    <h2 className="mt-1 text-lg font-bold text-gray-900">
-                      A cleaner operating layer
-                    </h2>
                   </div>
                   <div className="rounded-full bg-[#14B8A6]/10 px-3 py-1 text-xs font-semibold text-[#14B8A6]">
                     +24/7 visibility
@@ -328,8 +322,7 @@ export default function Home() {
               Clear service breakdowns that speak to outcomes, not just deliverables.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600">
-              We keep the messaging practical: what the service solves, what gets configured, and what your team
-              should expect after launch.
+              We focus on business outcomes, practical implementation, and measurable improvements from day one.
             </p>
           </div>
 
@@ -459,7 +452,7 @@ export default function Home() {
                   "Audit-first engagements reduce wasted scope and expensive guesswork.",
                   "Packages are arranged around business maturity, not technical jargon.",
                   "Value propositions are explicit so buyers know what they are getting.",
-                  "The design stays polished and modern without losing the current brand feel.",
+                  "We make scope and pricing easy to understand for international decision makers.",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3 rounded-2xl bg-white p-4 shadow-sm">
                     <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#14B8A6]/10">
@@ -639,9 +632,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+ 
       {/* Keep the industries section as is */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-50  py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
             <div className="rounded-[2rem] border border-gray-100 bg-white p-6 shadow-xl">
@@ -650,16 +643,30 @@ export default function Home() {
                 The website should communicate fit quickly, so these sectors are surfaced as obvious use cases.
               </p>
 
-              <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+              <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {industries.map((industry) => (
                   <div
                     key={industry.name}
-                    className="rounded-2xl border border-gray-100 bg-gray-50 p-4 text-center transition-all duration-300 hover:border-[#14B8A6]/25 hover:shadow-md"
+                    className="group relative h-64 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-[#14B8A6]/30 cursor-pointer"
                   >
-                    <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-2xl bg-[#14B8A6]/10 text-[#14B8A6]">
-                      <industry.icon className="h-5 w-5" />
+                    {/* Background Image */}
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                      style={{
+                        backgroundImage: `url('${industry.backgroundImage}')`,
+                      }}
+                    />
+                    
+                    {/* Dark Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300" />
+                    
+                    {/* Content */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#14B8A6] text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                        <industry.icon className="h-6 w-6" />
+                      </div>
+                      <p className="mt-3 text-sm font-semibold text-white">{industry.name}</p>
                     </div>
-                    <p className="mt-3 text-sm font-semibold text-gray-900">{industry.name}</p>
                   </div>
                 ))}
               </div>
