@@ -9,12 +9,10 @@ import {
   FaCheck,
   FaCogs,
   FaChartLine,
-  FaClipboardCheck,
   FaDatabase,
   FaHeadset,
   FaHospital,
   FaIndustry,
-  FaPlay,
   FaPlug,
   FaRocket,
   FaShoppingCart,
@@ -22,6 +20,13 @@ import {
   FaTools,
   FaTruck,
   FaWarehouse,
+  FaClipboardList,
+  FaPencilRuler,
+  FaCode,
+  FaChartPie,
+  FaUsers,
+  FaClock,
+  FaCalendarAlt,
 } from "react-icons/fa";
 import ClientCarousel from "@/components/ClientCarousel";
 
@@ -104,30 +109,43 @@ const clients = [
   { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
 ];
 
-const process = [
+// Redesigned process flow with more detail and visual approach
+const processSteps = [
   {
     step: "01",
     title: "Audit",
     description:
       "We review the current state of your systems, workflows, and pain points.",
+    icon: FaClipboardList,
+    deliverables: ["Current state assessment", "Gap analysis report", "High-level roadmap"],
+    color: "from-blue-500 to-cyan-500",
   },
   {
     step: "02",
     title: "Design",
     description:
       "We define the right scope, package, integrations, and rollout plan.",
+    icon: FaPencilRuler,
+    deliverables: ["Detailed solution design", "Integration architecture", "Migration strategy"],
+    color: "from-indigo-500 to-purple-500",
   },
   {
     step: "03",
     title: "Implement",
     description:
       "We configure ERPNext, migrate data, and train your users for go-live.",
+    icon: FaCode,
+    deliverables: ["Configured system", "Data migration", "User training & documentation"],
+    color: "from-teal-500 to-emerald-500",
   },
   {
     step: "04",
     title: "Optimize",
     description:
       "We refine reporting, automation, and support as your business grows.",
+    icon: FaChartPie,
+    deliverables: ["Performance optimization", "Advanced automation", "Continuous support"],
+    color: "from-amber-500 to-orange-500",
   },
 ];
 
@@ -483,41 +501,149 @@ export default function Home() {
         </div>
       </section>
 
+      {/* REDESIGNED HOW WE WORK SECTION */}
+            {/* REDESIGNED HOW WE WORK SECTION - NO GREEN LINE */}
+      <section className="bg-gradient-to-b from-gray-50 to-white py-24">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#14B8A6]/10 px-4 py-1.5 mb-4">
+              <FaCalendarAlt className="h-3.5 w-3.5 text-[#14B8A6]" />
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#14B8A6]">Our Methodology</span>
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
+              How we deliver <span className="text-[#14B8A6]">exceptional results</span>
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+              A proven, transparent process that transforms your operations from chaos to clarity
+            </p>
+          </div>
 
+          {/* Horizontal Timeline - Desktop (no line) */}
+          <div className="hidden lg:block relative mb-20">
+            <div className="relative grid grid-cols-4 gap-8">
+              {processSteps.map((step) => (
+                <div key={step.step} className="relative text-center group">
+                  {/* Timeline node */}
+                  <div className="relative z-10 flex justify-center mb-6">
+                    <div className={`
+                      flex items-center justify-center w-16 h-16 
+                      rounded-2xl bg-gradient-to-br ${step.color} 
+                      shadow-lg transform transition-all duration-300 
+                      group-hover:scale-110 group-hover:shadow-xl
+                    `}>
+                      <step.icon className="w-7 h-7 text-white" />
+                    </div>
+                  </div>
 
+                  {/* Step number badge */}
+                  <div className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1 mb-4">
+                    <span className="text-xs font-bold text-[#14B8A6]">Step {step.step}</span>
+                    <span className="text-xs text-gray-400">•</span>
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed px-4 mb-4">{step.description}</p>
+                  
+                  {/* Deliverables preview */}
+                  <div className="mt-2 pt-4 border-t border-gray-100">
+                    <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Key deliverables</p>
+                    <ul className="space-y-1.5">
+                      {step.deliverables.map((item) => (
+                        <li key={item} className="text-xs text-gray-600 flex items-center justify-center gap-1.5">
+                          <FaCheck className="h-2.5 w-2.5 text-[#14B8A6]" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Vertical Timeline - Mobile & Tablet (no line) */}
+          <div className="lg:hidden relative">
+            <div className="space-y-10">
+              {processSteps.map((step, idx) => (
+                <div key={step.step} className="relative flex gap-5 group">
+                  {/* Timeline node */}
+                  <div className="relative z-10 flex-shrink-0">
+                    <div className={`
+                      flex items-center justify-center w-14 h-14 
+                      rounded-xl bg-gradient-to-br ${step.color} 
+                      shadow-md transform transition-all duration-300 
+                      group-hover:scale-105
+                    `}>
+                      <step.icon className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
+                      <div className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-0.5">
+                        <span className="text-xs font-bold text-[#14B8A6]">Step {step.step}</span>
+                      </div>
+                      <div className="flex items-center gap-1 text-xs text-gray-500">
+                        <FaClock className="h-3 w-3" />
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4">{step.description}</p>
+                    
+                    {/* Deliverables */}
+                    <div className="bg-gray-50 rounded-xl p-3">
+                      <p className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2 flex items-center gap-1.5">
+                        <FaCheck className="h-3 w-3 text-[#14B8A6]" />
+                        Key deliverables
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {step.deliverables.map((item) => (
+                          <span key={item} className="text-xs bg-white px-2 py-1 rounded-full text-gray-700 shadow-sm">
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Supporting metrics / CTA */}
+          <div className="mt-16 text-center">
+            <div className="inline-flex flex-wrap items-center justify-center gap-6 bg-white rounded-2xl shadow-sm border border-gray-100 p-6 max-w-2xl mx-auto">
+              <div className="flex items-center gap-3">
+                <div className="flex -space-x-2">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#14B8A6] to-[#0D9488] flex items-center justify-center text-white text-xs font-bold ring-2 ring-white">
+                      {String.fromCharCode(64 + i)}
+                    </div>
+                  ))}
+                </div>
+                <span className="text-sm text-gray-600">Trusted by businesses across East Africa</span>
+              </div>
+              <div className="w-px h-8 bg-gray-200 hidden sm:block" />
+              <Link
+                href="/contact?intent=demo"
+                className="inline-flex items-center gap-2 text-[#14B8A6] font-semibold text-sm hover:gap-3 transition-all"
+              >
+                Need to start demo?
+                <FaArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Keep the industries section as is */}
       <section className="bg-gray-50 py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
-                How We Work
-              </span>
-              <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                A clear delivery flow from audit to optimize.
-              </h2>
-
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
-                We keep momentum by turning each stage into a tangible outcome—so your team always knows what happens next.
-              </p>
-
-              <div className="mt-8 space-y-4">
-                {process.map((item, idx) => (
-                  <div
-                    key={item.step}
-                    className={`group flex gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#14B8A6]/30 hover:shadow-md ${idx % 2 === 1 ? "bg-gradient-to-br from-[#14B8A6]/5 to-white" : ""}`}
-                  >
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#14B8A6]/10 text-sm font-bold text-[#14B8A6] transition-colors group-hover:bg-[#14B8A6]/15">
-                      {item.step}
-                    </div>
-                    <div className="min-w-0">
-                      <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
-                      <p className="mt-1 text-sm leading-relaxed text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             <div className="rounded-[2rem] border border-gray-100 bg-white p-6 shadow-xl">
               <h3 className="text-xl font-bold text-gray-900">Industries we support</h3>
               <p className="mt-2 text-sm leading-relaxed text-gray-600">

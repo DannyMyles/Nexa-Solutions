@@ -119,7 +119,8 @@ export default function ClientCarousel({
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
-            className="w-2 h-2 rounded-full bg-gray-300 hover:bg-[#14B8A6] transition-colors"
+            disabled={!emblaApi}
+            className="w-2 h-2 rounded-full bg-gray-300 hover:bg-[#14B8A6] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
