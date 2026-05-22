@@ -59,7 +59,7 @@ const coreServices = [
 const valueProps = [
   {
     icon: FaShieldAlt,
-    title: "Built for Kenyan operations",
+    title: "Built for global operations",
     text: "KRA compliance, M-Pesa reconciliation, payroll, and approval structures are considered from day one.",
   },
   {
@@ -79,56 +79,11 @@ const valueProps = [
   },
 ];
 
-const packages = [
-  {
-    name: "Foundation",
-    badge: "Best for smaller teams",
-    price: "KSh 260,000+",
-    investment: "Scoped after a free audit",
-    description:
-      "For businesses that want a clean ERPNext launch with the most important workflows mapped first.",
-    features: [
-      "Discovery workshop and process audit",
-      "Core ERP setup and configuration",
-      "Basic migration and onboarding",
-      "Launch support and stabilization",
-    ],
-  },
-  {
-    name: "Growth",
-    badge: "Most popular",
-    price: "KSh 650,000+",
-    investment: "Fixed scope after discovery",
-    description:
-      "For teams ready to connect operations, finance, and reporting into a single operating layer.",
-    features: [
-      "Everything in Foundation",
-      "Automation for approvals and handoffs",
-      "Custom dashboards and reports",
-      "Role-based training for teams",
-    ],
-  },
-  {
-    name: "Scale",
-    badge: "For multi-department teams",
-    price: "KSh 910,000+",
-    investment: "Custom scoped for complexity",
-    description:
-      "For larger operations that need integrations, multi-branch visibility, and deeper governance.",
-    features: [
-      "Advanced integrations and APIs",
-      "Multi-branch and department setup",
-      "Extended support and optimization",
-      "Roadmap for continuous improvement",
-    ],
-  },
-];
+// NOTE: Pricing section removed from the homepage.
+// Package/tier data intentionally kept out to avoid unused-variable warnings.
 
-const pricingHighlights = [
-  "One-time implementation fee",
-  "No recurring licence fees",
-  "Audit-led scoping",
-];
+
+
 
 const industries = [
   { icon: FaBuilding, name: "Manufacturing" },
@@ -218,8 +173,8 @@ export default function Home() {
             </div>
 
             <h1 className="mt-6 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
-              Modern ERP for Kenyan teams that want{" "}
-              <span className="block text-[#14B8A6]">clarity, control, and conversion.</span>
+              Modern ERP built for
+              <span className="px-2 text-[#14B8A6]">clarity, control, and growth.</span>
             </h1>
 
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
@@ -233,21 +188,21 @@ export default function Home() {
                 className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
               >
                 Request for Audit
-                <FaClipboardCheck className="ml-2 h-4 w-4" />
+                {/* <FaClipboardCheck className="ml-2 h-4 w-4" /> */}
               </Link>
               <Link
                 href="/contact?intent=demo"
                 className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#14B8A6] hover:text-[#14B8A6]"
               >
                 Try Demo Account
-                <FaPlay className="ml-2 h-3.5 w-3.5" />
+                {/* <FaPlay className="ml-2 h-3.5 w-3.5" /> */}
               </Link>
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold text-gray-700 transition-colors hover:text-[#14B8A6]"
               >
                 Explore Services
-                <FaArrowRight className="ml-2 h-4 w-4" />
+                {/* <FaArrowRight className="ml-2 h-4 w-4" /> */}
               </Link>
             </div>
 
@@ -387,6 +342,85 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
+              Software Solutions & Web Services
+            </span>
+            <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
+              ERP, business systems, and digital builds—ready to deploy
+            </h2>
+            <p className="mt-4 max-w-3xl mx-auto text-base leading-relaxed text-gray-600">
+              Explore our software categories and web services. We implement and tailor solutions to
+              your workflows—whether you’re in East Africa or beyond.
+            </p>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-2">
+            <div className="rounded-[2rem] border border-gray-100 bg-gray-50 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-5">Software Solutions</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  "ERP Software Popular",
+                  "Accounting Software",
+                  "HR & Payroll Software",
+                  "Inventory Management",
+                  "POS System",
+                  "CRM Software",
+                  "Fleet Management",
+                  "Property Management",
+                  "Hospital Management",
+                  "Logistics Software",
+                  "ERP for Schools",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 border border-gray-100"
+                  >
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#14B8A6]" />
+                    <span className="text-sm font-semibold text-gray-800">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-gray-100 bg-gray-50 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-5">Web & Digital</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  "All Services",
+                  "Web Design",
+                  "Custom Website Design",
+                  "Corporate Web Development",
+                  "E-commerce Payments Integration",
+                  "SEO Web Design",
+                  "Website Redesign",
+                  "Website Maintenance",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 border border-gray-100"
+                  >
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#14B8A6]" />
+                    <span className="text-sm font-semibold text-gray-800">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href="/services"
+              className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-7 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
+            >
+              View Services
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-gray-50 py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
@@ -449,97 +483,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
-            <div className="max-w-3xl">
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
-                Pricing
-              </span>
-              <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                Structured pricing that helps buyers compare scope quickly.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                We keep the tiers easy to understand and open with a free audit so each quote is scoped to the
-                actual business need.
-              </p>
-            </div>
-            <Link
-              href="/contact?intent=audit"
-              className="inline-flex items-center rounded-full border border-[#14B8A6]/20 bg-[#14B8A6]/10 px-5 py-3 text-sm font-semibold text-[#14B8A6] transition-colors hover:bg-[#14B8A6] hover:text-white"
-            >
-              Book a tailored audit
-            </Link>
-          </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            {pricingHighlights.map((item) => (
-              <div
-                key={item}
-                className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {packages.map((tier, index) => (
-              <div
-                key={tier.name}
-                className={`relative rounded-[1.9rem] border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
-                  index === 1
-                    ? "border-[#14B8A6]/30 bg-gradient-to-b from-[#14B8A6]/8 to-white"
-                    : "border-gray-100 bg-gray-50"
-                }`}
-              >
-                {index === 1 && (
-                  <div className="absolute right-6 top-6 rounded-full bg-[#14B8A6] px-3 py-1 text-xs font-semibold text-white">
-                    Most popular
-                  </div>
-                )}
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#14B8A6]">
-                  {tier.badge}
-                </span>
-                <h3 className="mt-3 text-2xl font-bold text-gray-900">{tier.name}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">{tier.description}</p>
-
-                <div className="mt-5 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-100">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
-                    Implementation cost
-                  </p>
-                  <p className="mt-2 text-3xl font-bold text-[#14B8A6]">{tier.price}</p>
-                  <p className="mt-1 text-sm font-semibold text-gray-900">{tier.investment}</p>
-                </div>
-
-                <ul className="mt-5 space-y-3">
-                  {tier.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-sm text-gray-700">
-                      <FaCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#14B8A6]" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-6 flex flex-col gap-3">
-                  <Link
-                    href="/contact?intent=audit"
-                    className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#0D9488]"
-                  >
-                    Request for Audit
-                  </Link>
-                  <Link
-                    href="/contact?intent=demo"
-                    className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-5 py-3 font-semibold text-gray-700 transition-colors hover:border-[#14B8A6] hover:text-[#14B8A6]"
-                  >
-                    Try Demo Account
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="bg-gray-50 py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
@@ -549,15 +493,23 @@ export default function Home() {
                 How We Work
               </span>
               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                A process that feels structured from the first call.
+                A clear delivery flow from audit to optimize.
               </h2>
+
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
+                We keep momentum by turning each stage into a tangible outcome—so your team always knows what happens next.
+              </p>
+
               <div className="mt-8 space-y-4">
-                {process.map((item) => (
-                  <div key={item.step} className="flex gap-4 rounded-2xl bg-white p-5 shadow-sm">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#14B8A6]/10 text-sm font-bold text-[#14B8A6]">
+                {process.map((item, idx) => (
+                  <div
+                    key={item.step}
+                    className={`group flex gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#14B8A6]/30 hover:shadow-md ${idx % 2 === 1 ? "bg-gradient-to-br from-[#14B8A6]/5 to-white" : ""}`}
+                  >
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#14B8A6]/10 text-sm font-bold text-[#14B8A6] transition-colors group-hover:bg-[#14B8A6]/15">
                       {item.step}
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
                       <p className="mt-1 text-sm leading-relaxed text-gray-600">{item.description}</p>
                     </div>

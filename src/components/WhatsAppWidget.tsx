@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { services } from "@/data/services";
 
 export default function WhatsAppWidget() {
-  const phoneNumber = "+254758269725";
+  const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_PHONE ?? "";
   const [selectedService, setSelectedService] = useState("");
 
   const getMessage = () => {
@@ -19,6 +19,10 @@ export default function WhatsAppWidget() {
   const handleClick = () => {
     const message = getMessage();
     const encodedMessage = encodeURIComponent(message);
+
+    // If phone is not configured, do nothing (prevents a broken wa.me/ link).
+    if (!phoneNumber) return;
+
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 

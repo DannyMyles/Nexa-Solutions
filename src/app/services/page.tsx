@@ -18,7 +18,7 @@ import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
   title: "Services | Nexa Solutions",
-  description: "Explore our ERPNext implementation services including business process analysis, customization, integration, and ongoing support for businesses in Kenya.",
+  description: "Explore our ERPNext implementation services including business process analysis, customization, integration, and ongoing support for businesses worldwide.",
 };
 
 const services = [
@@ -320,10 +320,13 @@ export default function ServicesPage() {
               { step: "03", title: "Implement", description: "We configure and deploy your ERPNext system" },
               { step: "04", title: "Support", description: "We provide ongoing training and maintenance" },
             ].map((item) => (
-              <div key={item.step} className="relative p-6 bg-white rounded-xl border border-gray-100">
+              <div
+                key={item.step}
+                className="relative p-6 bg-white rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#14B8A6]/30 hover:shadow-md"
+              >
                 <div className="text-4xl font-bold text-[#14B8A6]/20 mb-4">{item.step}</div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
