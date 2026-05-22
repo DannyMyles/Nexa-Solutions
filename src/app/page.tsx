@@ -52,21 +52,21 @@ const coreServices = [
       "From custom fields to approval flows, we shape ERPNext so your team spends less time on manual work.",
     bullets: ["Custom apps", "Automation", "Reports & dashboards"],
   },
-  {
-    icon: FaPlug,
-    title: "Integrations",
-    description:
-      "We connect ERPNext to your payments, websites, and external systems so data moves once and stays accurate.",
-    bullets: ["API work", "M-Pesa flows", "Third-party tools"],
-  },
+    {
+      icon: FaPlug,
+      title: "Integrations",
+      description:
+        "We connect ERPNext to your payments, websites, and external systems so data moves once and stays accurate.",
+      bullets: ["API work", "Payment gateway flows", "Third-party tools"],
+    },
 ];
 
 const valueProps = [
-  {
-    icon: FaShieldAlt,
-    title: "Built for global operations",
-    text: "KRA compliance, M-Pesa reconciliation, payroll, and approval structures are considered from day one.",
-  },
+    {
+      icon: FaShieldAlt,
+      title: "Built for global operations",
+      text: "Local compliance, payment processing, payroll, and approval structures are considered from day one.",
+    },
   {
     icon: FaDatabase,
     title: "No loose ends",
@@ -226,9 +226,8 @@ export default function Home() {
 
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
               {[
-                "Fixed scope delivery",
-                "KRA eTIMS and M-Pesa readiness",
-                "No per-user licensing surprises",
+              "Compliance-ready configurations",
+              "No per-user licensing surprises",
               ].map((item) => (
                 <div
                   key={item}
@@ -389,7 +388,8 @@ export default function Home() {
                   "Fleet Management",
                   "Property Management",
                   "Hospital Management",
-                  "Logistics Software",
+                  "Logistics Software", 
+                  "Booking Systems",
                   "ERP for Schools",
                 ].map((item) => (
                   <div
@@ -670,7 +670,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">
