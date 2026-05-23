@@ -184,15 +184,45 @@ export default function ServicesPage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Services</span>
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">ERPNext Services</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-              ERPNext that works with your team
+              Run your business in one system — sales, stock, payments, and reports in real time.
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We deliver practical ERP implementations—built around your workflows, integrated to your systems,
-              and supported long after go-live.
+              Raminiam POS + ERPNext gives you full visibility and control with M-Pesa integration, KRA-ready reporting, and fast day-to-day insights.
             </p>
 
+            <div className="mt-6">
+              <p className="text-sm text-gray-700 font-semibold">
+                Built for retail shops, wholesalers, and growing businesses in Kenya.
+              </p>
+            </div>
+
+            {/* Value strip */}
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+              {[
+                "💰 Real-time Profit Tracking",
+                "📦 Smart Inventory Control",
+                "📊 KRA-Compliant Reporting",
+                "⚡ Fast & Reliable Performance",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-gray-100 bg-white/80 px-4 py-3 text-sm font-medium text-gray-700 shadow-sm"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600 font-medium">
+                Trusted by businesses across Kenya
+              </p>
+              <p className="mt-1 text-xs text-gray-500">
+                Supporting retail, distribution, and SMEs with ERPNext delivery.
+              </p>
+            </div>
           </div>
         </div>
       </section>
