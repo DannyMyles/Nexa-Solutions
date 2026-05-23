@@ -189,7 +189,7 @@ export default function ServicesPage() {
               Run your business in one system — sales, stock, payments, and reports in real time.
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Raminiam POS + ERPNext gives you full visibility and control with M-Pesa integration, KRA-ready reporting, and fast day-to-day insights.
+              Point Of Sale + ERPNext gives you full visibility and control with M-Pesa integration, KRA-ready reporting, and fast day-to-day insights.
             </p>
 
             <div className="mt-6">
