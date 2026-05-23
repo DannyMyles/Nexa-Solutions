@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="font-sans antialiased">
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen pb-44 sm:pb-32">{children}</main>
         <Footer />
         <FloatingCtaWidget />
         <WhatsAppWidget />

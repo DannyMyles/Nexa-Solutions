@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+
 import { useState, type CSSProperties, type PointerEvent as ReactPointerEvent } from "react";
 import {
   FaArrowRight,
@@ -24,8 +25,8 @@ import {
   FaPencilRuler,
   FaCode,
   FaChartPie,
-  FaUsers,
   FaClock,
+
   FaCalendarAlt,
 } from "react-icons/fa";
 import ClientCarousel from "@/components/ClientCarousel";
@@ -180,8 +181,8 @@ export default function Home() {
             backgroundSize: "32px 32px",
           }}
         />
-        <div className="absolute -top-12 left-0 h-80 w-80 rounded-full bg-[#14B8A6]/20 blur-3xl animate-float-slow" />
-        <div className="absolute bottom-0 right-0 h-[26rem] w-[26rem] rounded-full bg-[#14B8A6]/15 blur-3xl animate-float-slower" />
+        <div className="absolute -top-12 left-0 h-72 w-72 sm:h-80 sm:w-80 rounded-full bg-[#14B8A6]/20 blur-3xl animate-float-slow" />
+        <div className="absolute bottom-0 right-0 h-[18rem] w-[18rem] sm:h-[22rem] sm:w-[22rem] lg:h-[26rem] lg:w-[26rem] rounded-full bg-[#14B8A6]/15 blur-3xl animate-float-slower" />
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
           <div className="max-w-3xl">
@@ -559,8 +560,9 @@ export default function Home() {
           {/* Vertical Timeline - Mobile & Tablet (no line) */}
           <div className="lg:hidden relative">
             <div className="space-y-10">
-              {processSteps.map((step, idx) => (
-                <div key={step.step} className="relative flex gap-5 group">
+                {processSteps.map((step) => (
+
+                 <div key={step.step} className="relative flex gap-5 group">
                   {/* Timeline node */}
                   <div className="relative z-10 flex-shrink-0">
                     <div className={`

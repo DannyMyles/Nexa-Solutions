@@ -27,7 +27,7 @@ export default function WhatsAppWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
       {/* Service Selector Dropdown */}
       <div className="absolute bottom-full right-0 mb-3 w-64 p-3 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
         <label className="block text-xs font-medium text-gray-500 mb-1">

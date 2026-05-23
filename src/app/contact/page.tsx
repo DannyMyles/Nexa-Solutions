@@ -77,12 +77,12 @@ export default function ContactPage({
   return (
     <div className="flex flex-col">
 {/* Hero Section */}
-      <section className="relative py-24 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+      <section className="relative pt-28 pb-24 lg:pt-32 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         {/* Enhanced background */}
         <div className="absolute inset-0 opacity-40">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-16 right-4 w-72 h-72 sm:bottom-20 sm:right-10 sm:w-96 sm:h-96 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
         </div>
         {/* Pattern overlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0" style={{ 
@@ -186,7 +186,7 @@ export default function ContactPage({
               </div>
 
 {/* Map - Enhanced Section */}
-              <div className="relative h-[380px] w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="relative h-[280px] sm:h-[340px] md:h-[380px] w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 {/* Google Maps Embed */}
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8199999999997!2d36.835!3d-1.255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117e0e5e3a3b%3A0x1234567890abcdef!2sOccidental%20House%2C%20Baricho%20Road%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1699999999999!5m2!1sen!2ske"

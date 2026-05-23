@@ -21,7 +21,7 @@ export default function FloatingCtaWidget() {
   }
 
   return (
-    <div className="fixed bottom-28 right-6 z-50 w-[min(92vw,19rem)] rounded-[1.5rem] border border-[#14B8A6]/20 bg-[#051B2B] p-4 text-white shadow-2xl shadow-black/20 backdrop-blur">
+    <div className="fixed bottom-24 right-4 sm:bottom-28 sm:right-6 z-50 w-[min(92vw,19rem)] rounded-[1.5rem] border border-[#14B8A6]/20 bg-[#051B2B] p-4 text-white shadow-2xl shadow-black/20 backdrop-blur">
       <button
         type="button"
         onClick={() => setIsOpen(false)}

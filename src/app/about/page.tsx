@@ -58,12 +58,12 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
 {/* Hero Section */}
-      <section className="relative py-24 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+      <section className="relative pt-28 pb-24 lg:pt-32 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         {/* Enhanced background */}
         <div className="absolute inset-0 opacity-40">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-16 right-4 w-72 h-72 sm:bottom-20 sm:right-10 sm:w-96 sm:h-96 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
         </div>
         {/* Pattern overlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0" style={{ 

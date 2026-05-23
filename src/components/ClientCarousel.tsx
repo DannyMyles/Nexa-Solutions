@@ -90,7 +90,7 @@ export default function ClientCarousel({
       <button
         onClick={scrollPrev}
         disabled={!prevBtnEnabled}
-        className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
+        className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
           prevBtnEnabled
             ? "bg-white shadow-lg hover:bg-[#14B8A6] hover:text-white text-gray-700"
             : "bg-gray-200 text-gray-400 cursor-not-allowed"
@@ -103,7 +103,7 @@ export default function ClientCarousel({
       <button
         onClick={scrollNext}
         disabled={!nextBtnEnabled}
-        className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
+        className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
           nextBtnEnabled
             ? "bg-white shadow-lg hover:bg-[#14B8A6] hover:text-white text-gray-700"
             : "bg-gray-200 text-gray-400 cursor-not-allowed"
@@ -114,7 +114,7 @@ export default function ClientCarousel({
       </button>
 
       {/* Dots Indicator */}
-      <div className="flex justify-center gap-2 mt-6">
+      <div className="flex justify-center gap-2 mt-4 sm:mt-6">
         {clients.map((_, index) => (
           <button
             key={index}
