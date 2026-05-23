@@ -634,9 +634,9 @@ export default function Home() {
           </div>
         </div>
       </section>
- 
+  
       {/* Keep the industries section as is */}
-      <section className="bg-gray-50  py-20">
+      <section className="bg-gray-50 py-14 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
             <div className="rounded-[2rem] border border-gray-100 bg-white p-6 shadow-xl">
@@ -645,32 +645,41 @@ export default function Home() {
                 The website should communicate fit quickly, so these sectors are surfaced as obvious use cases.
               </p>
 
-              <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {industries.map((industry) => (
-                  <div
-                    key={industry.name}
-                    className="group relative h-64 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-[#14B8A6]/30 cursor-pointer"
-                  >
-                    {/* Background Image */}
+              {/* Mobile: Horizontal scroll (single row), Desktop: Grid */}
+              <div className="mt-6 overflow-x-auto lg:overflow-visible">
+                <div className="flex gap-6 lg:grid lg:grid-cols-3 lg:gap-6 w-max lg:w-full">
+                  {industries.map((industry) => (
                     <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-                      style={{
-                        backgroundImage: `url('${industry.backgroundImage}')`,
-                      }}
-                    />
-                    
-                    {/* Dark Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300" />
-                    
-                    {/* Content */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#14B8A6] text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
-                        <industry.icon className="h-6 w-6" />
+                      key={industry.name}
+                      className="group relative w-[280px] sm:w-[320px] lg:w-auto h-64 flex-shrink-0 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-[#14B8A6]/30 cursor-pointer"
+                    >
+                      {/* Background Image with better mobile positioning */}
+                      <div
+                        className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                        style={{
+                          backgroundImage: `url('${industry.backgroundImage}')`,
+                          backgroundPosition: 'center 35%',
+                        }}
+                      />
+                      
+                      {/* Dark Overlay - darker on mobile for better text contrast */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70 group-hover:opacity-80 transition-opacity duration-300" />
+                      
+                      {/* Content - responsive sizing */}
+                      <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#14B8A6] text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                          <industry.icon className="h-6 w-6" />
+                        </div>
+                        <p className="mt-3 text-sm font-semibold text-white px-2">{industry.name}</p>
                       </div>
-                      <p className="mt-3 text-sm font-semibold text-white">{industry.name}</p>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+              </div>
+
+              {/* Scroll indicator for mobile */}
+              <div className="mt-4 text-center lg:hidden">
+                <p className="text-xs text-gray-400">← Swipe to see more industries →</p>
               </div>
 
               <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-gray-100">
@@ -679,7 +688,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">

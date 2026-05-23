@@ -67,19 +67,28 @@ export default function ClientCarousel({
   return (
     <div className="relative">
       {/* Carousel Container */}
-      <div ref={emblaRef} className="overflow-hidden cursor-grab active:cursor-grabbing">
+      <div
+        ref={emblaRef}
+        className="overflow-hidden cursor-grab active:cursor-grabbing touch-pan-y select-none px-1 sm:px-0"
+      >
         <div className="flex">
           {clients.map((client) => (
             <div
               key={client.name}
-              className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33%] min-w-0 px-3"
+              className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33%] min-w-0 px-2 sm:px-3"
             >
-              <div className="p-6 bg-gray-50 rounded-2xl text-center card-hover h-full flex flex-col justify-center">
-                <div className="w-16 h-16 mx-auto bg-[#14B8A6]/10 rounded-4xl flex items-center justify-center mb-4">
-                  <span className="text-xl font-bold text-[#14B8A6]">{client.logo}</span>
+              <div className="p-5 sm:p-6 bg-gray-50 rounded-2xl text-center card-hover h-full min-h-[170px] flex flex-col justify-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto bg-[#14B8A6]/10 rounded-4xl flex items-center justify-center mb-4">
+                  <span className="text-xl sm:text-2xl font-bold text-[#14B8A6]">
+                    {client.logo}
+                  </span>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-1">{client.name}</h3>
-                <p className="text-[#14B8A6] text-sm">{client.description}</p>
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1">
+                  {client.name}
+                </h3>
+                <p className="text-[#14B8A6] text-sm sm:text-sm">
+                  {client.description}
+                </p>
               </div>
             </div>
           ))}
@@ -90,7 +99,7 @@ export default function ClientCarousel({
       <button
         onClick={scrollPrev}
         disabled={!prevBtnEnabled}
-        className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
+        className={`hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
           prevBtnEnabled
             ? "bg-white shadow-lg hover:bg-[#14B8A6] hover:text-white text-gray-700"
             : "bg-gray-200 text-gray-400 cursor-not-allowed"
@@ -103,7 +112,7 @@ export default function ClientCarousel({
       <button
         onClick={scrollNext}
         disabled={!nextBtnEnabled}
-        className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
+        className={`hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
           nextBtnEnabled
             ? "bg-white shadow-lg hover:bg-[#14B8A6] hover:text-white text-gray-700"
             : "bg-gray-200 text-gray-400 cursor-not-allowed"
