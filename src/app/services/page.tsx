@@ -186,12 +186,13 @@ export default function ServicesPage() {
           <div className="text-center max-w-3xl mx-auto">
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Services</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-              Comprehensive ERPNext Solutions
+              ERPNext that works with your team
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              From implementation to ongoing support, we provide end-to-end ERPNext services 
-              tailored to your business needs. Let us help you transform your operations.
+              We deliver practical ERP implementations—built around your workflows, integrated to your systems,
+              and supported long after go-live.
             </p>
+
           </div>
         </div>
       </section>

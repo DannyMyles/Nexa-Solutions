@@ -196,10 +196,12 @@ export default function Home() {
               <span className="px-2 text-[#14B8A6]">clarity, control, and growth.</span>
             </h1>
 
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
-              Nexa Solutions helps businesses move from fragmented spreadsheets and manual follow-ups to a
-              smarter operating system with ERPNext, tailored workflows, and support that scales with your growth.
-            </p>
+              <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
+                We help you simplify operations, scale faster, and gain full control of your business processes—
+                with ERPNext, tailored workflows, and long-term support.
+              </p>
+
+
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -317,14 +319,15 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
-              What We Deliver
+              What You Gain
             </span>
             <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-              Clear service breakdowns that speak to outcomes, not just deliverables.
+              ERP that runs your business—clearly, consistently, and fast.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600">
-              We focus on business outcomes, practical implementation, and measurable improvements from day one.
+              We align ERPNext configuration, integrations, and support around outcomes you can measure from day one.
             </p>
+
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -363,9 +366,9 @@ export default function Home() {
               ERP, business systems, and digital builds—ready to deploy
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-base leading-relaxed text-gray-600">
-              Explore our software categories and web services. We implement and tailor solutions to
-              your workflows—whether you’re in East Africa or beyond.
+              Explore our software categories and web services—built to fit your workflows, connect your data, and help you operate with confidence.
             </p>
+
           </div>
 
           <div className="grid gap-8 lg:grid-cols-2">
@@ -438,22 +441,21 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
-                Why Nexa
+                Why Choose Nexa
               </span>
               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                A more transparent way to buy ERP services.
+                Your ERP partner—not a vendor.
               </h2>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
-                Competitor-style clarity matters: package your engagement, show the scope, and make the value easy
-                to understand before the first call.
+                You shouldn’t buy uncertainty. We deliver clear scope, measurable outcomes, and support that keeps improving your system long after go-live.
               </p>
 
               <div className="mt-8 space-y-4">
                 {[
-                  "Audit-first engagements reduce wasted scope and expensive guesswork.",
-                  "Packages are arranged around business maturity, not technical jargon.",
-                  "Value propositions are explicit so buyers know what they are getting.",
-                  "We make scope and pricing easy to understand for international decision makers.",
+                  "Proven expertise in ERPNext + Frappe implementations—built for real-world workflows.",
+                  "Tailored solutions (no one-size-fits-all templates).",
+                  "Audit-first scoping to reduce risk, waste, and expensive rework.",
+                  "Long-term support mindset: training, optimization, and reliability.",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3 rounded-2xl bg-white p-4 shadow-sm">
                     <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#14B8A6]/10">
@@ -464,6 +466,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
 
             <div className="relative">
               <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-[2rem] bg-[#14B8A6]/15" />
@@ -484,10 +487,11 @@ export default function Home() {
 
                 <div className="mt-6 rounded-[1.5rem] bg-gradient-to-br from-[#14B8A6] to-[#0D9488] p-6 text-white">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">Conversion focus</p>
-                  <h3 className="mt-3 text-xl font-bold">Request a tailored audit before committing to scope.</h3>
+                  <h3 className="mt-3 text-xl font-bold">Request an audit that turns uncertainty into a roadmap.</h3>
                   <p className="mt-3 text-sm leading-relaxed text-white/90">
-                    This makes pricing easier to trust and gives your team a clear path from problem to plan.
+                    You’ll get clear scope, risks, and opportunities—so pricing is easier to trust and your team knows the next step.
                   </p>
+
                 </div>
               </div>
             </div>

@@ -65,14 +65,16 @@ export default function ContactPage({
     intent === "audit"
       ? "Request for Audit"
       : intent === "demo"
-        ? "Try Demo Account"
+        ? "Book a Guided Demo"
         : "Send Us a Message";
+
   const formDescription =
     intent === "audit"
-      ? "Tell us what you want assessed and we'll come back with a clear scope, risks, and opportunities."
+      ? "Tell us what you want assessed. We’ll return with a clear scope, risks, and opportunities."
       : intent === "demo"
-        ? "Tell us a bit about your team and we'll arrange a guided demo experience tailored to your workflow."
-        : "Fill out the form below and we'll get back to you as soon as possible.";
+        ? "Tell us a bit about your workflow. We’ll arrange a guided demo tailored to how your team operates."
+        : "Fill out the form below and we’ll get back to you as soon as possible.";
+
 
   return (
     <div className="flex flex-col">
@@ -101,9 +103,10 @@ export default function ContactPage({
               Get in Touch
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Ready to transform your business with ERPNext? We&apos;d love to hear from you. 
-              Reach out to discuss how we can help your business grow.
+              Ready to move faster with ERPNext? Talk to us today—get an audit, see the platform in action,
+              and leave with a clear next-step plan.
             </p>
+
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
                 href="/contact?intent=audit"
@@ -239,8 +242,9 @@ export default function ContactPage({
               <div className="bg-gradient-to-br from-[#14B8A6] to-[#0D9488] rounded-2xl p-8 text-white">
                 <h3 className="text-xl font-bold mb-3">Prefer to talk directly?</h3>
                 <p className="text-white/90 mb-5 text-sm">
-                  Call us now to discuss your requirements with our team.
+                  Call us now to discuss your goals—and get a clear recommended next step.
                 </p>
+
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
                     href="tel:+254758269725"

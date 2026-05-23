@@ -80,11 +80,13 @@ export default function AboutPage() {
             <div>
               <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">About Us</span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-                Empowering businesses with smart ERP solutions.
+                Simplify operations. Scale faster. Stay in control.
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Nexa Solutions is a trusted ERPNext and Frappe partner delivering practical systems and local expertise for businesses across Kenya, East Africa, and global teams.
+                We’re more than an ERP provider—we’re your technology partner for ERPNext and Frappe implementations.
+                We design practical systems with clear scope, tailored workflows, and support that keeps improving after go-live.
               </p>
+
             </div>
 
             <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 bg-white shadow-xl">
@@ -167,21 +169,20 @@ export default function AboutPage() {
             <div>
               <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Why Choose Nexa Solutions</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-6">
-                Your Trusted ERP Partner
+                Partner-level delivery for real business outcomes
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                We bring together technical expertise, industry knowledge, and a commitment to 
-                delivering results. Our team combines deep ERPNext technical skills with a thorough 
-                understanding of East African business environments.
+                You don’t need more features—you need a system that works with your team.
+                We combine proven ERPNext expertise with audit-first scoping and long-term support so your ERP becomes an advantage.
               </p>
 
               <div className="space-y-4">
                 {[
-                  "Certified ERPNext & Frappe implementors",
-                  "Proven track record with successful deployments",
-                  "Tailored solutions for African business contexts",
-                  "Comprehensive end-to-end implementation services",
-                  "Dedicated ongoing support and maintenance",
+                  "Proven expertise: 10+ implementations and hands-on ERPNext delivery",
+                  "Tailored solutions—not one-size-fits-all configurations",
+                  "Audit-first scoping to reduce risk, waste, and costly rework",
+                  "Structured delivery across setup, migration, training, and go-live",
+                  "Support that stays: optimization and reliability after deployment",
                 ].map((item) => (
                   <div key={item} className="flex items-center">
                     <div className="w-5 h-5 bg-[#14B8A6] rounded-full flex items-center justify-center flex-shrink-0">
@@ -192,6 +193,7 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
+
 
             <div className="relative">
               <div className="absolute inset-0 bg-[#14B8A6]/20 rounded-3xl transform rotate-3"></div>
@@ -204,7 +206,8 @@ export default function AboutPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">Discovery</h4>
-                      <p className="text-gray-600 text-sm">We understand your business processes and requirements</p>
+                      <p className="text-gray-600 text-sm">We map your workflows and confirm where ERP will create the biggest impact</p>
+
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -213,7 +216,8 @@ export default function AboutPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">Design</h4>
-                      <p className="text-gray-600 text-sm">We create a tailored solution architecture</p>
+                      <p className="text-gray-600 text-sm">We define scope, integrations, and a rollout plan aligned to your goals</p>
+
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -222,7 +226,8 @@ export default function AboutPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">Implement</h4>
-                      <p className="text-gray-600 text-sm">We deploy and configure your ERPNext system</p>
+                      <p className="text-gray-600 text-sm">We configure ERPNext, migrate data, and prepare your team for a stable go-live</p>
+
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -231,7 +236,8 @@ export default function AboutPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">Support</h4>
-                      <p className="text-gray-600 text-sm">We provide ongoing training and maintenance</p>
+                      <p className="text-gray-600 text-sm">We train continuously and optimize your system as your business grows</p>
+
                     </div>
                   </div>
                 </div>
