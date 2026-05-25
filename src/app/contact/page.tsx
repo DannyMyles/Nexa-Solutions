@@ -8,29 +8,6 @@ export const metadata: Metadata = {
   description: "Get in touch with Nexa Solutions for ERPNext implementation services. Contact us at Riverside Drive, Kofisi, Nairobi.",
 };
 
-const team = [
-  {
-    name: "Daniel Kariuki",
-    role: "Technical Lead",
-    email: "dk@nexasolutions.com",
-    phone: "+254 716 357 560",
-    initials: "DK"
-  },
-  {
-    name: "Muhadi Wawire",
-    role: "ERPNext Consultant",
-    email: "md@nexasolutions.com",
-    phone: "+254 758 269 725",
-    initials: "MW"
-  },
-  {
-    name: "James Satia",
-    role: "Business Analyst",
-    email: "sjm@nexasolutions.com",
-    phone: "+254 708 355 982",
-    initials: "JS"
-  },
-];
 
 const contactInfo = [
   {
@@ -62,18 +39,13 @@ export default function ContactPage({
 }) {
   const intent = searchParams?.intent;
   const formTitle =
-    intent === "audit"
-      ? "Request for Audit"
-      : intent === "demo"
-        ? "Book a Guided Demo"
-        : "Send Us a Message";
+    intent === "demo" ? "Book a Guided Demo" : "Send Us a Message";
 
   const formDescription =
-    intent === "audit"
-      ? "Tell us what you want assessed. We’ll return with a clear scope, risks, and opportunities."
-      : intent === "demo"
-        ? "Tell us a bit about your workflow. We’ll arrange a guided demo tailored to how your team operates."
-        : "Fill out the form below and we’ll get back to you as soon as possible.";
+    intent === "demo"
+      ? "Tell us a bit about your workflow. We’ll arrange a guided demo tailored to how your team operates."
+      : "Fill out the form below and we’ll get back to you as soon as possible.";
+
 
 
   return (
@@ -102,25 +74,21 @@ export default function ContactPage({
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
               Get in Touch
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Ready to move faster with ERPNext? Talk to us today—get an audit, see the platform in action,
+                <p className="text-lg text-gray-600 leading-relaxed">
+              Ready to move faster with ERPNext? Talk to us today—book a guided demo, see the platform in action,
               and leave with a clear next-step plan.
             </p>
 
+
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
-                href="/contact?intent=audit"
+                href="/contact?intent=demo"
                 className="inline-flex items-center justify-center px-6 py-3 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm md:text-base"
               >
-                Request for Audit
-              </Link>
-              <Link
-                href="/contact?intent=demo"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-700 font-semibold rounded-full border-2 border-gray-200 hover:border-[#14B8A6] hover:text-[#14B8A6] transition-all duration-300 w-full sm:w-auto text-sm md:text-base"
-              >
-                Try Demo Account
+                Book a Guided Demo
               </Link>
             </div>
+
           </div>
         </div>
       </section>
@@ -131,23 +99,16 @@ export default function ContactPage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Contact Form - Left Column */}
             <ContactForm
-              initialService={
-                intent === "audit"
-                  ? "audit"
-                  : intent === "demo"
-                    ? "demo"
-                    : ""
-              }
+              initialService={intent === "demo" ? "demo" : ""}
               initialMessage={
-                intent === "audit"
-                  ? "Please review our current ERP or business setup and recommend what to improve."
-                  : intent === "demo"
-                    ? "We would like to see a guided demo and understand how the platform fits our workflow."
-                    : ""
+                intent === "demo"
+                  ? "We would like to see a guided demo and understand how the platform fits our workflow."
+                  : ""
               }
               title={formTitle}
               description={formDescription}
             />
+
             
 {/* Contact Info - Right Column */}
             <div className="space-y-8">
@@ -268,27 +229,15 @@ export default function ContactPage({
               {/* Fast Track CTA */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <Link
-                  href="/contact?intent=audit"
-                  className="group p-5 rounded-2xl border border-gray-200 bg-white hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-[#14B8A6]/10 flex items-center justify-center mb-3 group-hover:bg-[#14B8A6] transition-colors">
-                    <FaMapPin className="text-[#14B8A6] group-hover:text-white" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-1">Request for Audit</h3>
-                  <p className="text-sm text-gray-600">
-                    Get a tailored assessment of your current setup.
-                  </p>
-                </Link>
-                <Link
                   href="/contact?intent=demo"
                   className="group p-5 rounded-2xl border border-gray-200 bg-white hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300"
                 >
                   <div className="w-10 h-10 rounded-xl bg-[#14B8A6]/10 flex items-center justify-center mb-3 group-hover:bg-[#14B8A6] transition-colors">
                     <FaWhatsapp className="text-[#14B8A6] group-hover:text-white" />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-1">Try Demo Account</h3>
+                  <h3 className="font-bold text-gray-900 mb-1">Book a Guided Demo</h3>
                   <p className="text-sm text-gray-600">
-                    See the platform in action before you decide.
+                    See the platform in action tailored to your workflow.
                   </p>
                 </Link>
               </div>
@@ -297,56 +246,7 @@ export default function ContactPage({
         </div>
       </section>
 
-{/* Team Contact Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Team</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-              Direct Contacts
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Reach out directly to any of our team members for immediate assistance
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="p-6 bg-white rounded-xl card-hover border border-gray-100 hover:shadow-lg transition-all duration-300 group"
-              >
-                {/* Avatar */}
-                <div className="w-16 h-16 bg-gradient-to-br from-[#14B8A6] to-[#0D9488] rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-lg">{member.initials}</span>
-                </div>
-                
-                <div className="text-center">
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-[#14B8A6] font-medium text-sm mb-4">{member.role}</p>
-                </div>
-                
-                <div className="space-y-2">
-                  <a
-                    href={`mailto:${member.email}`}
-                    className="flex items-center justify-center text-sm text-gray-600 hover:text-[#14B8A6] transition-colors"
-                  >
-                    <FaEnvelope className="w-4 h-4 mr-2" />
-                    {member.email}
-                  </a>
-                  <a
-                    href={`tel:${member.phone}`}
-                    className="flex items-center justify-center text-sm text-gray-600 hover:text-[#14B8A6] transition-colors"
-                  >
-                    <FaPhone className="w-4 h-4 mr-2" />
-                    {member.phone}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

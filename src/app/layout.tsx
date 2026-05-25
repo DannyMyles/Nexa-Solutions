@@ -3,9 +3,8 @@ import "./fonts/montserrat.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FloatingCtaWidget from "@/components/FloatingCtaWidget";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
-
+ 
 export const metadata: Metadata = {
   title: "Nexa Solutions | ERPNext, Audit & Demo-Ready ERP Delivery",
   description:
@@ -25,7 +24,6 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen pb-44 sm:pb-32">{children}</main>
         <Footer />
-        <FloatingCtaWidget />
         <WhatsAppWidget />
       </body>
     </html>

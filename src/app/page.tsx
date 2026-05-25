@@ -204,12 +204,7 @@ export default function Home() {
 
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/contact?intent=audit"
-                className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
-              >
-                Request an Audit
-              </Link>
+
               <Link
                 href="/contact?intent=demo"
                 className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#14B8A6] hover:text-[#14B8A6]"
@@ -217,14 +212,14 @@ export default function Home() {
                 Book a Guided Demo
               </Link>
               <Link
-                href="/services"
-                className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold text-gray-700 transition-colors hover:text-[#14B8A6]"
+                href="/solutions/accounting-software"
+                className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold border border-[#14B8A6] text-gray-700 transition-colors hover:text-[#14B8A6]"
               >
                 Explore Services
               </Link>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {[
               "Compliance-ready configurations",
               "No per-user licensing surprises",
@@ -243,16 +238,6 @@ export default function Home() {
             <div className="absolute -inset-3 rounded-[2rem] bg-[#14B8A6]/15 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 p-4 shadow-2xl shadow-[#14B8A6]/10 backdrop-blur-xl">
               <div className="rounded-[1.5rem] border border-gray-100 bg-gradient-to-br from-gray-50 via-white to-gray-100 p-4">
-                <div className="mb-4 flex items-center justify-between">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#14B8A6]">
-                      Live Preview
-                    </p>
-                  </div>
-                  <div className="rounded-full bg-[#14B8A6]/10 px-3 py-1 text-xs font-semibold text-[#14B8A6]">
-                    +24/7 visibility
-                  </div>
-                </div>
 
                 <Image
                   src="/images/web.webp"
@@ -263,23 +248,6 @@ export default function Home() {
                   priority
                 />
 
-                <div className="mt-4 grid grid-cols-3 gap-3">
-                  {[
-                    { value: "10+", label: "Projects" },
-                    { value: "5+", label: "Industries" },
-                    { value: "100%", label: "Focus on fit" },
-                  ].map((stat) => (
-                    <div
-                      key={stat.label}
-                      className="rounded-2xl bg-white p-3 text-center shadow-sm ring-1 ring-gray-100"
-                    >
-                      <p className="text-xl font-bold text-[#14B8A6]">{stat.value}</p>
-                      <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gray-500">
-                        {stat.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
               </div>
 
               <div className="mt-4 grid grid-cols-2 gap-3">
@@ -487,7 +455,7 @@ export default function Home() {
 
                 <div className="mt-6 rounded-[1.5rem] bg-gradient-to-br from-[#14B8A6] to-[#0D9488] p-6 text-white">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">Conversion focus</p>
-                  <h3 className="mt-3 text-xl font-bold">Request an audit that turns uncertainty into a roadmap.</h3>
+                  <h3 className="mt-3 text-xl font-bold">Turn uncertainty into a roadmap with our delivery process.</h3>
                   <p className="mt-3 text-sm leading-relaxed text-white/90">
                     You’ll get clear scope, risks, and opportunities—so pricing is easier to trust and your team knows the next step.
                   </p>
@@ -708,13 +676,6 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link
-              href="/contact?intent=audit"
-              className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488]"
-            >
-              Request for Audit
-              <FaArrowRight className="ml-2 h-4 w-4" />
-            </Link>
             <Link
               href="/contact?intent=demo"
               className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#14B8A6] hover:text-[#14B8A6]"

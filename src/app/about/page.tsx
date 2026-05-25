@@ -7,29 +7,7 @@ export const metadata: Metadata = {
   description: "Learn about Nexa Solutions - your trusted ERPNext implementors in Kenya. Discover our mission, team, and why choose us.",
 };
 
-const team = [ 
-  {
-    name: "Daniel Kariuki",
-    role: "Technical Lead",
-    email: "dk@nexasolutions.com",
-    phone: "+254 716 357 560",
-    bio: "Technical expert specializing in ERPNext customization, integration, and complex system architecture.",
-  },
-  {
-    name: "Muhadi Wawire",
-    role: "ErpNext Consultant",
-    email: "md@nexasolutions.com",
-    phone: "+254 758 269 725",
-    bio: "Visionary leader with extensive experience in ERP implementation and business transformation across East Africa.",
-  },
-   {
-    name: "James Satia",
-    role: "Business Analyst",
-    email: "sjm@nexasolutions.com",
-    phone: "+254 708 355 982",
-    bio: "Operations specialist focused on process optimization and ensuring seamless project delivery.",
-  },
-];
+
 
 const values = [
   {
@@ -247,48 +225,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Team</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-              Meet the Leadership
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Our experienced team is dedicated to helping your business succeed with the right ERP solutions
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="bg-white rounded-2xl p-8 card-hover border border-gray-100"
-              >
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-[#14B8A6] to-[#0D9488] rounded-full flex items-center justify-center mb-6">
-                  <span className="text-3xl font-bold text-white">
-                    {member.name.split(" ").map((n) => n[0]).join("")}
-                  </span>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-[#14B8A6] font-medium mb-4">{member.role}</p>
-                  <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
-                  <div className="pt-4 border-t border-gray-100">
-                    <p className="text-sm text-gray-500">
-                      <a href={`mailto:${member.email}`} className="hover:text-[#14B8A6] transition-colors">
-                        {member.email}
-                      </a>
-                    </p>
-                    <p className="text-sm text-gray-500">{member.phone}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
@@ -308,7 +245,7 @@ export default function AboutPage() {
             </a>
 
             <a
-              href="/services"
+              href="/solutions/accounting-software"
               className="inline-flex items-center px-8 py-4 bg-white/20 text-white font-semibold rounded-full hover:bg-white/30 transition-all duration-300 hover:shadow-lg"
             >
               View Services
