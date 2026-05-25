@@ -91,7 +91,7 @@ export default function Footer() {
 
               <li>
                 <Link href="/contact?intent=demo" className="text-sm hover:text-[#14B8A6] transition-colors">
-                  Try Demo Account
+                  Book a Guided Demo
                 </Link>
               </li>
             </ul>

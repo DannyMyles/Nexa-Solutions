@@ -225,7 +225,7 @@ export default function Navbar() {
               href="/contact?intent=demo"
               className="px-5 py-2.5 bg-[#14B8A6] text-white text-sm font-medium rounded-full hover:bg-[#0D9488] transition-all duration-300 hover:shadow-lg hover:shadow-[#14B8A6]/30"
             >
-              Try Demo
+              Book a Guided Demo
             </Link>
 
           </div>

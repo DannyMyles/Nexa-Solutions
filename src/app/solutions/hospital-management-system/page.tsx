@@ -391,19 +391,12 @@ export default function HospitalManagementSystemPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/contact?intent=audit"
-              className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
-            >
-              Request for Audit
-              <FaArrowRight className="ml-2 w-4 h-4" />
-            </Link>
 
             <Link
               href="/contact?intent=demo"
               className="inline-flex items-center px-8 py-4 bg-white/20 text-white font-semibold rounded-full hover:bg-white/30 transition-all duration-300 hover:shadow-lg"
             >
-              Try Demo Account
+              Book a Guided Demo
             </Link>
 
             <Link

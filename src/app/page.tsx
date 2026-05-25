@@ -680,7 +680,7 @@ export default function Home() {
               href="/contact?intent=demo"
               className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#14B8A6] hover:text-[#14B8A6]"
             >
-              Try Demo Account
+              Book a Guided Demo
             </Link>
           </div>
         </div>

@@ -225,28 +225,10 @@ export default function ContactPage({
                   </a>
                 </div>
               </div>
-
-              {/* Fast Track CTA */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Link
-                  href="/contact?intent=demo"
-                  className="group p-5 rounded-2xl border border-gray-200 bg-white hover:border-[#14B8A6] hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-[#14B8A6]/10 flex items-center justify-center mb-3 group-hover:bg-[#14B8A6] transition-colors">
-                    <FaWhatsapp className="text-[#14B8A6] group-hover:text-white" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-1">Book a Guided Demo</h3>
-                  <p className="text-sm text-gray-600">
-                    See the platform in action tailored to your workflow.
-                  </p>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
       </section>
-
-
     </div>
   );
 }

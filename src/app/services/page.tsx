@@ -384,14 +384,6 @@ export default function ServicesPage() {
               Book a Demo
               <FaArrowRight className="ml-2 w-4 h-4" />
             </Link>
-
-            <Link
-              href="/contact?intent=demo"
-              className="inline-flex items-center px-8 py-4 bg-white/20 text-white font-semibold rounded-full hover:bg-white/30 transition-all duration-300 hover:shadow-lg"
-            >
-              Try Demo Account
-            </Link>
-
             <Link
               href="/contact"
               className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300 hover:shadow-lg"

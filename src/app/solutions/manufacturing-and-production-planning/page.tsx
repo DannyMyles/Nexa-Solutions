@@ -119,13 +119,6 @@ export default function ManufacturingAndProductionPlanningPage() {
         
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact?intent=audit"
-              className="inline-flex items-center justify-center rounded-full bg-white text-[#14B8A6] font-semibold px-8 py-4 hover:bg-gray-100 transition-all duration-300"
-            >
-              Request Audit
-              <FaArrowRight className="ml-2 w-4 h-4" />
-            </Link>
-            <Link
               href="/contact?intent=demo"
               className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 text-white font-semibold px-8 py-4 hover:bg-white/20 transition-all duration-300"
             >
