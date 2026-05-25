@@ -195,13 +195,7 @@ export default function AccountingSoftwarePage() {
               {item.description}
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/contact?intent=demo"
-                className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
-              >
-                Book a Demo
-              </Link>
+            <div className="mt-8 sm:flex-row gap-3">
               <Link
                 href="/contact?intent=demo"
                 className="inline-flex items-center justify-center rounded-full border border-[#14B8A6]/30 bg-white px-8 py-3.5 font-semibold text-[#14B8A6] transition-all duration-300 hover:border-[#14B8A6] hover:bg-[#14B8A6]/5"
