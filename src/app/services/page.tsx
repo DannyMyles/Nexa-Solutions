@@ -372,15 +372,16 @@ export default function ServicesPage() {
             Ready to Scope the Right Solution?
           </h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Start with a tailored audit or see the platform in action, then we&apos;ll shape the engagement around
+            Start with a guided demo or see the platform in action, then we&apos;ll shape the engagement around
             what your team actually needs.
+
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/contact?intent=audit"
+              <Link
+              href="/contact?intent=demo"
               className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Request for Audit
+              Book a Demo
               <FaArrowRight className="ml-2 w-4 h-4" />
             </Link>
 

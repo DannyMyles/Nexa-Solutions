@@ -197,10 +197,10 @@ export default function AccountingSoftwarePage() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
-                href="/contact?intent=audit"
+                href="/contact?intent=demo"
                 className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
               >
-                Request an Audit
+                Book a Demo
               </Link>
               <Link
                 href="/contact?intent=demo"
@@ -251,14 +251,6 @@ export default function AccountingSoftwarePage() {
                   <span className="font-bold text-[#14B8A6]">03</span>
                   <span>We implement, migrate, train, and support go-live.</span>
                 </div>
-              </div>
-              <div className="mt-6">
-                <Link
-                  href="/contact?intent=audit"
-                  className="inline-flex items-center justify-center w-full rounded-full bg-[#14B8A6] px-6 py-3.5 font-semibold text-white hover:bg-[#0D9488] transition-colors"
-                >
-                  Get a tailored audit
-                </Link>
               </div>
             </div>
           </div>
@@ -399,12 +391,13 @@ export default function AccountingSoftwarePage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact?intent=audit"
+              href="/contact?intent=demo"
               className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Request for Audit
+              Book a Demo
               <FaArrowRight className="ml-2 w-4 h-4" />
             </Link>
+
 
             <Link
               href="/contact?intent=demo"

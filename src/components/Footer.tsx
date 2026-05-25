@@ -42,7 +42,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm hover:text-[#14B8A6] transition-colors">
+                <Link href="/company" className="text-sm hover:text-[#14B8A6] transition-colors">
                   About Us
                 </Link>
               </li>

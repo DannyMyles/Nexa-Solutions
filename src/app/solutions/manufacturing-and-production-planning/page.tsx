@@ -4,33 +4,26 @@ import Link from "next/link";
 
 import { FaArrowRight } from "react-icons/fa";
 
-type NavItem = {
-  slug: string;
-  label: string;
-  description: string;
-  bullets: string[];
-};
-
 export const metadata: Metadata = {
-  title: "Mpesa Integration | Nexa Solutions",
+  title: "Manufacturing and Production Planning | Nexa Solutions",
   description:
-    "Automate payments and reconciliation between your business operations and M-Pesa.",
+    "Plan, schedule, and execute manufacturing workflows with ERPNext: production planning, BOMs, quality checkpoints, and reporting.",
 };
 
-const item: NavItem = {
-  slug: "mpesa-integration",
-  label: "Mpesa Integration",
+const item = {
+  slug: "manufacturing-and-production-planning",
+  label: "Manufacturing and Production Planning",
   description:
-    "Automate payments and reconciliation between your business operations and M-Pesa.",
+    "Implement ERPNext manufacturing planning so your teams can plan accurately, track execution, and improve throughput.",
   bullets: [
-    "Payment webhooks support",
-    "Automatic receipt and invoice matching",
-    "Daily settlement reconciliation",
-    "Error handling and audit trails",
+    "BOM setup and production workflows",
+    "Production planning and scheduling",
+    "Work orders execution tracking",
+    "Audit-ready reporting and traceability",
   ],
 };
 
-export default function MpesaIntegrationPage() {
+export default function ManufacturingAndProductionPlanningPage() {
   if (!item?.slug) notFound();
 
   return (
@@ -44,7 +37,7 @@ export default function MpesaIntegrationPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">
-              Integrations
+              Solutions
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">
               {item.label}
@@ -69,11 +62,10 @@ export default function MpesaIntegrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">What we implement</h2>
+              <h2 className="text-2xl font-bold text-gray-900">What we deliver</h2>
               <p className="text-gray-600 mt-3 leading-relaxed">
-                Integration work delivered with clear mapping, safe auth, and production-ready monitoring.
+                A manufacturing setup that matches your operational rhythm—so planning, execution, and reporting stay consistent.
               </p>
-
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
                   <li
@@ -92,19 +84,53 @@ export default function MpesaIntegrationPage() {
               <div className="mt-4 space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">01</span>
-                  <span>We review the integration scope and required data flows.</span>
+                  <span>
+                    <span className="font-semibold">Baseline your production flow.</span> We map BOMs, work orders, and planning constraints.
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">02</span>
-                  <span>We design the integration architecture and security approach.</span>
+                  <span>
+                    <span className="font-semibold">Configure ERPNext manufacturing.</span> We set up workflows and reporting for your team.
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">03</span>
-                  <span>We build, test, migrate/roll out, and support go-live.</span>
+                  <span>
+                    <span className="font-semibold">Migrate, test, and stabilize.</span> We run go-live support with reconciliation and training.
+                  </span>
                 </div>
               </div>
+
               
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Plan production with confidence.
+          </h2>
+          <p className="text-white/90 text-lg leading-relaxed">
+            Start with an ERPNext audit and we’ll configure manufacturing planning for your workflow.
+          </p>
+        
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/contact?intent=audit"
+              className="inline-flex items-center justify-center rounded-full bg-white text-[#14B8A6] font-semibold px-8 py-4 hover:bg-gray-100 transition-all duration-300"
+            >
+              Request Audit
+              <FaArrowRight className="ml-2 w-4 h-4" />
+            </Link>
+            <Link
+              href="/contact?intent=demo"
+              className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 text-white font-semibold px-8 py-4 hover:bg-white/20 transition-all duration-300"
+            >
+              Book Demo
+            </Link>
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "Company", href: "/company" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -18,13 +18,9 @@ const solutions = [
   "CRM Software",
   "Inventory and Warehouse Management",
   "Manufacturing and Production Planning",
-  "Project Management Software",
   "E-commerce Integration",
   "POS (Point of Sale) System",
-  "Fleet and Asset Management",
   "Real Estate Property Management",
-  "Non-Profit Organization Management",
-  "Agriculture and Farm Management",
   "Legal Practice Management",
   "School, College and University Management Software",
 ];
@@ -35,8 +31,6 @@ const integrations = [
   "Biometric Data Integration",
   "Custom Software Integrations",
   "KRA TIMS & eTIMS Integration",
-  "Payment Gateway Integration (PayPal, Stripe, etc.)",
-  "Bank Reconciliation Integration"
 ];
 
 function toCategorySlug(label: string) {
@@ -50,6 +44,113 @@ function toCategorySlug(label: string) {
   );
 }
 
+type DropdownProps = {
+  label: string;
+  items: string[];
+  itemsHeading: string;
+  itemToHref: (label: string) => string;
+};
+
+function SolutionsIntegrationsDropdown({
+  label,
+  items,
+  itemsHeading,
+  itemToHref,
+}: DropdownProps) {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+
+    // Close only on *outside* interactions. We use pointerdown in the bubble phase
+    // to avoid racing Next<Link> navigation.
+    const onPointerDown = (e: PointerEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (!target) return;
+      const within = target.closest?.("[data-dropdown-root='true']");
+      if (!within) setOpen(false);
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("pointerdown", onPointerDown);
+
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("pointerdown", onPointerDown);
+    };
+  }, [open]);
+
+  return (
+    <div className="relative" data-dropdown-root="true">
+      <button
+        type="button"
+        className={`text-sm font-medium transition-colors duration-200 text-gray-700 hover:text-[#14B8A6] inline-flex items-center gap-2 ${open ? "text-[#14B8A6]" : ""}`}
+        aria-haspopup="menu"
+        aria-expanded={open}
+        aria-controls={`${label}-dropdown-menu`}
+        onClick={() => setOpen((v) => !v)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setOpen((v) => !v);
+          }
+        }}
+      >
+        {label}
+        <svg
+          className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`}
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M5 7.5L10 12.5L15 7.5"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>    
+      </button>
+
+      {open && (
+        <div
+          id={`${label}-dropdown-menu`}
+          role="menu"
+          aria-label={`${label} menu`}
+          className="absolute left-0 top-full mt-3 min-w-[320px] bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50"
+        >
+          <div className="px-4 py-2">
+            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider">{itemsHeading}</div>
+          </div>
+          {items.map((itemLabel) => {
+            const href = itemToHref(itemLabel);
+            return (
+              <Link
+                key={itemLabel}
+                href={href}
+                role="menuitem"
+                className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
+                onClick={(e) => {
+                  // Prevent the global outside-click handler from racing before navigation.
+                  e.stopPropagation();
+                  setOpen(false);
+                }}
+              >
+                {itemLabel}
+              </Link>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -100,68 +201,25 @@ export default function Navbar() {
             ))}
 
             {/* Solutions Dropdown */}
-            <div className="relative group">
-              <button
-                type="button"
-                className={`text-sm font-medium transition-colors duration-200 text-gray-700 hover:text-[#14B8A6] inline-flex items-center gap-2`}
-                aria-haspopup="menu"
-              >
-                Solutions
-                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-
-              <div className="absolute left-0 top-full mt-3 hidden group-hover:block min-w-[320px] bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50">
-                <div className="px-4 py-2">
-                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Industries & Use-cases</div>
-                </div>
-                {solutions.map((label) => {
-                  const slug = toCategorySlug(label);
-                  return (
-                    <Link
-                      key={label}
-                      href={`/solutions/${slug}`}
-                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
-                    >
-                      {label}
-                    </Link>
-                  );
-                })}
-              </div>
+            <div className="relative">
+              <SolutionsIntegrationsDropdown
+                label="Solutions"
+                items={solutions}
+                itemToHref={(label) => `/solutions/${toCategorySlug(label)}`}
+                itemsHeading="Industries & Use-cases"
+              />
             </div>
 
             {/* Integrations Dropdown */}
-            <div className="relative group">
-              <button
-                type="button"
-                className={`text-sm font-medium transition-colors duration-200 text-gray-700 hover:text-[#14B8A6] inline-flex items-center gap-2`}
-                aria-haspopup="menu"
-              >
-                Integrations
-                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-
-              <div className="absolute left-0 top-full mt-3 hidden group-hover:block min-w-[360px] bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50">
-                <div className="px-4 py-2">
-                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Connectors & Platforms</div>
-                </div>
-                {integrations.map((label) => {
-                  const slug = toCategorySlug(label);
-                  return (
-                    <Link
-                      key={label}
-                      href={`/integrations/${slug}`}
-                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
-                    >
-                      {label}
-                    </Link>
-                  );
-                })}
-              </div>
+            <div className="relative">
+              <SolutionsIntegrationsDropdown
+                label="Integrations"
+                items={integrations}
+                itemToHref={(label) => `/integrations/${toCategorySlug(label)}`}
+                itemsHeading="Connectors & Platforms"
+              />
             </div>
+
 
             <Link
               href="/contact?intent=demo"
