@@ -3,90 +3,90 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   FaArrowRight,
-  FaShoppingCart,
-  FaBoxes,
-  FaFileInvoiceDollar,
-  FaUndo,
-  FaUsers,
-  FaChartLine,
+  FaBuilding,
+  FaUserFriends,
+  FaFileContract,
+  FaWrench,
+  FaChartBar,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "E-commerce Integration | Nexa Solutions",
+  title: "Real Estate Property Management | Nexa Solutions",
   description:
-    "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
+    "Manage properties, tenants, leases, and maintenance with an integrated ERPNext system built for real estate operations.",
 };
 
 const item = {
-  label: "E-commerce Integration",
+  label: "Real Estate Property Management",
   description:
-    "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
+    "Manage properties, tenants, leases, and maintenance with an integrated ERPNext system built for real estate operations.",
   bullets: [
-    "Order capture & fulfillment sync",
-    "Inventory availability updates",
-    "Invoice, payment, and status handling",
-    "Reporting for sales, stock, and margins",
+    "Property and unit listings",
+    "Tenant onboarding and lease management",
+    "Automated rent invoicing and collections",
+    "Maintenance tracking and vendor management",
   ],
 };
 
 const features = [
   {
-    icon: FaShoppingCart,
-    title: "Multi-platform Order Sync",
+    icon: FaBuilding,
+    title: "Property & Unit Management",
     description:
-      "Automatically pull orders from Shopify, WooCommerce, and other platforms into ERPNext for fulfillment and invoicing.",
+      "Centralize all your properties and units with occupancy status, floor plans, amenities, and valuation records in one place.",
   },
   {
-    icon: FaBoxes,
-    title: "Inventory Availability Updates",
+    icon: FaUserFriends,
+    title: "Tenant Management",
     description:
-      "Push real-time stock levels from ERPNext to your storefront so customers always see accurate availability.",
+      "Digital tenant profiles with onboarding checklists, document storage, communication history, and lease renewal tracking.",
   },
   {
-    icon: FaFileInvoiceDollar,
-    title: "Invoice & Payment Automation",
+    icon: FaFileContract,
+    title: "Lease & Agreement Management",
     description:
-      "Auto-generate eTIMS-compliant invoices on order receipt and reconcile payments against ERPNext accounts.",
+      "Structured lease agreements with automated expiry alerts, renewal workflows, and escalation clause management.",
   },
   {
-    icon: FaUndo,
-    title: "Returns & Refund Management",
+    icon: FaWrench,
+    title: "Maintenance & Repairs",
     description:
-      "Handle return requests, credit notes, and stock adjustments in ERPNext with full audit trails.",
+      "Log maintenance requests, assign vendors, track job progress, and capture costs against individual units and properties.",
   },
   {
-    icon: FaUsers,
-    title: "Customer Data Sync",
+    icon: FaChartBar,
+    title: "Financial Reporting",
     description:
-      "Sync customer profiles, purchase history, and contact details between your store and ERPNext CRM.",
+      "Rent roll reports, income vs. expense statements, occupancy rates, and cash flow dashboards for portfolio visibility.",
   },
   {
-    icon: FaChartLine,
-    title: "Performance Reporting",
+    icon: FaMapMarkerAlt,
+    title: "Occupancy & Vacancy Tracking",
     description:
-      "Unified dashboards for online revenue, top products, fulfillment rates, and margin analysis across all channels.",
+      "Real-time occupancy dashboards, vacancy aging reports, and prospect pipeline to minimize revenue gaps between tenancies.",
   },
 ];
 
 const clients = [
-  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
-  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
+  { name: "Prime Properties", description: "Commercial Real Estate", logo: "PP" },
   { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
-  { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
   { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
-  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
   { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
+  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
+  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
+  { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
 ];
 
 const processSteps = [
-  { step: "01", title: "Discovery", description: "We map your store platform, order flows, and finance requirements." },
-  { step: "02", title: "Design", description: "We design the integration architecture, data mappings, and error handling." },
-  { step: "03", title: "Implement", description: "We build, test end-to-end, and support your go-live launch." },
-  { step: "04", title: "Support", description: "We monitor the integration, resolve issues, and handle platform updates." },
+  { step: "01", title: "Discovery", description: "We map your property portfolio, lease structures, and reporting needs." },
+  { step: "02", title: "Design", description: "We design the property hierarchy, rent schedules, and finance integrations." },
+  { step: "03", title: "Implement", description: "We configure, migrate property data, train your team, and go live." },
+  { step: "04", title: "Support", description: "We provide ongoing support, lease renewals assistance, and system upgrades." },
 ];
 
-export default function EcommerceIntegrationPage() {
+export default function RealEstatePropertyManagementPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
@@ -97,7 +97,7 @@ export default function EcommerceIntegrationPage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="max-w-2xl">
               <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Solutions</span>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
@@ -119,8 +119,8 @@ export default function EcommerceIntegrationPage() {
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <Image
-                  src="/images/solutions/ecomerce.webp"
-                  alt="E-commerce Integration"
+                  src="/images/solutions/realestate.webp"
+                  alt="Real Estate Property Management"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -138,7 +138,7 @@ export default function EcommerceIntegrationPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900">What we deliver</h2>
               <p className="text-gray-600 mt-3 leading-relaxed">
-                Integration work that keeps orders, stock, and finance in sync so your team operates with fewer errors and faster fulfillment.
+                An end-to-end property management system on ERPNext that connects tenants, leases, maintenance, and finance.
               </p>
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
@@ -154,15 +154,15 @@ export default function EcommerceIntegrationPage() {
               <div className="mt-4 space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">01</span>
-                  <span><span className="font-semibold">Map your store flow.</span> We align product, order, and fulfillment data.</span>
+                  <span>We review your portfolio structure, lease types, and billing workflows.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">02</span>
-                  <span><span className="font-semibold">Configure ERPNext.</span> We set up invoicing, stock movement, and reporting.</span>
+                  <span>We design the property hierarchy, rent schedules, and finance integrations.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">03</span>
-                  <span><span className="font-semibold">Integrate and stabilize.</span> We test end-to-end and support go-live.</span>
+                  <span>We implement, migrate existing data, train your team, and support go-live.</span>
                 </div>
               </div>
               <div className="mt-6">
@@ -186,7 +186,7 @@ export default function EcommerceIntegrationPage() {
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">What&apos;s Included</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Key Capabilities</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Every integration is built around your specific store platform, product catalog, and finance workflows.
+              Every module is configured around your property portfolio and management workflows.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -211,9 +211,9 @@ export default function EcommerceIntegrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <div className="text-center">
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Clients</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Businesses we&apos;ve helped</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Companies we&apos;ve helped</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We deliver e-commerce integrations with clear scope, smooth rollout, and long-term support.
+              We deliver property management solutions with clear scope, smooth rollout, and long-term support.
             </p>
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function EcommerceIntegrationPage() {
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Process</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How we work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              A structured approach that ensures data integrity from day one of the integration.
+              A proven methodology that minimizes disruption to your property operations during implementation.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -250,9 +250,9 @@ export default function EcommerceIntegrationPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to connect your online store?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to streamline your property operations?</h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Start with a tailored audit or see the integration in action — we&apos;ll build it around your store&apos;s exact data flow.
+            Start with a tailored audit or see the platform in action — we&apos;ll shape the engagement around your portfolio&apos;s needs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

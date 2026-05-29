@@ -3,90 +3,90 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   FaArrowRight,
-  FaShoppingCart,
+  FaCashRegister,
+  FaTags,
   FaBoxes,
-  FaFileInvoiceDollar,
-  FaUndo,
-  FaUsers,
-  FaChartLine,
+  FaFileInvoice,
+  FaExchangeAlt,
+  FaChartBar,
 } from "react-icons/fa";
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "E-commerce Integration | Nexa Solutions",
+  title: "POS System | Nexa Solutions",
   description:
-    "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
+    "Implement a reliable POS integrated with ERPNext for real-time sales, stock movement, and financial reporting.",
 };
 
 const item = {
-  label: "E-commerce Integration",
+  label: "POS System",
   description:
-    "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
+    "Implement a reliable POS integrated with ERPNext for real-time sales, stock movement, and financial reporting.",
   bullets: [
-    "Order capture & fulfillment sync",
-    "Inventory availability updates",
-    "Invoice, payment, and status handling",
-    "Reporting for sales, stock, and margins",
+    "Fast sales with configurable pricing tiers",
+    "Instant inventory updates and stock visibility",
+    "Receipts, invoices, and payment records",
+    "Revenue, product, and margin reporting",
   ],
 };
 
 const features = [
   {
-    icon: FaShoppingCart,
-    title: "Multi-platform Order Sync",
+    icon: FaCashRegister,
+    title: "Fast Checkout & Payments",
     description:
-      "Automatically pull orders from Shopify, WooCommerce, and other platforms into ERPNext for fulfillment and invoicing.",
+      "Touch-friendly POS interface with support for cash, M-Pesa, card, and split payments — all synced to ERPNext in real time.",
+  },
+  {
+    icon: FaTags,
+    title: "Product Catalog & Pricing",
+    description:
+      "Configure products, variants, price tiers, and discount rules. Apply customer-specific pricing directly at the point of sale.",
   },
   {
     icon: FaBoxes,
-    title: "Inventory Availability Updates",
+    title: "Real-time Inventory Updates",
     description:
-      "Push real-time stock levels from ERPNext to your storefront so customers always see accurate availability.",
+      "Every sale triggers an immediate stock movement in ERPNext so your warehouse team always sees accurate quantities.",
   },
   {
-    icon: FaFileInvoiceDollar,
-    title: "Invoice & Payment Automation",
+    icon: FaFileInvoice,
+    title: "Receipts & Invoice Generation",
     description:
-      "Auto-generate eTIMS-compliant invoices on order receipt and reconcile payments against ERPNext accounts.",
+      "Auto-generate eTIMS-compliant receipts and invoices on every sale, with print and email delivery options built in.",
   },
   {
-    icon: FaUndo,
-    title: "Returns & Refund Management",
+    icon: FaExchangeAlt,
+    title: "Shift & Cash Management",
     description:
-      "Handle return requests, credit notes, and stock adjustments in ERPNext with full audit trails.",
+      "Structured opening and closing balances, cashier shifts, petty cash management, and end-of-day reconciliation workflows.",
   },
   {
-    icon: FaUsers,
-    title: "Customer Data Sync",
+    icon: FaChartBar,
+    title: "Sales Analytics & Reports",
     description:
-      "Sync customer profiles, purchase history, and contact details between your store and ERPNext CRM.",
-  },
-  {
-    icon: FaChartLine,
-    title: "Performance Reporting",
-    description:
-      "Unified dashboards for online revenue, top products, fulfillment rates, and margin analysis across all channels.",
+      "Daily sales summaries, best-selling products, revenue by category, and margin reports accessible directly in ERPNext.",
   },
 ];
 
 const clients = [
   { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
+  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
   { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
   { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
   { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
   { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
-  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
   { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
 ];
 
 const processSteps = [
-  { step: "01", title: "Discovery", description: "We map your store platform, order flows, and finance requirements." },
-  { step: "02", title: "Design", description: "We design the integration architecture, data mappings, and error handling." },
-  { step: "03", title: "Implement", description: "We build, test end-to-end, and support your go-live launch." },
-  { step: "04", title: "Support", description: "We monitor the integration, resolve issues, and handle platform updates." },
+  { step: "01", title: "Discovery", description: "We map your store layout, product catalog, pricing rules, and payment methods." },
+  { step: "02", title: "Design", description: "We design the POS configuration, ERPNext integration, and receipt templates." },
+  { step: "03", title: "Implement", description: "We configure, train cashiers and managers, and support your go-live." },
+  { step: "04", title: "Support", description: "We provide ongoing support, updates, and monthly performance reviews." },
 ];
 
-export default function EcommerceIntegrationPage() {
+export default function PosSystemPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
@@ -119,8 +119,8 @@ export default function EcommerceIntegrationPage() {
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <Image
-                  src="/images/solutions/ecomerce.webp"
-                  alt="E-commerce Integration"
+                  src="/images/solutions/pos.webp"
+                  alt="POS System"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -138,7 +138,7 @@ export default function EcommerceIntegrationPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900">What we deliver</h2>
               <p className="text-gray-600 mt-3 leading-relaxed">
-                Integration work that keeps orders, stock, and finance in sync so your team operates with fewer errors and faster fulfillment.
+                A POS that works inside ERPNext so every sale instantly updates stock, triggers invoicing, and feeds your finance reports.
               </p>
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
@@ -154,15 +154,15 @@ export default function EcommerceIntegrationPage() {
               <div className="mt-4 space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">01</span>
-                  <span><span className="font-semibold">Map your store flow.</span> We align product, order, and fulfillment data.</span>
+                  <span><span className="font-semibold">Define store flow.</span> We configure products, pricing, and receipt settings.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">02</span>
-                  <span><span className="font-semibold">Configure ERPNext.</span> We set up invoicing, stock movement, and reporting.</span>
+                  <span><span className="font-semibold">Integrate with ERPNext.</span> We connect stock movement, invoicing, and payments.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">03</span>
-                  <span><span className="font-semibold">Integrate and stabilize.</span> We test end-to-end and support go-live.</span>
+                  <span><span className="font-semibold">Test and go live.</span> We validate performance and support your launch.</span>
                 </div>
               </div>
               <div className="mt-6">
@@ -186,7 +186,7 @@ export default function EcommerceIntegrationPage() {
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">What&apos;s Included</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Key Capabilities</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Every integration is built around your specific store platform, product catalog, and finance workflows.
+              Every feature is configured around your store layout, payment methods, and product catalog.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -213,7 +213,7 @@ export default function EcommerceIntegrationPage() {
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Clients</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Businesses we&apos;ve helped</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We deliver e-commerce integrations with clear scope, smooth rollout, and long-term support.
+              We deliver POS solutions with clear scope, smooth rollout, and long-term support.
             </p>
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function EcommerceIntegrationPage() {
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Process</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How we work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              A structured approach that ensures data integrity from day one of the integration.
+              A structured approach that minimizes disruption to your daily trading operations.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -250,9 +250,9 @@ export default function EcommerceIntegrationPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to connect your online store?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to upgrade your point of sale?</h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Start with a tailored audit or see the integration in action — we&apos;ll build it around your store&apos;s exact data flow.
+            Start with a tailored audit or see the POS in action — we&apos;ll configure it around your store&apos;s exact workflow.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

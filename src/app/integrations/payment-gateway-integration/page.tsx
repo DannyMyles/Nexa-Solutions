@@ -5,25 +5,25 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Custom Software Integrations | Nexa Solutions",
+  title: "Payment Gateway Integration (PayPal, Stripe, etc.) | Nexa Solutions",
   description:
-    "Build bespoke integration layers between ERPNext and systems unique to your business.",
+    "Connect external payment gateways to ERPNext so your sales and finance records stay consistent end-to-end.",
 };
 
 const item = {
-  slug: "custom-software-integrations",
-  label: "Custom Software Integrations",
+  slug: "payment-gateway-integration",
+  label: "Payment Gateway Integration",
   description:
-    "Build bespoke integration layers between ERPNext and systems unique to your business — clean, documented, and production-ready.",
+    "Connect PayPal, Stripe, Flutterwave, and other gateways to ERPNext so every transaction instantly updates your sales and finance records.",
   bullets: [
-    "Custom API development",
-    "Webhooks and scheduled syncs",
-    "Data mapping and transformation",
-    "Monitoring, logging, and reliability",
+    "Payment intent capture and webhook flows",
+    "Settlement reconciliation",
+    "Automatic invoice status updates",
+    "Webhook-driven event handling",
   ],
 };
 
-export default function CustomSoftwareIntegrationsPage() {
+export default function PaymentGatewayIntegrationPage() {
   if (!item?.slug) notFound();
 
   return (
@@ -39,7 +39,8 @@ export default function CustomSoftwareIntegrationsPage() {
             <div>
               <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Integrations</span>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
-              <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
+              <p className="text-sm text-gray-500 mt-1">(PayPal, Stripe, Flutterwave &amp; more)</p>
+              <p className="text-lg text-gray-600 leading-relaxed mt-3">{item.description}</p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/contact?intent=audit"
@@ -58,8 +59,8 @@ export default function CustomSoftwareIntegrationsPage() {
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <Image
-                  src="/images/solutions/erp.jpeg"
-                  alt="Custom Software Integrations"
+                  src="/images/solutions/erpsystem.jpg"
+                  alt="Payment Gateway Integration"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -93,11 +94,11 @@ export default function CustomSoftwareIntegrationsPage() {
               <div className="mt-4 space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">01</span>
-                  <span>We review the systems involved, data flows, and integration requirements.</span>
+                  <span>We review your payment gateway, transaction volumes, and reconciliation needs.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">02</span>
-                  <span>We design the integration architecture, API contracts, and error handling.</span>
+                  <span>We design the webhook flows, invoice matching, and error handling approach.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">03</span>
@@ -121,9 +122,9 @@ export default function CustomSoftwareIntegrationsPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Have a system that needs to talk to ERPNext?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to connect your payment gateway?</h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Start with a tailored audit and we&apos;ll scope the cleanest path to connecting your systems.
+            Start with a tailored audit or see the integration in action — we&apos;ll sync every payment directly into ERPNext.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

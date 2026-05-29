@@ -3,90 +3,90 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   FaArrowRight,
-  FaShoppingCart,
-  FaBoxes,
-  FaFileInvoiceDollar,
-  FaUndo,
-  FaUsers,
+  FaGavel,
+  FaClock,
+  FaFolderOpen,
+  FaUserShield,
+  FaBalanceScale,
   FaChartLine,
 } from "react-icons/fa";
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "E-commerce Integration | Nexa Solutions",
+  title: "Legal Practice Management | Nexa Solutions",
   description:
-    "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
+    "Manage matters, clients, time billing, and compliance for law firms and legal departments with ERPNext.",
 };
 
 const item = {
-  label: "E-commerce Integration",
+  label: "Legal Practice Management",
   description:
-    "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
+    "Manage matters, clients, time billing, and compliance for law firms and legal departments with ERPNext.",
   bullets: [
-    "Order capture & fulfillment sync",
-    "Inventory availability updates",
-    "Invoice, payment, and status handling",
-    "Reporting for sales, stock, and margins",
+    "Matter and case lifecycle management",
+    "Time tracking and fee billing",
+    "Document and correspondence management",
+    "Trust accounting and financial reporting",
   ],
 };
 
 const features = [
   {
-    icon: FaShoppingCart,
-    title: "Multi-platform Order Sync",
+    icon: FaGavel,
+    title: "Matter & Case Management",
     description:
-      "Automatically pull orders from Shopify, WooCommerce, and other platforms into ERPNext for fulfillment and invoicing.",
+      "Structured matter files with status tracking, deadlines, hearing dates, and linked documents — all in one organized workspace.",
   },
   {
-    icon: FaBoxes,
-    title: "Inventory Availability Updates",
+    icon: FaClock,
+    title: "Time Tracking & Fee Billing",
     description:
-      "Push real-time stock levels from ERPNext to your storefront so customers always see accurate availability.",
+      "Capture billable hours against matters, generate fee notes, and track outstanding balances with automated reminders.",
   },
   {
-    icon: FaFileInvoiceDollar,
-    title: "Invoice & Payment Automation",
+    icon: FaFolderOpen,
+    title: "Document Management",
     description:
-      "Auto-generate eTIMS-compliant invoices on order receipt and reconcile payments against ERPNext accounts.",
+      "Centralized document repository with version control, access permissions, and matter-linked correspondence history.",
   },
   {
-    icon: FaUndo,
-    title: "Returns & Refund Management",
+    icon: FaUserShield,
+    title: "Client & Conflict Management",
     description:
-      "Handle return requests, credit notes, and stock adjustments in ERPNext with full audit trails.",
+      "Client intake workflows, conflict-of-interest checks, and secure client portals for matter status updates.",
   },
   {
-    icon: FaUsers,
-    title: "Customer Data Sync",
+    icon: FaBalanceScale,
+    title: "Trust & Client Accounting",
     description:
-      "Sync customer profiles, purchase history, and contact details between your store and ERPNext CRM.",
+      "Separate trust account ledgers, receipt and disbursement workflows, and reconciliation reports for regulatory compliance.",
   },
   {
     icon: FaChartLine,
-    title: "Performance Reporting",
+    title: "Practice Performance Analytics",
     description:
-      "Unified dashboards for online revenue, top products, fulfillment rates, and margin analysis across all channels.",
+      "Utilization rates, revenue per fee earner, matter profitability, and collections dashboards for practice management decisions.",
   },
 ];
 
 const clients = [
-  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
-  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
+  { name: "LexGroup Partners", description: "Legal Services", logo: "LGP" },
+  { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
+  { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
   { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
   { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
-  { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
-  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
-  { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
+  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
+  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
 ];
 
 const processSteps = [
-  { step: "01", title: "Discovery", description: "We map your store platform, order flows, and finance requirements." },
-  { step: "02", title: "Design", description: "We design the integration architecture, data mappings, and error handling." },
-  { step: "03", title: "Implement", description: "We build, test end-to-end, and support your go-live launch." },
-  { step: "04", title: "Support", description: "We monitor the integration, resolve issues, and handle platform updates." },
+  { step: "01", title: "Discovery", description: "We map your matter types, billing structures, and compliance requirements." },
+  { step: "02", title: "Design", description: "We design the matter workflow, billing rules, and document hierarchy." },
+  { step: "03", title: "Implement", description: "We configure, migrate matter data, train fee earners, and go live." },
+  { step: "04", title: "Support", description: "We provide ongoing compliance updates, reporting setup, and system upgrades." },
 ];
 
-export default function EcommerceIntegrationPage() {
+export default function LegalPracticeManagementPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
@@ -97,7 +97,7 @@ export default function EcommerceIntegrationPage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="max-w-2xl">
               <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Solutions</span>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
@@ -119,8 +119,8 @@ export default function EcommerceIntegrationPage() {
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <Image
-                  src="/images/solutions/ecomerce.webp"
-                  alt="E-commerce Integration"
+                  src="/images/solutions/erpsystem.jpg"
+                  alt="Legal Practice Management"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -138,7 +138,7 @@ export default function EcommerceIntegrationPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900">What we deliver</h2>
               <p className="text-gray-600 mt-3 leading-relaxed">
-                Integration work that keeps orders, stock, and finance in sync so your team operates with fewer errors and faster fulfillment.
+                A legal practice management system on ERPNext that connects matters, billing, documents, and finance in one place.
               </p>
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
@@ -154,15 +154,15 @@ export default function EcommerceIntegrationPage() {
               <div className="mt-4 space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">01</span>
-                  <span><span className="font-semibold">Map your store flow.</span> We align product, order, and fulfillment data.</span>
+                  <span>We review your matter types, billing model, and compliance obligations.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">02</span>
-                  <span><span className="font-semibold">Configure ERPNext.</span> We set up invoicing, stock movement, and reporting.</span>
+                  <span>We design the matter workflow, document structure, and finance integrations.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#14B8A6]">03</span>
-                  <span><span className="font-semibold">Integrate and stabilize.</span> We test end-to-end and support go-live.</span>
+                  <span>We implement, migrate matter records, train fee earners, and support go-live.</span>
                 </div>
               </div>
               <div className="mt-6">
@@ -186,7 +186,7 @@ export default function EcommerceIntegrationPage() {
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">What&apos;s Included</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Key Capabilities</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Every integration is built around your specific store platform, product catalog, and finance workflows.
+              Every module is configured around your practice areas, billing model, and compliance requirements.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -211,9 +211,9 @@ export default function EcommerceIntegrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <div className="text-center">
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Clients</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Businesses we&apos;ve helped</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Organizations we&apos;ve helped</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We deliver e-commerce integrations with clear scope, smooth rollout, and long-term support.
+              We deliver legal practice solutions with clear scope, smooth rollout, and long-term support.
             </p>
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function EcommerceIntegrationPage() {
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Process</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How we work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              A structured approach that ensures data integrity from day one of the integration.
+              A structured methodology that ensures billing accuracy and fee earner adoption from day one.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -250,9 +250,9 @@ export default function EcommerceIntegrationPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to connect your online store?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to modernize your legal practice?</h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Start with a tailored audit or see the integration in action — we&apos;ll build it around your store&apos;s exact data flow.
+            Start with a tailored audit or see the platform in action — we&apos;ll shape the engagement around your practice&apos;s needs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
