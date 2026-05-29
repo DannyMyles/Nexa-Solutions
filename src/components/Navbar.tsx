@@ -148,6 +148,7 @@ function SolutionsIntegrationsDropdown({
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileSection, setOpenMobileSection] = useState<"solutions" | "integrations" | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -159,6 +160,19 @@ export default function Navbar() {
   }, []);
 
   const isActive = (href: string) => pathname === href;
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setOpenMobileSection(null);
+  };
+
+  const toggleMobileMenu = () => {
+    if (isMobileMenuOpen) {
+      closeMobileMenu();
+      return;
+    }
+
+    setIsMobileMenuOpen(true);
+  };
 
   return (
     <nav
@@ -231,8 +245,8 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 relative z-[60]"
+            onClick={toggleMobileMenu}
             aria-label="Toggle menu"
             aria-expanded={isMobileMenuOpen}
           >
@@ -256,11 +270,11 @@ export default function Navbar() {
           <>
             <div
               className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={closeMobileMenu}
             />
             <div className="md:hidden absolute top-full left-0 right-0 z-50">
-              <div className="bg-white mx-4 mt-4 p-4 rounded-2xl shadow-xl">
-                <div className="flex flex-col space-y-1">
+              <div className="bg-white mx-4 mt-4 rounded-2xl shadow-xl max-h-[calc(100vh-7.5rem)] overflow-y-auto">
+                <div className="flex flex-col space-y-1 p-4">
                   {[
                     { name: "Home", href: "/" },
                     { name: "Company", href: "/company" },
@@ -274,53 +288,111 @@ export default function Navbar() {
                           ? "bg-[#14B8A6]/10 text-[#14B8A6]"
                           : "text-gray-700 hover:bg-gray-100"
                       }`}
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={closeMobileMenu}
                     >
                       {link.name}
                     </Link>
                   ))}
 
                   <div className="pt-2">
-                    <div className="px-4 pt-2 pb-1 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                      Solutions
-                    </div>
-                    <div className="grid grid-cols-1 gap-0.5 px-2">
-                      {solutions.map((label) => (
-                        <Link
-                          key={label}
-                          href={`/solutions/${toCategorySlug(label)}`}
-                          className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {label}
-                        </Link>
-                      ))}
-                    </div>
+                    <button
+                      type="button"
+                      className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-left text-sm font-semibold uppercase tracking-wider text-gray-500 hover:bg-gray-50"
+                      aria-expanded={openMobileSection === "solutions"}
+                      onClick={() =>
+                        setOpenMobileSection((current) =>
+                          current === "solutions" ? null : "solutions"
+                        )
+                      }
+                    >
+                      <span>Solutions</span>
+                      <svg
+                        className={`w-4 h-4 transition-transform ${
+                          openMobileSection === "solutions" ? "rotate-180" : ""
+                        }`}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </button>
+
+                    {openMobileSection === "solutions" && (
+                      <div className="grid grid-cols-1 gap-0.5 px-2 pb-1 max-h-72 overflow-y-auto">
+                        {solutions.map((label) => (
+                          <Link
+                            key={label}
+                            href={`/solutions/${toCategorySlug(label)}`}
+                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
+                            onClick={closeMobileMenu}
+                          >
+                            {label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                   <div className="pt-2">
-                    <div className="px-4 pt-2 pb-1 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                      Integrations
-                    </div>
-                    <div className="grid grid-cols-1 gap-0.5 px-2">
-                      {integrations.map((label) => (
-                        <Link
-                          key={label}
-                          href={`/integrations/${toCategorySlug(label)}`}
-                          className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {label}
-                        </Link>
-                      ))}
-                    </div>
+                    <button
+                      type="button"
+                      className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-left text-sm font-semibold uppercase tracking-wider text-gray-500 hover:bg-gray-50"
+                      aria-expanded={openMobileSection === "integrations"}
+                      onClick={() =>
+                        setOpenMobileSection((current) =>
+                          current === "integrations" ? null : "integrations"
+                        )
+                      }
+                    >
+                      <span>Integrations</span>
+                      <svg
+                        className={`w-4 h-4 transition-transform ${
+                          openMobileSection === "integrations" ? "rotate-180" : ""
+                        }`}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </button>
+
+                    {openMobileSection === "integrations" && (
+                      <div className="grid grid-cols-1 gap-0.5 px-2 pb-1 max-h-72 overflow-y-auto">
+                        {integrations.map((label) => (
+                          <Link
+                            key={label}
+                            href={`/integrations/${toCategorySlug(label)}`}
+                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
+                            onClick={closeMobileMenu}
+                          >
+                            {label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                   <div className="pt-2">
                     <Link
                       href="/contact?intent=demo"
                       className="block px-5 py-3 bg-[#14B8A6] text-white text-base font-semibold rounded-xl text-center hover:bg-[#0D9488] transition-colors"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={closeMobileMenu}
                     >
                       Book a Guided Demo
                     </Link>
