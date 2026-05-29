@@ -175,7 +175,7 @@ export default function Navbar() {
             <div className="w-10 h-10 bg-[#14B8A6] rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-xl">N</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Nexa Solutions</span>
+            <span className="text-xl font-bold text-gray-900">NexaGen Solutions Limited</span>
           </Link>
 
           {/* Desktop Navigation */}

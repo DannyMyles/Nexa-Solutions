@@ -37,7 +37,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-[#14B8A6] rounded-full flex items-center justify-center shrink-0">
                 <span className="text-white font-bold text-xl">N</span>
               </div>
-              <span className="text-xl font-bold text-white">Nexa Solutions</span>
+              <span className="text-xl font-bold text-white">NexaGen Solutions Limited</span>
             </Link>
             <p className="text-sm leading-relaxed text-gray-400">
               Kenya&apos;s trusted ERPNext implementors. We deliver end-to-end ERP solutions
@@ -156,7 +156,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Nexa Solutions Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} NexaGen Solutions Limited. All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
             <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-[#14B8A6] transition-colors">

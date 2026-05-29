@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Nexa Solutions",
+  title: "Terms & Conditions | NexaGen Solutions Limited",
   description: "Terms and conditions governing the use of Nexa Solutions services and website.",
 };
 
@@ -29,21 +29,21 @@ export default function TermsAndConditionsPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
               <p className="text-gray-600 leading-relaxed">
-                By accessing or using the Nexa Solutions Ltd website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our website or engage our services. These terms apply to all visitors, clients, and others who access or use our services.
+                By accessing or using the NexaGen Solutions Limited website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our website or engage our services. These terms apply to all visitors, clients, and others who access or use our services.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Services</h2>
               <p className="text-gray-600 leading-relaxed">
-                Nexa Solutions Ltd provides ERPNext implementation, customization, integration, training, and ongoing support services. The specific scope, deliverables, timelines, and fees for any engagement are defined in a separately executed Statement of Work (SOW) or Service Agreement. These Terms and Conditions apply alongside any such agreements.
+                NexaGen Solutions Limited provides ERPNext implementation, customization, integration, training, and ongoing support services. The specific scope, deliverables, timelines, and fees for any engagement are defined in a separately executed Statement of Work (SOW) or Service Agreement. These Terms and Conditions apply alongside any such agreements.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Intellectual Property</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                All content on this website — including text, graphics, logos, and design — is the property of Nexa Solutions Ltd and is protected under applicable Kenyan intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written consent.
+                All content on this website — including text, graphics, logos, and design — is the property of NexaGen Solutions Limited and is protected under applicable Kenyan intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written consent.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 ERPNext is an open-source platform developed by Frappe Technologies. Our implementation work, custom modules, and proprietary configurations developed for clients remain subject to the terms agreed in the individual service contracts.
@@ -94,7 +94,7 @@ export default function TermsAndConditionsPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Limitation of Liability</h2>
               <p className="text-gray-600 leading-relaxed">
-                To the maximum extent permitted by Kenyan law, Nexa Solutions Ltd shall not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of our services or website. Our total aggregate liability for any claim shall not exceed the total fees paid by you for the specific service giving rise to the claim in the three (3) months preceding the claim.
+                To the maximum extent permitted by Kenyan law, NexaGen Solutions Limited shall not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of our services or website. Our total aggregate liability for any claim shall not exceed the total fees paid by you for the specific service giving rise to the claim in the three (3) months preceding the claim.
               </p>
             </div>
 
@@ -132,7 +132,7 @@ export default function TermsAndConditionsPage() {
                 For questions about these Terms and Conditions, please reach out to us:
               </p>
               <div className="mt-4 p-6 bg-gray-50 rounded-2xl border border-gray-100 space-y-2">
-                <p className="text-gray-700 font-semibold">Nexa Solutions Ltd</p>
+                <p className="text-gray-700 font-semibold">NexaGen Solutions Limited</p>
                 <p className="text-gray-600 text-sm">Riverside Drive, Kofisi, Nairobi, Kenya</p>
                 <p className="text-gray-600 text-sm">
                   Email:{" "}

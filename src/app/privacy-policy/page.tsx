@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Nexa Solutions",
+  title: "Privacy Policy | NexaGen Solutions Limited",
   description: "How Nexa Solutions collects, uses, and protects your personal information.",
 };
 
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
               <p className="text-gray-600 leading-relaxed">
-                Nexa Solutions Ltd (&quot;we,&quot; &quot;our,&quot; or &quot;the Company&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage our services. By using our website, you consent to the data practices described in this policy.
+                NexaGen Solutions Limited (&quot;we,&quot; &quot;our,&quot; or &quot;the Company&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage our services. By using our website, you consent to the data practices described in this policy.
               </p>
             </div>
 
@@ -153,7 +153,7 @@ export default function PrivacyPolicyPage() {
                 If you have questions or concerns about this Privacy Policy, please contact us:
               </p>
               <div className="mt-4 p-6 bg-gray-50 rounded-2xl border border-gray-100 space-y-2">
-                <p className="text-gray-700 font-semibold">Nexa Solutions Ltd</p>
+                <p className="text-gray-700 font-semibold">NexaGen Solutions Limited</p>
                 <p className="text-gray-600 text-sm">Riverside Drive, Kofisi, Nairobi, Kenya</p>
                 <p className="text-gray-600 text-sm">
                   Email:{" "}

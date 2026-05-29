@@ -607,58 +607,52 @@ export default function Home() {
         </div>
       </section>
   
-      {/* Keep the industries section as is */}
+      {/* Industries Section */}
       <section className="bg-gray-50 py-14 sm:py-20">
-        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
-            <div className="rounded-[2rem] border border-gray-100 bg-white p-6 shadow-xl">
-              <h3 className="text-xl font-bold text-gray-900">Industries we support</h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                The website should communicate fit quickly, so these sectors are surfaced as obvious use cases.
-              </p>
-
-              {/* Mobile: Horizontal scroll (single row), Desktop: Grid */}
-              <div className="mt-6 overflow-x-auto lg:overflow-visible">
-                <div className="flex gap-6 lg:grid lg:grid-cols-3 lg:gap-6 w-max lg:w-full">
-                  {industries.map((industry) => (
-                    <div
-                      key={industry.name}
-                      className="group relative w-[280px] sm:w-[320px] lg:w-auto h-64 flex-shrink-0 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-[#14B8A6]/30 cursor-pointer"
-                    >
-                      {/* Background Image with better mobile positioning */}
-                      <div
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-                        style={{
-                          backgroundImage: `url('${industry.backgroundImage}')`,
-                          backgroundPosition: 'center 35%',
-                        }}
-                      />
-                      
-                      {/* Dark Overlay - darker on mobile for better text contrast */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70 group-hover:opacity-80 transition-opacity duration-300" />
-                      
-                      {/* Content - responsive sizing */}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#14B8A6] text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
-                          <industry.icon className="h-6 w-6" />
-                        </div>
-                        <p className="mt-3 text-sm font-semibold text-white px-2">{industry.name}</p>
-                      </div>
-                    </div>
-                  ))}
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Who we serve</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Industries we support</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+              We&apos;ve implemented ERPNext across a wide range of sectors, each with distinct workflows and compliance requirements.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {industries.map((industry) => (
+              <div
+                key={industry.name}
+                className="group relative h-48 sm:h-52 rounded-2xl overflow-hidden cursor-pointer"
+              >
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style={{ backgroundImage: `url('${industry.backgroundImage}')` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-3 text-center">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#14B8A6] text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                    <industry.icon className="h-5 w-5" />
+                  </div>
+                  <p className="mt-2 text-xs font-semibold text-white leading-tight">{industry.name}</p>
                 </div>
               </div>
-
-              {/* Scroll indicator for mobile */}
-              <div className="mt-4 text-center lg:hidden">
-                <p className="text-xs text-gray-400">← Swipe to see more industries →</p>
-              </div>
-
-              <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-gray-100">
-                <ClientCarousel clients={clients} autoPlay autoPlayInterval={4000} />
-              </div>
-            </div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Clients Carousel — full width */}
+      <section className="bg-white py-14 sm:py-20 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-10">
+          <div className="text-center">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Clients</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Companies we&apos;ve helped</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+              Trusted by businesses across Kenya to deliver ERPNext with clear scope and long-term support.
+            </p>
+          </div>
+        </div>
+        <div className="w-full px-4 sm:px-8">
+          <ClientCarousel clients={clients} autoPlay autoPlayInterval={4000} />
         </div>
       </section>
 

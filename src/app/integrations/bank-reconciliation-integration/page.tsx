@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Bank Reconciliation Integration | Nexa Solutions",
+  title: "Bank Reconciliation Integration | NexaGen Solutions Limited",
   description:
     "Reduce manual reconciliation with automated bank statement import and smart transaction matching.",
 };
@@ -42,16 +42,10 @@ export default function BankReconciliationIntegrationPage() {
               <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/contact?intent=audit"
+                  href="/contact?intent=demo"
                   className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
                 >
-                  Request an Audit
-                </Link>
-                <Link
-                  href="/contact?intent=demo"
-                  className="inline-flex items-center justify-center rounded-full border border-[#14B8A6]/30 bg-white px-8 py-3.5 font-semibold text-[#14B8A6] transition-all duration-300 hover:border-[#14B8A6] hover:bg-[#14B8A6]/5"
-                >
-                  Book a Demo
+                  Book a Guided Demo
                 </Link>
               </div>
             </div>
@@ -130,7 +124,7 @@ export default function BankReconciliationIntegrationPage() {
               href="/contact?intent=demo"
               className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Book a Demo
+              Book a Guided Demo
               <FaArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <Link

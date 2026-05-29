@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import { FaCheck, FaAward, FaUsers, FaRocket, FaBullseye } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "About Us | Nexa Solutions",
-  description: "Learn about Nexa Solutions - your trusted ERPNext implementors in Kenya. Discover our mission, team, and why choose us.",
+  title: "About Us | NexaGen Solutions Limited",
+  description: "Learn about NexaGen Solutions Limited - your trusted ERPNext implementors in Kenya. Discover our mission, team, and why choose us.",
 };
 
 
@@ -145,7 +145,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Why Choose Nexa Solutions</span>
+              <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Why Choose NexaGen Solutions Limited</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-6">
                 Partner-level delivery for real business outcomes
               </h2>

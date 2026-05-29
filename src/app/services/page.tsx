@@ -1,32 +1,27 @@
-
 import { Metadata } from "next";
-import { 
-  FaTools, 
-  FaChartLine, 
-  FaCogs, 
-  FaPlug, 
-  FaHeadset, 
-  FaWarehouse, 
-  FaShoppingCart, 
-  FaTruck, 
-  FaIndustry,
-  FaGlobe,
+import {
+  FaTools,
+  FaChartLine,
+  FaCogs,
+  FaPlug,
+  FaHeadset,
   FaCheck,
-  FaArrowRight
+  FaArrowRight,
 } from "react-icons/fa";
 import Link from "next/link";
-import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Services | Nexa Solutions",
-  description: "Explore our ERPNext implementation services including business process analysis, customization, integration, and ongoing support for businesses worldwide.",
+  title: "Services | NexaGen Solutions Limited",
+  description:
+    "ERPNext implementation, customization, integration, and ongoing support services for businesses across Kenya and East Africa.",
 };
 
 const services = [
   {
     icon: FaTools,
     title: "ERPNext Implementation",
-    description: "Complete implementation of ERPNext tailored to your business requirements, from initial setup to full deployment.",
+    description:
+      "Complete ERPNext implementation tailored to your business — from initial setup to full deployment and go-live support.",
     features: [
       "System configuration and setup",
       "Data migration from legacy systems",
@@ -35,7 +30,7 @@ const services = [
       "Post-implementation review",
     ],
     benefits: [
-      "Reduced implementation time and costs",
+      "Faster time to value",
       "Minimal disruption to operations",
       "Optimized system performance",
       "Comprehensive knowledge transfer",
@@ -44,234 +39,179 @@ const services = [
   {
     icon: FaChartLine,
     title: "Business Process Analysis",
-    description: "In-depth analysis of your current workflows to identify optimization opportunities and design efficient processes.",
+    description:
+      "We map your current workflows, identify gaps, and design cleaner, faster operating models built around how your business actually works.",
     features: [
       "Process mapping and documentation",
-      "Gap analysis",
+      "Gap analysis and bottleneck identification",
       "Process optimization recommendations",
       "Workflow automation design",
       "Performance benchmarks",
     ],
     benefits: [
       "Improved operational efficiency",
-      "Reduced manual processes",
+      "Fewer manual processes",
       "Better resource utilization",
-      "Clear process visibility",
+      "Clearer process visibility",
     ],
   },
   {
     icon: FaCogs,
-    title: "System Customization",
-    description: "Custom extensions and modifications to make ERPNext work exactly how your business needs it to.",
+    title: "Customization & Automation",
+    description:
+      "From custom fields to approval flows, we shape ERPNext so your team spends less time on manual work and more on what matters.",
     features: [
       "Custom fields and doctypes",
-      "App development",
-      "Report customization",
-      "Dashboard development",
+      "Custom app development",
+      "Report and dashboard customization",
+      "Approval and workflow automation",
       "UI/UX modifications",
     ],
     benefits: [
-      "Perfect system fit",
-      "Improved user adoption",
+      "System that fits your workflow exactly",
+      "Higher user adoption",
       "Better reporting capabilities",
-      "Enhanced user experience",
+      "Reduced manual entry",
     ],
   },
-{
+  {
     icon: FaPlug,
     title: "Integration Services",
-    description: "Seamless integration of ERPNext with your existing systems, third-party applications, and APIs.",
+    description:
+      "We connect ERPNext to your payments, websites, and external systems so data moves once and stays accurate across the board.",
     features: [
-       "API development and integration",
-       "Tax compliance integration",
-       "Payment processing integration",
-       "eTIMS - Electronic Tax Invoice Management System",
-       "Payment gateway integration",
-       "E-commerce platform integration",
-       "CRM and accounting integration",
-       "Custom webhook setup",
-       "Custom API integrations",
-     ],
+      "M-Pesa payment integration",
+      "KRA eTIMS tax compliance",
+      "Payment gateway integration",
+      "E-commerce platform integration",
+      "Biometric attendance sync",
+      "Bank reconciliation automation",
+      "Custom API and webhook development",
+    ],
     benefits: [
       "Unified business data",
       "Automated data flow",
-      "Reduced duplicate entry",
+      "Eliminated duplicate entry",
       "Real-time synchronization",
-      "Tax compliance automation",
-      "Seamless payment processing",
     ],
   },
   {
     icon: FaHeadset,
     title: "Ongoing Support & Maintenance",
-    description: "Dedicated support services to keep your ERPNext system running smoothly and efficiently.",
+    description:
+      "You get a partner after go-live — not just a handover document. We keep your system current, secure, and running smoothly.",
     features: [
-      "Technical support desk",
+      "Dedicated technical support desk",
       "System updates and upgrades",
       "Performance monitoring",
-      "Security patches",
-      "Backup and recovery",
+      "Security patches and backups",
+      "Statutory compliance updates",
     ],
-benefits: [
+    benefits: [
       "Peace of mind",
       "System reliability",
-      "Security compliance",
-      "Latest features access",
-      "No subscriptions or monthly fees",
-      "Perpetual license",
+      "Always on the latest version",
+      "No subscriptions or monthly SaaS fees",
     ],
   },
 ];
 
-const industries = [
-  { 
-    icon: FaWarehouse, 
-    name: "Manufacturing", 
-    description: "Track production, manage inventory, streamline supply chains" 
-  },
-  { 
-    icon: FaShoppingCart, 
-    name: "Retail & E-commerce", 
-    description: "Manage POS, inventory, and multi-channel sales" 
-  },
-  { 
-    icon: FaTruck, 
-    name: "Distribution", 
-    description: "Optimize logistics, warehouse, and fleet management" 
-  },
-  { 
-    icon: FaIndustry, 
-    name: "Healthcare", 
-    description: "Patient records, appointments, inventory control" 
-  },
-  { 
-    icon: FaGlobe, 
-    name: "Services", 
-    description: "Project management, CRM, and resource planning" 
-  },
-];
-
-const clients = [
-  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
-  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
-  { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
-  { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
-  { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
-  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
-  { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
+const processSteps = [
+  { step: "01", title: "Discovery", description: "We analyze your workflows, systems, and pain points to establish a clear baseline." },
+  { step: "02", title: "Design", description: "We create a tailored implementation plan with defined scope, integrations, and milestones." },
+  { step: "03", title: "Implement", description: "We configure ERPNext, migrate data, train users, and manage go-live." },
+  { step: "04", title: "Support", description: "We provide ongoing maintenance, upgrades, and hands-on post-go-live support." },
 ];
 
 export default function ServicesPage() {
   return (
     <div className="flex flex-col">
-{/* Hero Section */}
-      <section className="relative pt-28 pb-24 lg:pt-32 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
-        {/* Enhanced background */}
-        <div className="absolute inset-0 opacity-40">
-          <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-16 right-4 w-72 h-72 sm:bottom-20 sm:right-10 sm:w-96 sm:h-96 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
+      {/* Hero */}
+      <section className="relative pt-28 pb-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-10 left-6 w-72 h-72 bg-[#14B8A6]/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-4 w-96 h-96 bg-[#14B8A6]/15 rounded-full blur-3xl" />
         </div>
-        {/* Pattern overlay */}
-        <div className="absolute top-0 left-0 right-0 bottom-0" style={{ 
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgb(20, 184, 166 / 0.08) 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }}></div>
-        {/* Diagonal texture */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 opacity-5" style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgb(20, 184, 166) 35px, rgb(20, 184, 166) 36px)`,
-        }}></div>
-
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">ERPNext Services</span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-              Run your business in one system — sales, stock, payments, and reports in real time.
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">
+              ERPNext Services
+            </span>
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-3 mb-5">
+              End-to-end ERPNext delivery — from first audit to long-term support
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Point Of Sale + ERPNext gives you full visibility and control with M-Pesa integration, KRA-ready reporting, and fast day-to-day insights.
+              We implement, customize, integrate, and support ERPNext for businesses across Kenya and East Africa.
+              Every engagement is scoped to your workflow, not a generic template.
             </p>
-
-            <div className="mt-6">
-              <p className="text-sm text-gray-700 font-semibold">
-                Built for retail shops, wholesalers, and growing businesses in Kenya.
-              </p>
-            </div>
-
-            {/* Value strip */}
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
-              {[
-                "💰 Real-time Profit Tracking",
-                "📦 Smart Inventory Control",
-                "📊 KRA-Compliant Reporting",
-                "⚡ Fast & Reliable Performance",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-gray-100 bg-white/80 px-4 py-3 text-sm font-medium text-gray-700 shadow-sm"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-6 text-center">
-              <p className="text-sm text-gray-600 font-medium">
-                Trusted by businesses across Kenya
-              </p>
-              <p className="mt-1 text-xs text-gray-500">
-                Supporting retail, distribution, and SMEs with ERPNext delivery.
-              </p>
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                href="/contact?intent=demo"
+                className="inline-flex items-center justify-center px-8 py-3.5 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Book a Guided Demo
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-8 py-3.5 border border-gray-200 text-gray-700 font-semibold rounded-full hover:border-[#14B8A6] hover:text-[#14B8A6] transition-all duration-300"
+              >
+                Talk to us
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Detail Section */}
+      {/* Services Detail */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-20">
+          <div className="text-center mb-16">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">What we do</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Our core service areas</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+              Five areas of expertise, each delivered as part of a structured engagement — not piecemeal projects.
+            </p>
+          </div>
+          <div className="space-y-16">
             {services.map((service, index) => (
-              <div
-                key={service.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
-              >
-                <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className="w-16 h-16 bg-[#14B8A6]/10 rounded-2xl flex items-center justify-center mb-6">
-                    <service.icon className="w-8 h-8 text-[#14B8A6]" />
+              <div key={service.title} className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <div className={index % 2 === 1 ? "lg:order-2" : ""}>
+                  <div className="w-14 h-14 bg-[#14B8A6]/10 rounded-2xl flex items-center justify-center mb-5">
+                    <service.icon className="w-7 h-7 text-[#14B8A6]" />
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                    {service.description}
-                  </p>
-
-                  <h4 className="font-semibold text-gray-900 mb-4">Key Features</h4>
-                  <ul className="space-y-3 mb-8">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                  <p className="text-gray-600 text-lg leading-relaxed mb-6">{service.description}</p>
+                  <h4 className="font-semibold text-gray-900 mb-3">What&apos;s included</h4>
+                  <ul className="space-y-2">
                     {service.features.map((feature) => (
-                      <li key={feature} className="flex items-center">
-                        <FaCheck className="w-4 h-4 text-[#14B8A6] mr-3" />
-                        <span className="text-gray-700">{feature}</span>
+                      <li key={feature} className="flex items-center gap-3">
+                        <FaCheck className="w-4 h-4 text-[#14B8A6] shrink-0" />
+                        <span className="text-gray-700 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-
-                <div className={index % 2 === 1 ? "lg:order-0" : ""}>
-                  <div className="bg-gray-50 rounded-2xl p-8">
-                    <h4 className="font-semibold text-gray-900 mb-6">Business Benefits</h4>
-                    <div className="space-y-4">
+                <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+                  <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <h4 className="font-semibold text-gray-900 mb-5">Business outcomes</h4>
+                    <div className="space-y-3">
                       {service.benefits.map((benefit) => (
-                        <div key={benefit} className="flex items-start p-4 bg-white rounded-xl">
-                          <div className="w-6 h-6 bg-[#14B8A6]/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div key={benefit} className="flex items-start gap-3 p-3 bg-white rounded-xl">
+                          <div className="w-6 h-6 bg-[#14B8A6]/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
                             <FaCheck className="w-3 h-3 text-[#14B8A6]" />
                           </div>
-                          <span className="ml-3 text-gray-700">{benefit}</span>
+                          <span className="text-gray-700 text-sm">{benefit}</span>
                         </div>
                       ))}
+                    </div>
+                    <div className="mt-6 pt-5 border-t border-gray-100">
+                      <Link
+                        href="/contact?intent=demo"
+                        className="inline-flex items-center gap-2 text-[#14B8A6] font-semibold text-sm hover:gap-3 transition-all"
+                      >
+                        Discuss this service
+                        <FaArrowRight className="w-3.5 h-3.5" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -281,77 +221,18 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Industries Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Industries We Serve</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-              Expertise Across Industries
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We have experience implementing ERPNext solutions for a wide range of industries, 
-              each with unique requirements and challenges.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industries.map((industry) => (
-              <div
-                key={industry.name}
-                className="p-6 bg-white rounded-xl card-hover border border-gray-100"
-              >
-                <div className="w-12 h-12 bg-[#14B8A6]/10 rounded-xl flex items-center justify-center mb-4">
-                  <industry.icon className="w-6 h-6 text-[#14B8A6]" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{industry.name}</h3>
-                <p className="text-gray-600 text-sm">{industry.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Clients</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-              Companies We&apos;ve Helped
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We&apos;re proud to have worked with amazing businesses across various industries, 
-              helping them achieve operational excellence with ERPNext.
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <ClientCarousel clients={clients} autoPlay={true} autoPlayInterval={4000} />
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
+      {/* Process */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Process</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-              How We Work
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How we work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Our proven methodology ensures successful implementation and maximum ROI for your business.
+              A structured, transparent approach that maximizes ROI and team adoption.
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { step: "01", title: "Discovery", description: "We analyze your business requirements and processes" },
-              { step: "02", title: "Design", description: "We create a tailored implementation plan" },
-              { step: "03", title: "Implement", description: "We configure and deploy your ERPNext system" },
-              { step: "04", title: "Support", description: "We provide ongoing training and maintenance" },
-            ].map((item) => (
+            {processSteps.map((item) => (
               <div
                 key={item.step}
                 className="relative p-6 bg-white rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#14B8A6]/30 hover:shadow-md"
@@ -365,23 +246,21 @@ export default function ServicesPage() {
         </div>
       </section>
 
-{/* CTA Section */}
+      {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Ready to Scope the Right Solution?
+            Ready to scope the right solution?
           </h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Start with a guided demo or see the platform in action, then we&apos;ll shape the engagement around
-            what your team actually needs.
-
+            See the platform in action or talk through your requirements — we&apos;ll shape the engagement around what your team actually needs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
+            <Link
               href="/contact?intent=demo"
               className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Book a Demo
+              Book a Guided Demo
               <FaArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <Link

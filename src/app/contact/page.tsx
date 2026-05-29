@@ -4,8 +4,8 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaWhatsapp, FaMapPin } fr
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Nexa Solutions",
-  description: "Get in touch with Nexa Solutions for ERPNext implementation services. Contact us at Riverside Drive, Kofisi, Nairobi.",
+  title: "Contact Us | NexaGen Solutions Limited",
+  description: "Get in touch with NexaGen Solutions Limited for ERPNext implementation services. Contact us at Riverside Drive, Kofisi, Nairobi.",
 };
 
 
@@ -80,14 +80,6 @@ export default function ContactPage({
             </p>
 
 
-            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link
-                href="/contact?intent=demo"
-                className="inline-flex items-center justify-center px-6 py-3 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm md:text-base"
-              >
-                Book a Guided Demo
-              </Link>
-            </div>
 
           </div>
         </div>
@@ -161,7 +153,7 @@ export default function ContactPage({
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
-                  title="Nexa Solutions Location Map"
+                  title="NexaGen Solutions Location Map"
                 />
                 
                 {/* Gradient Overlay */}
@@ -176,7 +168,7 @@ export default function ContactPage({
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-base font-bold text-gray-900 mb-0.5">
-                          Nexa Solutions
+                          NexaGen Solutions Limited
                         </h3>
                         <p className="text-gray-500 text-sm mb-3">
                           Riverside Drive, Kofisi
