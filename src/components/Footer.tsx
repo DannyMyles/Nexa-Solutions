@@ -29,18 +29,18 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-        {/* Main grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
+        {/* Main flex row - all sections on same row */}
+        <div className="flex flex-wrap lg:flex-nowrap gap-8 pb-12 border-b border-gray-800">
           {/* Company Info */}
-          <div className="space-y-5 lg:col-span-1">
+          <div className="flex-1 min-w-[200px] space-y-5">
             <Link href="/" className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-[#14B8A6] rounded-full flex items-center justify-center shrink-0">
                 <span className="text-white font-bold text-xl">N</span>
               </div>
-              <span className="text-xl font-bold text-white">NexaGen Solutions Limited</span>
+              <span className="text-xl font-bold text-white">NGS</span>
             </Link>
             <p className="text-sm leading-relaxed text-gray-400">
-              Kenya&apos;s trusted ERPNext implementors. We deliver end-to-end ERP solutions
+              Trusted ERPNext implementors. We deliver end-to-end ERP solutions
               that transform operations across industries — with compliance built in from day one.
             </p>
             <div className="flex space-x-3">
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          <div className="flex-1 min-w-[150px] space-y-3">
             <h3 className="text-base font-semibold text-white">Quick Links</h3>
             <ul className="space-y-2.5">
               {[
@@ -93,8 +93,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Solutions & Integrations */}
-          <div className="space-y-4">
+          {/* Solutions */}
+          <div className="flex-1 min-w-[180px] space-y-3">
             <h3 className="text-base font-semibold text-white">Solutions</h3>
             <ul className="space-y-2.5">
               {solutionLinks.map((link) => (
@@ -105,7 +105,11 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <h3 className="text-base font-semibold text-white pt-4">Integrations</h3>
+          </div>
+
+          {/* Integrations */}
+          <div className="flex-1 min-w-[180px] space-y-3">
+            <h3 className="text-base font-semibold text-white">Integrations</h3>
             <ul className="space-y-2.5">
               {integrationLinks.map((link) => (
                 <li key={link.name}>
@@ -118,7 +122,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
+          <div className="flex-1 min-w-[220px] space-y-4">
             <h3 className="text-base font-semibold text-white">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
