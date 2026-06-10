@@ -55,7 +55,7 @@ export default function ContactPage({
       <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[500px] flex items-center">
         {/* Background image */}
         <Image
-          src="/images/contact-team.jpg"
+          src="/images/ChatGPT Image Jun 10, 2026, 05_02_04 PM.png"
           alt=""
           fill
           className="object-cover object-center"

@@ -610,7 +610,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-10">
           <div className="text-center">
             <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Our Clients</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Companies we&apos;ve helped</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Organizations We&apos;ve Partnered With</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               Trusted by businesses across Kenya to deliver ERPNext with clear scope and long-term support.
             </p>

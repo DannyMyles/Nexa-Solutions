@@ -39,7 +39,7 @@ export default function AboutPage() {
       <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[560px] flex items-center">
         {/* Background image */}
         <Image
-          src="/images/hero-team.jpg"
+          src="/images/ChatGPT Image Jun 10, 2026, 04_51_16 PM.png"
           alt=""
           fill
           className="object-cover object-center"
