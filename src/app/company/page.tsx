@@ -53,30 +53,15 @@ export default function AboutPage() {
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgb(20, 184, 166) 35px, rgb(20, 184, 166) 36px)`,
         }}></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] items-center">
-            <div>
-              <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">About Us</span>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-                Simplify operations. Scale faster. Stay in control.
-              </h1>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                We’re more than an ERP provider—we’re your technology partner for ERPNext and Frappe implementations.
-                We design practical systems with clear scope, tailored workflows, and support that keeps improving after go-live.
-              </p>
-
-            </div>
-
-            <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 bg-white shadow-xl">
-              <Image
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
-                alt="Business team collaborating on ERP strategy"
-                width={1200}
-                height={800}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">About Us</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6 max-w-4xl mx-auto">
+            Simplify operations. Scale faster. Stay in control.
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            We&apos;re more than an ERP provider—we&apos;re your technology partner for ERPNext and Frappe implementations.
+            We design practical systems with clear scope, tailored workflows, and support that keeps improving after go-live.
+          </p>
         </div>
       </section>
 
@@ -141,16 +126,24 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 overflow-hidden">
+        <Image
+          src="/images/solutions/erpsystem.jpg"
+          alt="ERP system background"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gray-900/75" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Why Choose NexaGen Solutions Limited</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">
                 Partner-level delivery for real business outcomes
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                You don’t need more features—you need a system that works with your team.
+              <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                You don&apos;t need more features—you need a system that works with your team.
                 We combine proven ERPNext expertise with audit-first scoping and long-term support so your ERP becomes an advantage.
               </p>
 
@@ -166,7 +159,7 @@ export default function AboutPage() {
                     <div className="w-5 h-5 bg-[#14B8A6] rounded-full flex items-center justify-center flex-shrink-0">
                       <FaCheck className="w-3 h-3 text-white" />
                     </div>
-                    <span className="ml-3 text-gray-700">{item}</span>
+                    <span className="ml-3 text-gray-200">{item}</span>
                   </div>
                 ))}
               </div>

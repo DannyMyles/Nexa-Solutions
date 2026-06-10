@@ -70,13 +70,13 @@ const features = [
 ];
 
 const clients = [
-  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
-  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
-  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
-  { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
-  { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
-  { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
-  { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
+  { name: "Elite Retail", description: "Fashion & Retail", logo: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Spices Restaurant", description: "Food & Beverage", logo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Green Valley Farms", description: "Agriculture", logo: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Prime Distributors", description: "Wholesale", logo: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "CGM Logistics", description: "Transportation", logo: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Sunrise Healthcare", description: "Medical Services", logo: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=96&h=96&q=80" },
 ];
 
 const processSteps = [

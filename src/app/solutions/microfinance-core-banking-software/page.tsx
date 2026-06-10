@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaArrowRight,
   FaHandHoldingUsd,
@@ -71,13 +72,13 @@ const features = [
 ];
 
 const clients = [
-  { name: "Prime Distributors", description: "Wholesale", logo: "PD" },
-  { name: "Green Valley Farms", description: "Agriculture", logo: "GV" },
-  { name: "CGM Logistics", description: "Transportation", logo: "CGM" },
-  { name: "Sunrise Healthcare", description: "Medical Services", logo: "SH" },
-  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "CoC" },
-  { name: "Elite Retail", description: "Fashion & Retail", logo: "ER" },
-  { name: "Spices Restaurant", description: "Food & Beverage", logo: "SR" },
+  { name: "Prime Distributors", description: "Wholesale", logo: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Green Valley Farms", description: "Agriculture", logo: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "CGM Logistics", description: "Transportation", logo: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Sunrise Healthcare", description: "Medical Services", logo: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Elite Retail", description: "Fashion & Retail", logo: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Spices Restaurant", description: "Food & Beverage", logo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=96&h=96&q=80" },
 ];
 
 const processSteps = [
@@ -99,17 +100,30 @@ export default function MicrofinanceCoreBankingSoftwarePage() {
           <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#14B8A6]/20 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Solutions</span>
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
-            <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/contact?intent=demo"
-                className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
-              >
-                Book a Guided Demo
-              </Link>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Solutions</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
+              <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
+              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/contact?intent=demo"
+                  className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
+                >
+                  Book a Guided Demo
+                </Link>
+              </div>
+            </div>
+            <div className="relative hidden lg:block">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-4/3">
+                <Image
+                  src="/images/solutions/banking.jpeg"
+                  alt="Microfinance Core Banking Software"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaEnvelope,
   FaPhone,
@@ -33,12 +34,18 @@ export default function Footer() {
         <div className="flex flex-wrap lg:flex-nowrap gap-8 pb-12 border-b border-gray-800">
           {/* Company Info */}
           <div className="flex-1 min-w-[200px] space-y-5">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-[#14B8A6] rounded-full flex items-center justify-center shrink-0">
-                <span className="text-white font-bold text-xl">N</span>
-              </div>
-              <span className="text-xl font-bold text-white">NGS</span>
-            </Link>
+            <Link href="/" className="flex items-center">
+            <Image
+              src="/NexaGen_logo.svg"
+              alt="NexaGen Solutions Limited"
+              width={160}
+              height={48}
+              style={{ width: "auto", height: "6rem" }}
+              className="object-contain"
+              priority
+              unoptimized
+            />
+          </Link>
             <p className="text-sm leading-relaxed text-gray-400">
               Trusted ERPNext implementors. We deliver end-to-end ERP solutions
               that transform operations across industries — with compliance built in from day one.
