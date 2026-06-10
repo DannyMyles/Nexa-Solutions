@@ -88,6 +88,15 @@ const processSteps = [
   { step: "04", title: "Support", description: "We provide ongoing support, reporting setup, and pipeline reviews." },
 ];
 
+const audiences = ["Sales Teams", "B2B Service Businesses", "Consulting Firms", "Financial Services", "Distributors & Wholesalers"];
+
+const faqs = [
+  { q: "Can CRM be integrated with our existing email?", a: "Yes — ERPNext CRM supports email integration for tracking all client communications automatically." },
+  { q: "Does it support mobile access for field teams?", a: "Yes — ERPNext is fully responsive and accessible on any mobile browser without a separate app." },
+  { q: "Can we customize the sales pipeline stages?", a: "Yes — pipeline stages, required fields, and follow-up workflows are fully configurable." },
+  { q: "Does it integrate with ERPNext accounting?", a: "Yes — quotes and sales orders flow directly into invoicing and finance without manual re-entry." },
+];
+
 export default function CrmSoftwarePage() {
   if (!item?.slug) notFound();
 
@@ -220,6 +229,23 @@ export default function CrmSoftwarePage() {
         </div>
       </section>
 
+      {/* Who it's for */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Best Fit</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Who it&apos;s for</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {audiences.map((a) => (
+              <span key={a} className="px-5 py-2.5 rounded-full bg-[#14B8A6]/10 text-[#14B8A6] font-semibold text-sm">
+                {a}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -240,6 +266,27 @@ export default function CrmSoftwarePage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Common Questions</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="group rounded-2xl border border-gray-100 bg-gray-50 p-5">
+                <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 list-none">
+                  {faq.q}
+                  <span className="ml-4 shrink-0 text-[#14B8A6] transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-3 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>

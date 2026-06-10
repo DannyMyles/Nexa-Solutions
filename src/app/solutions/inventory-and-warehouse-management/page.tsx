@@ -86,6 +86,15 @@ const processSteps = [
   { step: "04", title: "Support", description: "We provide ongoing stock audits, system upgrades, and reporting assistance." },
 ];
 
+const audiences = ["Distributors & Wholesalers", "Retailers with Warehouses", "Manufacturing Companies", "Import/Export Businesses", "E-commerce Fulfilment"];
+
+const faqs = [
+  { q: "Does it support multiple warehouses?", a: "Yes — unlimited warehouse locations with full transfer workflows and valuation between them." },
+  { q: "Can we do batch and serial number tracking?", a: "Yes — full lot, batch, and serial number traceability is supported natively in ERPNext." },
+  { q: "Does it integrate with the POS module?", a: "Yes — ERPNext POS and inventory are natively integrated; every sale updates stock in real time." },
+  { q: "How do we handle stock discrepancies found during audits?", a: "Stock reconciliation tools let you investigate, adjust, and document variances with full audit trails." },
+];
+
 export default function InventoryAndWarehouseManagementPage() {
   return (
     <div className="flex flex-col">
@@ -216,6 +225,23 @@ export default function InventoryAndWarehouseManagementPage() {
         </div>
       </section>
 
+      {/* Who it's for */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Best Fit</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Who it&apos;s for</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {audiences.map((a) => (
+              <span key={a} className="px-5 py-2.5 rounded-full bg-[#14B8A6]/10 text-[#14B8A6] font-semibold text-sm">
+                {a}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -236,6 +262,27 @@ export default function InventoryAndWarehouseManagementPage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Common Questions</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="group rounded-2xl border border-gray-100 bg-gray-50 p-5">
+                <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 list-none">
+                  {faq.q}
+                  <span className="ml-4 shrink-0 text-[#14B8A6] transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-3 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>

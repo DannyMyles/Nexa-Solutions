@@ -23,6 +23,27 @@ const item = {
   ],
 };
 
+const howItWorks = [
+  { title: "Connect", description: "We integrate your biometric devices with ERPNext HR using the device's SDK or API connection." },
+  { title: "Sync", description: "Attendance punches are automatically pulled, validated against shift schedules, and cleaned for payroll." },
+  { title: "Process", description: "Verified attendance feeds flow directly into ERPNext payroll calculations, eliminating all manual data entry." },
+];
+
+const impact = [
+  { value: "Zero", label: "Manual attendance entry — data flows automatically from device to payroll" },
+  { value: "Accurate", label: "Payroll figures driven by verified biometric data, not manual timesheets" },
+  { value: "Full visibility", label: "Into tardiness, overtime, and absenteeism across all locations" },
+];
+
+const audiences = ["Manufacturers & Factories", "Retailers with Shift Staff", "Schools & Universities", "Healthcare Facilities", "Any Business with 10+ Employees"];
+
+const faqs = [
+  { q: "Which biometric devices do you support?", a: "ZKTeco, Anviz, and most brands with SDK or API access — we confirm compatibility before scoping." },
+  { q: "What if a device goes offline?", a: "Attendance data is buffered locally on the device and synced to ERPNext when connectivity is restored." },
+  { q: "Can it handle multiple shift patterns?", a: "Yes — shifts, overtime rules, and break policies are fully configured per employee group in ERPNext." },
+  { q: "Does it support fingerprint and face recognition?", a: "Yes — both modalities are supported for any device that provides them." },
+];
+
 export default function BiometricDataIntegrationPage() {
   if (!item?.slug) notFound();
 
@@ -112,6 +133,80 @@ export default function BiometricDataIntegrationPage() {
         </div>
       </section>
 
+      {/* How it works */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">The Process</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How it works</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {howItWorks.map((step, i) => (
+              <div key={step.title} className="p-8 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
+                <div className="w-12 h-12 bg-[#14B8A6] rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">{i + 1}</div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Business impact */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Results</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Business impact</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {impact.map((stat) => (
+              <div key={stat.label} className="p-8 bg-gradient-to-br from-[#14B8A6]/5 to-[#14B8A6]/10 rounded-2xl border border-[#14B8A6]/20 text-center">
+                <div className="text-4xl font-bold text-[#14B8A6] mb-2">{stat.value}</div>
+                <div className="text-gray-700 font-semibold">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who it's for */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Best Fit</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Who it&apos;s for</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {audiences.map((a) => (
+              <span key={a} className="px-5 py-2.5 rounded-full bg-[#14B8A6]/10 text-[#14B8A6] font-semibold text-sm">
+                {a}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Common Questions</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="group rounded-2xl border border-gray-100 bg-gray-50 p-5">
+                <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 list-none">
+                  {faq.q}
+                  <span className="ml-4 shrink-0 text-[#14B8A6] transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-3 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

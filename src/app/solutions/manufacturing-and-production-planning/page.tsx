@@ -86,6 +86,15 @@ const processSteps = [
   { step: "04", title: "Support", description: "We provide ongoing production reviews, system updates, and analytics setup." },
 ];
 
+const audiences = ["Light Manufacturers", "Food & Beverage Producers", "Assembly Operations", "Custom Fabricators", "Industrial SMEs"];
+
+const faqs = [
+  { q: "Does it support multi-level Bills of Materials?", a: "Yes — nested BOMs with sub-assemblies are fully supported and version-controlled." },
+  { q: "Can we plan production against open sales orders?", a: "Yes — MRP-style planning links demand from sales orders directly to production orders." },
+  { q: "Does it track actual raw material consumption per work order?", a: "Yes — material requisitions and actual-vs-planned consumption are tracked per production order." },
+  { q: "Can we manage outsourced production or job work?", a: "Yes — ERPNext's subcontracting workflows handle outsourced operations with full cost tracking." },
+];
+
 export default function ManufacturingAndProductionPlanningPage() {
   return (
     <div className="flex flex-col">
@@ -216,6 +225,23 @@ export default function ManufacturingAndProductionPlanningPage() {
         </div>
       </section>
 
+      {/* Who it's for */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Best Fit</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Who it&apos;s for</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {audiences.map((a) => (
+              <span key={a} className="px-5 py-2.5 rounded-full bg-[#14B8A6]/10 text-[#14B8A6] font-semibold text-sm">
+                {a}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -236,6 +262,27 @@ export default function ManufacturingAndProductionPlanningPage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Common Questions</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="group rounded-2xl border border-gray-100 bg-gray-50 p-5">
+                <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 list-none">
+                  {faq.q}
+                  <span className="ml-4 shrink-0 text-[#14B8A6] transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-3 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>

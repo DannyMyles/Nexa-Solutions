@@ -86,6 +86,15 @@ const processSteps = [
   { step: "04", title: "Support", description: "We provide ongoing support, lease renewals assistance, and system upgrades." },
 ];
 
+const audiences = ["Property Management Companies", "Real Estate Developers", "Commercial Landlords", "Residential Letting Agents", "Mixed-use Property Portfolios"];
+
+const faqs = [
+  { q: "Can it handle both residential and commercial leases?", a: "Yes — lease types, billing cycles, and deposit terms are fully configurable per unit." },
+  { q: "Does it automate rent invoicing and reminders?", a: "Yes — invoices are generated on schedule and overdue payment reminders are sent automatically." },
+  { q: "Can we track maintenance requests per unit?", a: "Yes — maintenance tickets link to tenants, units, and vendors with full status tracking." },
+  { q: "Does it integrate with M-Pesa for rent collection?", a: "Yes — M-Pesa payments are automatically matched to the relevant tenant invoice in ERPNext." },
+];
+
 export default function RealEstatePropertyManagementPage() {
   return (
     <div className="flex flex-col">
@@ -216,6 +225,23 @@ export default function RealEstatePropertyManagementPage() {
         </div>
       </section>
 
+      {/* Who it's for */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Best Fit</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Who it&apos;s for</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {audiences.map((a) => (
+              <span key={a} className="px-5 py-2.5 rounded-full bg-[#14B8A6]/10 text-[#14B8A6] font-semibold text-sm">
+                {a}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -236,6 +262,27 @@ export default function RealEstatePropertyManagementPage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Common Questions</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="group rounded-2xl border border-gray-100 bg-gray-50 p-5">
+                <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 list-none">
+                  {faq.q}
+                  <span className="ml-4 shrink-0 text-[#14B8A6] transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-3 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>
