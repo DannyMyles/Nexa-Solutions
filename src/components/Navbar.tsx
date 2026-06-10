@@ -196,8 +196,7 @@ export default function Navbar() {
               alt="NexaGen Solutions Limited"
               width={160}
               height={48}
-              style={{ width: "auto", height: "7rem" }}
-              className="object-contain mix-blend-multiply"
+              className="object-contain mix-blend-multiply h-28 w-auto"
               priority
               unoptimized
             />
