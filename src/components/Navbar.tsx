@@ -197,7 +197,7 @@ export default function Navbar() {
               width={160}
               height={48}
               style={{ width: "auto", height: "7rem" }}
-              className="object-contain"
+              className="object-contain mix-blend-multiply"
               priority
               unoptimized
             />

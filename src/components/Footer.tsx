@@ -40,8 +40,8 @@ export default function Footer() {
               alt="NexaGen Solutions Limited"
               width={160}
               height={48}
-              style={{ width: "auto", height: "6rem" }}
-              className="object-contain"
+              style={{ width: "auto", height: "7rem" }}
+              className="object-contain mix-blend-multiply"
               priority
               unoptimized
             />
