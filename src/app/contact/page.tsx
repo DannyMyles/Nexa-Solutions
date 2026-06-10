@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaWhatsapp, FaMapPin } from "react-icons/fa";
 import ContactForm from "@/components/ContactForm";
 
@@ -51,36 +52,56 @@ export default function ContactPage({
   return (
     <div className="flex flex-col">
 {/* Hero Section */}
-      <section className="relative pt-40 pb-24 lg:pt-44 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
-        {/* Enhanced background */}
-        <div className="absolute inset-0 opacity-40">
-          <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#13ACB3]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-16 right-4 w-72 h-72 sm:bottom-20 sm:right-10 sm:w-96 sm:h-96 bg-[#13ACB3]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] bg-[#13ACB3]/10 rounded-full blur-3xl"></div>
-        </div>
-        {/* Pattern overlay */}
-        <div className="absolute top-0 left-0 right-0 bottom-0" style={{ 
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgb(20, 184, 166 / 0.08) 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }}></div>
-        {/* Diagonal texture */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 opacity-5" style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgb(20, 184, 166) 35px, rgb(20, 184, 166) 36px)`,
-        }}></div>
+      <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[500px] flex items-center">
+        {/* Background image */}
+        <Image
+          src="/images/contact-team.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Overlay: dark teal centre-spread */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#082E30]/90 via-[#0B4F54]/82 to-[#13ACB3]/45" />
+        {/* Subtle dot grid */}
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Contact Us</span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-              Get in Touch
+            <span className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#7FD8DC] uppercase tracking-widest mb-5">
+              <span className="w-8 h-px bg-[#13ACB3]" />
+              Contact Us
+              <span className="w-8 h-px bg-[#13ACB3]" />
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              Let&apos;s Build Something Together
             </h1>
-                <p className="text-lg text-gray-600 leading-relaxed">
-              Ready to move faster with ERPNext? Talk to us today—book a guided demo, see the platform in action,
-              and leave with a clear next-step plan.
+            <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-2xl mx-auto">
+              Ready to move faster with ERPNext? Talk to us today — book a guided demo, see the platform in action, and leave with a clear next-step plan.
             </p>
-
-
-
+            {/* Quick-contact pills */}
+            <div className="flex flex-wrap justify-center gap-3">
+              <a
+                href="tel:+254758269725"
+                className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white px-5 py-2.5 rounded-full hover:bg-white/20 transition-colors text-sm font-medium"
+              >
+                <FaPhone className="w-3.5 h-3.5 text-[#13ACB3]" />
+                +254 758 269 725
+              </a>
+              <a
+                href="mailto:info@nexasolutions.com"
+                className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white px-5 py-2.5 rounded-full hover:bg-white/20 transition-colors text-sm font-medium"
+              >
+                <FaEnvelope className="w-3.5 h-3.5 text-[#13ACB3]" />
+                info@nexasolutions.com
+              </a>
+              <Link
+                href="/contact?intent=demo"
+                className="inline-flex items-center gap-2 bg-[#13ACB3] text-white px-5 py-2.5 rounded-full hover:bg-[#109298] transition-colors text-sm font-semibold"
+              >
+                Book a Guided Demo
+              </Link>
+            </div>
           </div>
         </div>
       </section>

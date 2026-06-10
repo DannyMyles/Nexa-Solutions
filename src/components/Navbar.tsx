@@ -46,6 +46,7 @@ type DropdownProps = {
   items: string[];
   itemsHeading: string;
   itemToHref: (label: string) => string;
+  isScrolled: boolean;
 };
 
 function SolutionsIntegrationsDropdown({
@@ -53,6 +54,7 @@ function SolutionsIntegrationsDropdown({
   items,
   itemsHeading,
   itemToHref,
+  isScrolled,
 }: DropdownProps) {
   const [open, setOpen] = useState(false);
 
@@ -85,8 +87,8 @@ function SolutionsIntegrationsDropdown({
         type="button"
         className={`text-sm font-medium inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all duration-200 ${
           open
-            ? "bg-[#13ACB3]/15 text-[#13ACB3]"
-            : "text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#13ACB3]"
+            ? isScrolled ? "bg-[#13ACB3]/15 text-[#13ACB3]" : "bg-white/15 text-white"
+            : isScrolled ? "text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#13ACB3]" : "text-white hover:bg-white/15"
         }`}
         aria-haspopup="menu"
         aria-expanded={open}
@@ -165,6 +167,8 @@ export default function Navbar() {
   }, []);
 
   const isActive = (href: string) => pathname === href;
+  const darkHeroPages = ["/company", "/contact"];
+  const useWhiteNav = !isScrolled && darkHeroPages.some((p) => pathname === p || pathname.startsWith(p + "?"));
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
     setOpenMobileSection(null);
@@ -207,7 +211,7 @@ export default function Navbar() {
             <Link
               href="/"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/") ? "text-[#13ACB3]" : "text-gray-700 hover:text-[#13ACB3]"
+                isActive("/") ? "text-[#13ACB3]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#13ACB3]"
               }`}
             >
               Home
@@ -216,7 +220,7 @@ export default function Navbar() {
             <Link
               href="/company"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/company") ? "text-[#13ACB3]" : "text-gray-700 hover:text-[#13ACB3]"
+                isActive("/company") ? "text-[#13ACB3]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#13ACB3]"
               }`}
             >
               Company
@@ -227,6 +231,7 @@ export default function Navbar() {
               items={solutions}
               itemToHref={(label) => `/solutions/${toCategorySlug(label)}`}
               itemsHeading="Industries & Use-cases"
+              isScrolled={!useWhiteNav}
             />
 
             <SolutionsIntegrationsDropdown
@@ -234,12 +239,13 @@ export default function Navbar() {
               items={integrations}
               itemToHref={(label) => `/integrations/${toCategorySlug(label)}`}
               itemsHeading="Connectors & Platforms"
+              isScrolled={!useWhiteNav}
             />
 
             <Link
               href="/contact"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/contact") ? "text-[#13ACB3]" : "text-gray-700 hover:text-[#13ACB3]"
+                isActive("/contact") ? "text-[#13ACB3]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#13ACB3]"
               }`}
             >
               Contact
@@ -259,6 +265,7 @@ export default function Navbar() {
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
             aria-expanded={isMobileMenuOpen}
+            style={{ color: useWhiteNav ? "#ffffff" : "#111827" }}
           >
             <svg
               className="w-6 h-6 text-gray-900"

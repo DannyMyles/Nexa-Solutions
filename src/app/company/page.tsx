@@ -36,32 +36,46 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
 {/* Hero Section */}
-      <section className="relative pt-40 pb-24 lg:pt-44 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
-        {/* Enhanced background */}
-        <div className="absolute inset-0 opacity-40">
-          <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#13ACB3]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-16 right-4 w-72 h-72 sm:bottom-20 sm:right-10 sm:w-96 sm:h-96 bg-[#13ACB3]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] bg-[#13ACB3]/10 rounded-full blur-3xl"></div>
-        </div>
-        {/* Pattern overlay */}
-        <div className="absolute top-0 left-0 right-0 bottom-0" style={{ 
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgb(20, 184, 166 / 0.08) 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }}></div>
-        {/* Diagonal texture */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 opacity-5" style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgb(20, 184, 166) 35px, rgb(20, 184, 166) 36px)`,
-        }}></div>
+      <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[560px] flex items-center">
+        {/* Background image */}
+        <Image
+          src="/images/hero-team.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Overlay: deep teal on the left fading to transparent teal on the right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#082E30]/92 via-[#0B4F54]/80 to-[#13ACB3]/40" />
+        {/* Subtle dot grid */}
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">About Us</span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6 max-w-4xl mx-auto">
-            Simplify operations. Scale faster. Stay in control.
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            We&apos;re more than an ERP provider—we&apos;re your technology partner for ERPNext and Frappe implementations.
-            We design practical systems with clear scope, tailored workflows, and support that keeps improving after go-live.
-          </p>
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#7FD8DC] uppercase tracking-widest mb-5">
+              <span className="w-8 h-px bg-[#13ACB3]" />
+              About NexaGen
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              Simplify operations.<br className="hidden sm:block" /> Scale faster.<br className="hidden sm:block" /> Stay in control.
+            </h1>
+            <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-xl">
+              We&apos;re your technology partner for ERPNext and Frappe implementations — practical systems, clear scope, tailored workflows, and support that keeps improving after go-live.
+            </p>
+            {/* Stats row */}
+            <div className="flex flex-wrap gap-8">
+              {[
+                { value: "50+", label: "Clients Served" },
+                { value: "5+", label: "Years Experience" },
+                { value: "12+", label: "Industries" },
+              ].map((s) => (
+                <div key={s.label}>
+                  <div className="text-3xl font-bold text-[#13ACB3]">{s.value}</div>
+                  <div className="text-sm text-white/60 mt-0.5">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
