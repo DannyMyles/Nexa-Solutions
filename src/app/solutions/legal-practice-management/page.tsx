@@ -111,12 +111,12 @@ export default function LegalPracticeManagementPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
                 <Image
                   src="/images/solutions/erpsystem.jpg"
                   alt="Legal Practice Management"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>

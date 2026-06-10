@@ -50,12 +50,12 @@ export default function KraTimsAndEtimsIntegrationPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
                 <Image
-                  src="/images/solutions/etims_new.png"
+                  src="/images/solutions/KRA-mascot2_etims.jpg"
                   alt="KRA TIMS and eTIMS Integration"
                   fill
-                  className="object-cover object-top"
+                  className="object-contain"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
