@@ -50,7 +50,7 @@ export default function CustomSoftwareIntegrationsPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative pt-28 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+      <section className="relative pt-40 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-10 left-6 w-56 h-56 bg-[#13ACB3]/20 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#13ACB3]/20 rounded-full blur-3xl" />

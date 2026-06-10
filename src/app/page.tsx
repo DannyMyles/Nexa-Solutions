@@ -167,7 +167,7 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       <section
-        className="relative overflow-hidden pt-28 pb-20 md:pt-32 md:pb-28"
+        className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28"
         onPointerMove={handleMove}
         onPointerLeave={() => setSpotlight({ x: 54, y: 36 })}
       >

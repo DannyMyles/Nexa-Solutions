@@ -51,7 +51,7 @@ export default function ContactPage({
   return (
     <div className="flex flex-col">
 {/* Hero Section */}
-      <section className="relative pt-28 pb-24 lg:pt-32 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+      <section className="relative pt-40 pb-24 lg:pt-44 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         {/* Enhanced background */}
         <div className="absolute inset-0 opacity-40">
           <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#13ACB3]/20 rounded-full blur-3xl"></div>
