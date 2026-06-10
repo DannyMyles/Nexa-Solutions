@@ -83,7 +83,11 @@ function SolutionsIntegrationsDropdown({
     <div className="relative" data-dropdown-root="true">
       <button
         type="button"
-        className={`text-sm font-medium transition-colors duration-200 text-gray-700 hover:text-[#13ACB3] inline-flex items-center gap-2 ${open ? "text-[#13ACB3]" : ""}`}
+        className={`text-sm font-medium inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all duration-200 ${
+          open
+            ? "bg-[#13ACB3]/15 text-[#13ACB3]"
+            : "text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#13ACB3]"
+        }`}
         aria-haspopup="menu"
         aria-expanded={open}
         aria-controls={`${label}-dropdown-menu`}
@@ -97,7 +101,7 @@ function SolutionsIntegrationsDropdown({
       >
         {label}
         <svg
-          className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`w-3.5 h-3.5 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
           viewBox="0 0 20 20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

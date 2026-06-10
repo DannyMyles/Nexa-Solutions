@@ -155,16 +155,19 @@ html {
   animation-play-state: paused;
 }
 
-/* Smooth button styles */
-button, 
+/* Smooth button styles — scoped to CTA links only, not nav buttons */
 a.inline-flex,
 a[href],
 button[type="submit"] {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button:hover, 
 a.inline-flex:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(20, 184, 166, 0.25);
+  box-shadow: 0 8px 25px rgba(19, 172, 179, 0.25);
+}
+
+/* Nav dropdown triggers must not inherit the CTA lift/glow */
+nav button {
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
