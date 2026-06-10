@@ -184,7 +184,7 @@ export default function Home() {
         <div className="absolute -top-12 left-0 h-72 w-72 sm:h-80 sm:w-80 rounded-full bg-[#13ACB3]/20 blur-3xl animate-float-slow" />
         <div className="absolute bottom-0 right-0 h-[18rem] w-[18rem] sm:h-[22rem] sm:w-[22rem] lg:h-[26rem] lg:w-[26rem] rounded-full bg-[#13ACB3]/15 blur-3xl animate-float-slower" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
+        <div className="relative mx-auto grid max-w-7xl gap-8 px-5 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#13ACB3]/15 bg-white/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#13ACB3] shadow-sm backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-[#13ACB3]" />
@@ -219,52 +219,17 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {[
-              "Compliance-ready configurations",
-              "No per-user licensing surprises",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-gray-200 bg-white/80 px-4 py-3 text-sm font-medium text-gray-700 shadow-sm backdrop-blur"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute -inset-3 rounded-[2rem] bg-[#13ACB3]/15 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 p-4 shadow-2xl shadow-[#13ACB3]/10 backdrop-blur-xl">
-              <div className="rounded-[1.5rem] border border-gray-100 bg-gradient-to-br from-gray-50 via-white to-gray-100 p-4">
-
-                <Image
-                  src="/images/web.webp"
-                  alt="ERPNext dashboard preview"
-                  width={900}
-                  height={640}
-                  className="h-auto w-full rounded-2xl border border-gray-200 object-cover shadow-lg"
-                  priority
-                />
-
-              </div>
-
-              <div className="mt-4 grid grid-cols-2 gap-3">
-                <div className="rounded-2xl bg-gray-900 px-4 py-4 text-white shadow-lg">
-                  <p className="text-xs uppercase tracking-[0.18em] text-white/60">Audit-first</p>
-                  <p className="mt-2 text-sm font-semibold">
-                    We scope the right solution before we quote the build.
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-[#13ACB3] px-4 py-4 text-white shadow-lg shadow-[#13ACB3]/20">
-                  <p className="text-xs uppercase tracking-[0.18em] text-white/80">Demo-led</p>
-                  <p className="mt-2 text-sm font-semibold">
-                    See the platform in action before you commit.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="relative -mr-8 lg:-mr-16">
+            <Image
+              src="/images/ChatGPT Image Jun 10, 2026, 04_26_50 PM.png"
+              alt="ERPNext dashboard preview"
+              width={1200}
+              height={860}
+              className="h-auto w-full object-cover"
+              priority
+            />
           </div>
         </div>
 
