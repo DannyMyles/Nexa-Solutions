@@ -12,10 +12,10 @@ export default function TermsAndConditionsPage() {
       {/* Hero */}
       <section className="relative pt-28 pb-12 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-64 h-64 bg-[#14B8A6]/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 right-10 w-64 h-64 bg-[#13ACB3]/20 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Legal</span>
+          <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Legal</span>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">Terms &amp; Conditions</h1>
           <p className="text-gray-600 mt-4">Last updated: {new Date().toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}</p>
         </div>
@@ -55,23 +55,23 @@ export default function TermsAndConditionsPage() {
               <p className="text-gray-600 leading-relaxed mb-4">As a client engaging our services, you agree to:</p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Provide accurate and complete information necessary for service delivery</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Make timely decisions and assign an accountable project lead from your organization</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Ensure adequate participation from key users during discovery, testing, and training</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Settle invoices within the agreed payment terms</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Maintain regular backups of your data, which remains your sole responsibility</span>
                 </li>
               </ul>
@@ -136,13 +136,13 @@ export default function TermsAndConditionsPage() {
                 <p className="text-gray-600 text-sm">Riverside Drive, Kofisi, Nairobi, Kenya</p>
                 <p className="text-gray-600 text-sm">
                   Email:{" "}
-                  <a href="mailto:info@nexasolutions.com" className="text-[#14B8A6] hover:underline">
+                  <a href="mailto:info@nexasolutions.com" className="text-[#13ACB3] hover:underline">
                     info@nexasolutions.com
                   </a>
                 </p>
                 <p className="text-gray-600 text-sm">
                   Phone:{" "}
-                  <a href="tel:+254758269725" className="text-[#14B8A6] hover:underline">
+                  <a href="tel:+254758269725" className="text-[#13ACB3] hover:underline">
                     +254 758 269 725
                   </a>
                 </p>
@@ -154,13 +154,13 @@ export default function TermsAndConditionsPage() {
           <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
             <Link
               href="/"
-              className="inline-flex items-center justify-center px-6 py-3 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 bg-[#13ACB3] text-white font-semibold rounded-full hover:bg-[#109298] transition-colors"
             >
               Back to Home
             </Link>
             <Link
               href="/privacy-policy"
-              className="inline-flex items-center justify-center px-6 py-3 border border-[#14B8A6]/30 text-[#14B8A6] font-semibold rounded-full hover:border-[#14B8A6] hover:bg-[#14B8A6]/5 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border border-[#13ACB3]/30 text-[#13ACB3] font-semibold rounded-full hover:border-[#13ACB3] hover:bg-[#13ACB3]/5 transition-colors"
             >
               Privacy Policy
             </Link>

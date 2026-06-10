@@ -181,19 +181,19 @@ export default function Home() {
             backgroundSize: "32px 32px",
           }}
         />
-        <div className="absolute -top-12 left-0 h-72 w-72 sm:h-80 sm:w-80 rounded-full bg-[#14B8A6]/20 blur-3xl animate-float-slow" />
-        <div className="absolute bottom-0 right-0 h-[18rem] w-[18rem] sm:h-[22rem] sm:w-[22rem] lg:h-[26rem] lg:w-[26rem] rounded-full bg-[#14B8A6]/15 blur-3xl animate-float-slower" />
+        <div className="absolute -top-12 left-0 h-72 w-72 sm:h-80 sm:w-80 rounded-full bg-[#13ACB3]/20 blur-3xl animate-float-slow" />
+        <div className="absolute bottom-0 right-0 h-[18rem] w-[18rem] sm:h-[22rem] sm:w-[22rem] lg:h-[26rem] lg:w-[26rem] rounded-full bg-[#13ACB3]/15 blur-3xl animate-float-slower" />
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#14B8A6]/15 bg-white/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#14B8A6] shadow-sm backdrop-blur">
-              <span className="h-2 w-2 rounded-full bg-[#14B8A6]" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#13ACB3]/15 bg-white/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#13ACB3] shadow-sm backdrop-blur">
+              <span className="h-2 w-2 rounded-full bg-[#13ACB3]" />
               ERPNext & Frappe implementation partner
             </div>
 
             <h1 className="mt-6 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
               Modern ERP built for
-              <span className="px-2 text-[#14B8A6]">clarity, control, and growth.</span>
+              <span className="px-2 text-[#13ACB3]">clarity, control, and growth.</span>
             </h1>
 
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
@@ -207,13 +207,13 @@ export default function Home() {
 
               <Link
                 href="/contact?intent=demo"
-                className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#14B8A6] hover:text-[#14B8A6]"
+                className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#13ACB3] hover:text-[#13ACB3]"
               >
                 Book a Guided Demo
               </Link>
               <Link
                 href="/solutions/accounting-software"
-                className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold border border-[#14B8A6] text-gray-700 transition-colors hover:text-[#14B8A6]"
+                className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold border border-[#13ACB3] text-gray-700 transition-colors hover:text-[#13ACB3]"
               >
                 Explore Services
               </Link>
@@ -235,8 +235,8 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-3 rounded-[2rem] bg-[#14B8A6]/15 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 p-4 shadow-2xl shadow-[#14B8A6]/10 backdrop-blur-xl">
+            <div className="absolute -inset-3 rounded-[2rem] bg-[#13ACB3]/15 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 p-4 shadow-2xl shadow-[#13ACB3]/10 backdrop-blur-xl">
               <div className="rounded-[1.5rem] border border-gray-100 bg-gradient-to-br from-gray-50 via-white to-gray-100 p-4">
 
                 <Image
@@ -257,7 +257,7 @@ export default function Home() {
                     We scope the right solution before we quote the build.
                   </p>
                 </div>
-                <div className="rounded-2xl bg-[#14B8A6] px-4 py-4 text-white shadow-lg shadow-[#14B8A6]/20">
+                <div className="rounded-2xl bg-[#13ACB3] px-4 py-4 text-white shadow-lg shadow-[#13ACB3]/20">
                   <p className="text-xs uppercase tracking-[0.18em] text-white/80">Demo-led</p>
                   <p className="mt-2 text-sm font-semibold">
                     See the platform in action before you commit.
@@ -269,10 +269,10 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto mt-14 max-w-7xl px-5 sm:px-6 lg:px-8">
-          <div className="grid gap-4 rounded-[2rem] border border-gray-200 bg-white/80 p-5 shadow-xl shadow-[#14B8A6]/5 backdrop-blur md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 rounded-[2rem] border border-gray-200 bg-white/80 p-5 shadow-xl shadow-[#13ACB3]/5 backdrop-blur md:grid-cols-2 lg:grid-cols-4">
             {valueProps.map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-100 bg-gray-50/80 p-5">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#14B8A6]/10 text-[#14B8A6]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#13ACB3]/10 text-[#13ACB3]">
                   <item.icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-4 text-base font-bold text-gray-900">{item.title}</h3>
@@ -286,7 +286,7 @@ export default function Home() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#13ACB3]">
               What You Gain
             </span>
             <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -302,10 +302,10 @@ export default function Home() {
             {coreServices.map((service, index) => (
               <div
                 key={service.title}
-                className="group rounded-[1.75rem] border border-gray-100 bg-gray-50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#14B8A6]/25 hover:shadow-xl"
+                className="group rounded-[1.75rem] border border-gray-100 bg-gray-50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#13ACB3]/25 hover:shadow-xl"
                 style={{ animationDelay: `${index * 60}ms` }}
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#14B8A6]/10 text-[#14B8A6] transition-colors group-hover:bg-[#14B8A6] group-hover:text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#13ACB3]/10 text-[#13ACB3] transition-colors group-hover:bg-[#13ACB3] group-hover:text-white">
                   <service.icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold text-gray-900">{service.title}</h3>
@@ -313,7 +313,7 @@ export default function Home() {
                 <ul className="mt-5 space-y-2">
                   {service.bullets.map((bullet) => (
                     <li key={bullet} className="flex items-center gap-2 text-sm text-gray-700">
-                      <FaCheck className="h-3.5 w-3.5 text-[#14B8A6]" />
+                      <FaCheck className="h-3.5 w-3.5 text-[#13ACB3]" />
                       {bullet}
                     </li>
                   ))}
@@ -327,7 +327,7 @@ export default function Home() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#13ACB3]">
               Software Solutions & Web Services
             </span>
             <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -361,7 +361,7 @@ export default function Home() {
                     key={item}
                     className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 border border-gray-100"
                   >
-                    <span className="h-2.5 w-2.5 rounded-full bg-[#14B8A6]" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#13ACB3]" />
                     <span className="text-sm font-semibold text-gray-800">{item}</span>
                   </div>
                 ))}
@@ -385,7 +385,7 @@ export default function Home() {
                     key={item}
                     className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 border border-gray-100"
                   >
-                    <span className="h-2.5 w-2.5 rounded-full bg-[#14B8A6]" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#13ACB3]" />
                     <span className="text-sm font-semibold text-gray-800">{item}</span>
                   </div>
                 ))}
@@ -396,7 +396,7 @@ export default function Home() {
           <div className="mt-10 text-center">
             <a
               href="/services"
-              className="inline-flex items-center justify-center rounded-full bg-[#14B8A6] px-7 py-3.5 font-semibold text-white shadow-lg shadow-[#14B8A6]/25 transition-all duration-300 hover:bg-[#0D9488] hover:shadow-xl"
+              className="inline-flex items-center justify-center rounded-full bg-[#13ACB3] px-7 py-3.5 font-semibold text-white shadow-lg shadow-[#13ACB3]/25 transition-all duration-300 hover:bg-[#109298] hover:shadow-xl"
             >
               View Services
             </a>
@@ -408,7 +408,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#13ACB3]">
                 Why Choose Nexa
               </span>
               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -426,8 +426,8 @@ export default function Home() {
                   "Long-term support mindset: training, optimization, and reliability.",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3 rounded-2xl bg-white p-4 shadow-sm">
-                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#14B8A6]/10">
-                      <FaCheck className="h-3 w-3 text-[#14B8A6]" />
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#13ACB3]/10">
+                      <FaCheck className="h-3 w-3 text-[#13ACB3]" />
                     </div>
                     <p className="text-sm leading-relaxed text-gray-700">{item}</p>
                   </div>
@@ -437,7 +437,7 @@ export default function Home() {
 
 
             <div className="relative">
-              <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-[2rem] bg-[#14B8A6]/15" />
+              <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-[2rem] bg-[#13ACB3]/15" />
               <div className="relative rounded-[2rem] border border-gray-100 bg-white p-6 shadow-2xl">
                 <div className="grid gap-4 sm:grid-cols-2">
                   {[
@@ -447,13 +447,13 @@ export default function Home() {
                     { value: "1", label: "Partner for all stages" },
                   ].map((stat) => (
                     <div key={stat.label} className="rounded-2xl bg-gray-50 p-5 text-center">
-                      <p className="text-3xl font-bold text-[#14B8A6]">{stat.value}</p>
+                      <p className="text-3xl font-bold text-[#13ACB3]">{stat.value}</p>
                       <p className="mt-2 text-sm text-gray-600">{stat.label}</p>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-6 rounded-[1.5rem] bg-gradient-to-br from-[#14B8A6] to-[#0D9488] p-6 text-white">
+                <div className="mt-6 rounded-[1.5rem] bg-gradient-to-br from-[#13ACB3] to-[#109298] p-6 text-white">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">Conversion focus</p>
                   <h3 className="mt-3 text-xl font-bold">Turn uncertainty into a roadmap with our delivery process.</h3>
                   <p className="mt-3 text-sm leading-relaxed text-white/90">
@@ -473,12 +473,12 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#14B8A6]/10 px-4 py-1.5 mb-4">
-              <FaCalendarAlt className="h-3.5 w-3.5 text-[#14B8A6]" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#14B8A6]">Our Methodology</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#13ACB3]/10 px-4 py-1.5 mb-4">
+              <FaCalendarAlt className="h-3.5 w-3.5 text-[#13ACB3]" />
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#13ACB3]">Our Methodology</span>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-              How we deliver <span className="text-[#14B8A6]">exceptional results</span>
+              How we deliver <span className="text-[#13ACB3]">exceptional results</span>
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
               A proven, transparent process that transforms your operations from chaos to clarity
@@ -504,7 +504,7 @@ export default function Home() {
 
                   {/* Step number badge */}
                   <div className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1 mb-4">
-                    <span className="text-xs font-bold text-[#14B8A6]">Step {step.step}</span>
+                    <span className="text-xs font-bold text-[#13ACB3]">Step {step.step}</span>
                     <span className="text-xs text-gray-400">•</span>
                   </div>
 
@@ -518,7 +518,7 @@ export default function Home() {
                     <ul className="space-y-1.5">
                       {step.deliverables.map((item) => (
                         <li key={item} className="text-xs text-gray-600 flex items-center justify-center gap-1.5">
-                          <FaCheck className="h-2.5 w-2.5 text-[#14B8A6]" />
+                          <FaCheck className="h-2.5 w-2.5 text-[#13ACB3]" />
                           {item}
                         </li>
                       ))}
@@ -551,7 +551,7 @@ export default function Home() {
                   <div className="flex-1 bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
                       <div className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-0.5">
-                        <span className="text-xs font-bold text-[#14B8A6]">Step {step.step}</span>
+                        <span className="text-xs font-bold text-[#13ACB3]">Step {step.step}</span>
                       </div>
                       <div className="flex items-center gap-1 text-xs text-gray-500">
                         <FaClock className="h-3 w-3" />
@@ -564,7 +564,7 @@ export default function Home() {
                     {/* Deliverables */}
                     <div className="bg-gray-50 rounded-xl p-3">
                       <p className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2 flex items-center gap-1.5">
-                        <FaCheck className="h-3 w-3 text-[#14B8A6]" />
+                        <FaCheck className="h-3 w-3 text-[#13ACB3]" />
                         Key deliverables
                       </p>
                       <div className="flex flex-wrap gap-1.5">
@@ -587,7 +587,7 @@ export default function Home() {
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#14B8A6] to-[#0D9488] flex items-center justify-center text-white text-xs font-bold ring-2 ring-white">
+                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#13ACB3] to-[#109298] flex items-center justify-center text-white text-xs font-bold ring-2 ring-white">
                       {String.fromCharCode(64 + i)}
                     </div>
                   ))}
@@ -597,7 +597,7 @@ export default function Home() {
               <div className="w-px h-8 bg-gray-200 hidden sm:block" />
               <Link
                 href="/contact?intent=demo"
-                className="inline-flex items-center gap-2 text-[#14B8A6] font-semibold text-sm hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-[#13ACB3] font-semibold text-sm hover:gap-3 transition-all"
               >
                 Need to start demo?
                 <FaArrowRight className="h-3.5 w-3.5" />
@@ -611,7 +611,7 @@ export default function Home() {
       <section className="bg-gray-50 py-14 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Who we serve</span>
+            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Who we serve</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Industries we support</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               We&apos;ve implemented ERPNext across a wide range of sectors, each with distinct workflows and compliance requirements.
@@ -629,7 +629,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-3 text-center">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#14B8A6] text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#13ACB3] text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
                     <industry.icon className="h-5 w-5" />
                   </div>
                   <p className="mt-2 text-xs font-semibold text-white leading-tight">{industry.name}</p>
@@ -644,7 +644,7 @@ export default function Home() {
       <section className="bg-white py-14 sm:py-20 overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-10">
           <div className="text-center">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Clients</span>
+            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Our Clients</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Companies we&apos;ve helped</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               Trusted by businesses across Kenya to deliver ERPNext with clear scope and long-term support.
@@ -658,7 +658,7 @@ export default function Home() {
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#14B8A6]">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#13ACB3]">
             Ready to move faster?
           </span>
           <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -672,7 +672,7 @@ export default function Home() {
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/contact?intent=demo"
-              className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#14B8A6] hover:text-[#14B8A6]"
+              className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#13ACB3] hover:text-[#13ACB3]"
             >
               Book a Guided Demo
             </Link>

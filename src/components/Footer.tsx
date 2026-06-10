@@ -56,7 +56,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#14B8A6] transition-colors"
+                className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#13ACB3] transition-colors"
               >
                 <FaLinkedin className="text-white w-4 h-4" />
               </a>
@@ -65,7 +65,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter / X"
-                className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#14B8A6] transition-colors"
+                className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#13ACB3] transition-colors"
               >
                 <FaTwitter className="text-white w-4 h-4" />
               </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#14B8A6] transition-colors"
+                className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#13ACB3] transition-colors"
               >
                 <FaFacebook className="text-white w-4 h-4" />
               </a>
@@ -92,7 +92,7 @@ export default function Footer() {
                 { name: "Book a Guided Demo", href: "/contact?intent=demo" },
               ].map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-400 hover:text-[#14B8A6] transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-[#13ACB3] transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -106,7 +106,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {solutionLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-400 hover:text-[#14B8A6] transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-[#13ACB3] transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -120,7 +120,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {integrationLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-400 hover:text-[#14B8A6] transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-[#13ACB3] transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -133,21 +133,21 @@ export default function Footer() {
             <h3 className="text-base font-semibold text-white">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="text-[#14B8A6] mt-1 shrink-0" />
+                <FaMapMarkerAlt className="text-[#13ACB3] mt-1 shrink-0" />
                 <span className="text-sm text-gray-400">
                   Riverside Drive, Kofisi<br />
                   Nairobi, Kenya
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <FaPhone className="text-[#14B8A6] shrink-0" />
-                <a href="tel:+254758269725" className="text-sm text-gray-400 hover:text-[#14B8A6] transition-colors">
+                <FaPhone className="text-[#13ACB3] shrink-0" />
+                <a href="tel:+254758269725" className="text-sm text-gray-400 hover:text-[#13ACB3] transition-colors">
                   +254 758 269 725
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <FaEnvelope className="text-[#14B8A6] shrink-0" />
-                <a href="mailto:info@nexasolutions.com" className="text-sm text-gray-400 hover:text-[#14B8A6] transition-colors">
+                <FaEnvelope className="text-[#13ACB3] shrink-0" />
+                <a href="mailto:info@nexasolutions.com" className="text-sm text-gray-400 hover:text-[#13ACB3] transition-colors">
                   info@nexasolutions.com
                 </a>
               </li>
@@ -156,7 +156,7 @@ export default function Footer() {
             <div className="pt-4">
               <Link
                 href="/contact?intent=demo"
-                className="inline-flex items-center px-5 py-2.5 bg-[#14B8A6] text-white text-sm font-semibold rounded-full hover:bg-[#0D9488] transition-colors"
+                className="inline-flex items-center px-5 py-2.5 bg-[#13ACB3] text-white text-sm font-semibold rounded-full hover:bg-[#109298] transition-colors"
               >
                 Book a Guided Demo
               </Link>
@@ -170,10 +170,10 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} NexaGen Solutions Limited. All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
-            <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-[#14B8A6] transition-colors">
+            <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-[#13ACB3] transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-and-conditions" className="text-sm text-gray-500 hover:text-[#14B8A6] transition-colors">
+            <Link href="/terms-and-conditions" className="text-sm text-gray-500 hover:text-[#13ACB3] transition-colors">
               Terms &amp; Conditions
             </Link>
           </div>

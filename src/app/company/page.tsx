@@ -39,9 +39,9 @@ export default function AboutPage() {
       <section className="relative pt-28 pb-24 lg:pt-32 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         {/* Enhanced background */}
         <div className="absolute inset-0 opacity-40">
-          <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-16 right-4 w-72 h-72 sm:bottom-20 sm:right-10 sm:w-96 sm:h-96 bg-[#14B8A6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-14 left-6 w-56 h-56 sm:top-20 sm:left-10 sm:w-72 sm:h-72 bg-[#13ACB3]/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-16 right-4 w-72 h-72 sm:bottom-20 sm:right-10 sm:w-96 sm:h-96 bg-[#13ACB3]/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] bg-[#13ACB3]/10 rounded-full blur-3xl"></div>
         </div>
         {/* Pattern overlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0" style={{ 
@@ -54,7 +54,7 @@ export default function AboutPage() {
         }}></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">About Us</span>
+          <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">About Us</span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6 max-w-4xl mx-auto">
             Simplify operations. Scale faster. Stay in control.
           </h1>
@@ -70,8 +70,8 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
-              <div className="w-14 h-14 bg-[#14B8A6]/10 rounded-xl flex items-center justify-center mb-6">
-                <FaBullseye className="w-7 h-7 text-[#14B8A6]" />
+              <div className="w-14 h-14 bg-[#13ACB3]/10 rounded-xl flex items-center justify-center mb-6">
+                <FaBullseye className="w-7 h-7 text-[#13ACB3]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -83,8 +83,8 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
-              <div className="w-14 h-14 bg-[#14B8A6]/10 rounded-xl flex items-center justify-center mb-6">
-                <FaRocket className="w-7 h-7 text-[#14B8A6]" />
+              <div className="w-14 h-14 bg-[#13ACB3]/10 rounded-xl flex items-center justify-center mb-6">
+                <FaRocket className="w-7 h-7 text-[#13ACB3]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -102,7 +102,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Values</span>
+            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Our Values</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
               What Drives Us
             </h2>
@@ -114,8 +114,8 @@ export default function AboutPage() {
                 key={value.title}
                 className="p-6 bg-white rounded-xl text-center card-hover border border-gray-100"
               >
-                <div className="w-14 h-14 mx-auto bg-[#14B8A6]/10 rounded-xl flex items-center justify-center mb-4">
-                  <value.icon className="w-7 h-7 text-[#14B8A6]" />
+                <div className="w-14 h-14 mx-auto bg-[#13ACB3]/10 rounded-xl flex items-center justify-center mb-4">
+                  <value.icon className="w-7 h-7 text-[#13ACB3]" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{value.title}</h3>
                 <p className="text-gray-600 text-sm">{value.description}</p>
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Why Choose NexaGen Solutions Limited</span>
+              <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Why Choose NexaGen Solutions Limited</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">
                 Partner-level delivery for real business outcomes
               </h2>
@@ -156,7 +156,7 @@ export default function AboutPage() {
                   "Support that stays: optimization and reliability after deployment",
                 ].map((item) => (
                   <div key={item} className="flex items-center">
-                    <div className="w-5 h-5 bg-[#14B8A6] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 bg-[#13ACB3] rounded-full flex items-center justify-center flex-shrink-0">
                       <FaCheck className="w-3 h-3 text-white" />
                     </div>
                     <span className="ml-3 text-gray-200">{item}</span>
@@ -167,12 +167,12 @@ export default function AboutPage() {
 
 
             <div className="relative">
-              <div className="absolute inset-0 bg-[#14B8A6]/20 rounded-3xl transform rotate-3"></div>
+              <div className="absolute inset-0 bg-[#13ACB3]/20 rounded-3xl transform rotate-3"></div>
               <div className="relative bg-white rounded-3xl p-8 border border-gray-100 shadow-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Our Approach</h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#14B8A6] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       1
                     </div>
                     <div className="ml-4">
@@ -182,7 +182,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#14B8A6] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       2
                     </div>
                     <div className="ml-4">
@@ -192,7 +192,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#14B8A6] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       3
                     </div>
                     <div className="ml-4">
@@ -202,7 +202,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#14B8A6] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       4
                     </div>
                     <div className="ml-4">
@@ -221,7 +221,7 @@ export default function AboutPage() {
 
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
+      <section className="py-20 bg-gradient-to-br from-[#13ACB3] to-[#109298]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to Work Together?
@@ -232,7 +232,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 <a
               href="mailto:info@nexasolutions.com"
-              className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="inline-flex items-center px-8 py-4 bg-white text-[#13ACB3] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               Contact Us
             </a>

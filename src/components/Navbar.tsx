@@ -83,7 +83,7 @@ function SolutionsIntegrationsDropdown({
     <div className="relative" data-dropdown-root="true">
       <button
         type="button"
-        className={`text-sm font-medium transition-colors duration-200 text-gray-700 hover:text-[#14B8A6] inline-flex items-center gap-2 ${open ? "text-[#14B8A6]" : ""}`}
+        className={`text-sm font-medium transition-colors duration-200 text-gray-700 hover:text-[#13ACB3] inline-flex items-center gap-2 ${open ? "text-[#13ACB3]" : ""}`}
         aria-haspopup="menu"
         aria-expanded={open}
         aria-controls={`${label}-dropdown-menu`}
@@ -130,7 +130,7 @@ function SolutionsIntegrationsDropdown({
                 key={itemLabel}
                 href={href}
                 role="menuitem"
-                className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
+                className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#109298]"
                 onClick={(e) => {
                   e.stopPropagation();
                   setOpen(false);
@@ -204,7 +204,7 @@ export default function Navbar() {
             <Link
               href="/"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/") ? "text-[#14B8A6]" : "text-gray-700 hover:text-[#14B8A6]"
+                isActive("/") ? "text-[#13ACB3]" : "text-gray-700 hover:text-[#13ACB3]"
               }`}
             >
               Home
@@ -213,7 +213,7 @@ export default function Navbar() {
             <Link
               href="/company"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/company") ? "text-[#14B8A6]" : "text-gray-700 hover:text-[#14B8A6]"
+                isActive("/company") ? "text-[#13ACB3]" : "text-gray-700 hover:text-[#13ACB3]"
               }`}
             >
               Company
@@ -236,7 +236,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/contact") ? "text-[#14B8A6]" : "text-gray-700 hover:text-[#14B8A6]"
+                isActive("/contact") ? "text-[#13ACB3]" : "text-gray-700 hover:text-[#13ACB3]"
               }`}
             >
               Contact
@@ -244,7 +244,7 @@ export default function Navbar() {
 
             <Link
               href="/contact?intent=demo"
-              className="px-5 py-2.5 bg-[#14B8A6] text-white text-sm font-medium rounded-full hover:bg-[#0D9488] transition-all duration-300 hover:shadow-lg hover:shadow-[#14B8A6]/30 whitespace-nowrap"
+              className="px-5 py-2.5 bg-[#13ACB3] text-white text-sm font-medium rounded-full hover:bg-[#109298] transition-all duration-300 hover:shadow-lg hover:shadow-[#13ACB3]/30 whitespace-nowrap"
             >
               Book a Guided Demo
             </Link>
@@ -292,7 +292,7 @@ export default function Navbar() {
                       href={link.href}
                       className={`text-base font-medium py-3 px-4 rounded-lg transition-colors ${
                         isActive(link.href)
-                          ? "bg-[#14B8A6]/10 text-[#14B8A6]"
+                          ? "bg-[#13ACB3]/10 text-[#13ACB3]"
                           : "text-gray-700 hover:bg-gray-100"
                       }`}
                       onClick={closeMobileMenu}
@@ -338,7 +338,7 @@ export default function Navbar() {
                           <Link
                             key={label}
                             href={`/solutions/${toCategorySlug(label)}`}
-                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
+                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#109298]"
                             onClick={closeMobileMenu}
                           >
                             {label}
@@ -385,7 +385,7 @@ export default function Navbar() {
                           <Link
                             key={label}
                             href={`/integrations/${toCategorySlug(label)}`}
-                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#14B8A6]/10 hover:text-[#0D9488]"
+                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#109298]"
                             onClick={closeMobileMenu}
                           >
                             {label}
@@ -398,7 +398,7 @@ export default function Navbar() {
                   <div className="pt-2">
                     <Link
                       href="/contact?intent=demo"
-                      className="block px-5 py-3 bg-[#14B8A6] text-white text-base font-semibold rounded-xl text-center hover:bg-[#0D9488] transition-colors"
+                      className="block px-5 py-3 bg-[#13ACB3] text-white text-base font-semibold rounded-xl text-center hover:bg-[#109298] transition-colors"
                       onClick={closeMobileMenu}
                     >
                       Book a Guided Demo

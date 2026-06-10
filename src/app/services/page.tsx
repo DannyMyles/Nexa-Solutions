@@ -129,12 +129,12 @@ export default function ServicesPage() {
       {/* Hero */}
       <section className="relative pt-28 pb-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-10 left-6 w-72 h-72 bg-[#14B8A6]/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-4 w-96 h-96 bg-[#14B8A6]/15 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-6 w-72 h-72 bg-[#13ACB3]/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-4 w-96 h-96 bg-[#13ACB3]/15 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">
+            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">
               ERPNext Services
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-3 mb-5">
@@ -147,13 +147,13 @@ export default function ServicesPage() {
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact?intent=demo"
-                className="inline-flex items-center justify-center px-8 py-3.5 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-8 py-3.5 bg-[#13ACB3] text-white font-semibold rounded-full hover:bg-[#109298] transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Book a Guided Demo
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3.5 border border-gray-200 text-gray-700 font-semibold rounded-full hover:border-[#14B8A6] hover:text-[#14B8A6] transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-3.5 border border-gray-200 text-gray-700 font-semibold rounded-full hover:border-[#13ACB3] hover:text-[#13ACB3] transition-all duration-300"
               >
                 Talk to us
               </Link>
@@ -166,7 +166,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">What we do</span>
+            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">What we do</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Our core service areas</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               Five areas of expertise, each delivered as part of a structured engagement — not piecemeal projects.
@@ -176,8 +176,8 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <div key={service.title} className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="w-14 h-14 bg-[#14B8A6]/10 rounded-2xl flex items-center justify-center mb-5">
-                    <service.icon className="w-7 h-7 text-[#14B8A6]" />
+                  <div className="w-14 h-14 bg-[#13ACB3]/10 rounded-2xl flex items-center justify-center mb-5">
+                    <service.icon className="w-7 h-7 text-[#13ACB3]" />
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">{service.title}</h3>
                   <p className="text-gray-600 text-lg leading-relaxed mb-6">{service.description}</p>
@@ -185,7 +185,7 @@ export default function ServicesPage() {
                   <ul className="space-y-2">
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-3">
-                        <FaCheck className="w-4 h-4 text-[#14B8A6] shrink-0" />
+                        <FaCheck className="w-4 h-4 text-[#13ACB3] shrink-0" />
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </li>
                     ))}
@@ -197,8 +197,8 @@ export default function ServicesPage() {
                     <div className="space-y-3">
                       {service.benefits.map((benefit) => (
                         <div key={benefit} className="flex items-start gap-3 p-3 bg-white rounded-xl">
-                          <div className="w-6 h-6 bg-[#14B8A6]/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <FaCheck className="w-3 h-3 text-[#14B8A6]" />
+                          <div className="w-6 h-6 bg-[#13ACB3]/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                            <FaCheck className="w-3 h-3 text-[#13ACB3]" />
                           </div>
                           <span className="text-gray-700 text-sm">{benefit}</span>
                         </div>
@@ -207,7 +207,7 @@ export default function ServicesPage() {
                     <div className="mt-6 pt-5 border-t border-gray-100">
                       <Link
                         href="/contact?intent=demo"
-                        className="inline-flex items-center gap-2 text-[#14B8A6] font-semibold text-sm hover:gap-3 transition-all"
+                        className="inline-flex items-center gap-2 text-[#13ACB3] font-semibold text-sm hover:gap-3 transition-all"
                       >
                         Discuss this service
                         <FaArrowRight className="w-3.5 h-3.5" />
@@ -225,7 +225,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Our Process</span>
+            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Our Process</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How we work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               A structured, transparent approach that maximizes ROI and team adoption.
@@ -235,9 +235,9 @@ export default function ServicesPage() {
             {processSteps.map((item) => (
               <div
                 key={item.step}
-                className="relative p-6 bg-white rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#14B8A6]/30 hover:shadow-md"
+                className="relative p-6 bg-white rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#13ACB3]/30 hover:shadow-md"
               >
-                <div className="text-4xl font-bold text-[#14B8A6]/20 mb-4">{item.step}</div>
+                <div className="text-4xl font-bold text-[#13ACB3]/20 mb-4">{item.step}</div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
               </div>
@@ -247,7 +247,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#14B8A6] to-[#0D9488]">
+      <section className="py-20 bg-gradient-to-br from-[#13ACB3] to-[#109298]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to scope the right solution?
@@ -258,7 +258,7 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact?intent=demo"
-              className="inline-flex items-center px-8 py-4 bg-white text-[#14B8A6] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="inline-flex items-center px-8 py-4 bg-white text-[#13ACB3] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               Book a Guided Demo
               <FaArrowRight className="ml-2 w-4 h-4" />

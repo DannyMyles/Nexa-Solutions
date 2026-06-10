@@ -62,8 +62,8 @@ export default function ContactForm({
 
         {isSubmitted ? (
           <div className="text-center py-12">
-            <div className="w-16 h-16 mx-auto bg-[#14B8A6]/10 rounded-full flex items-center justify-center mb-6">
-              <FaCheck className="w-8 h-8 text-[#14B8A6]" />
+            <div className="w-16 h-16 mx-auto bg-[#13ACB3]/10 rounded-full flex items-center justify-center mb-6">
+              <FaCheck className="w-8 h-8 text-[#13ACB3]" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
             <p className="text-gray-600">
@@ -88,7 +88,7 @@ export default function ContactForm({
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all text-gray-900 placeholder:text-gray-400"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#13ACB3] focus:ring-2 focus:ring-[#13ACB3]/20 transition-all text-gray-900 placeholder:text-gray-400"
                   placeholder="John Doe"
                 />
               </div>
@@ -106,7 +106,7 @@ export default function ContactForm({
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all text-gray-900 placeholder:text-gray-400"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#13ACB3] focus:ring-2 focus:ring-[#13ACB3]/20 transition-all text-gray-900 placeholder:text-gray-400"
                   placeholder="john@company.com"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function ContactForm({
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all text-gray-900 placeholder:text-gray-400"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#13ACB3] focus:ring-2 focus:ring-[#13ACB3]/20 transition-all text-gray-900 placeholder:text-gray-400"
                   placeholder="+254 700 000 000"
                 />
               </div>
@@ -143,7 +143,7 @@ export default function ContactForm({
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all text-gray-900 placeholder:text-gray-400"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#13ACB3] focus:ring-2 focus:ring-[#13ACB3]/20 transition-all text-gray-900 placeholder:text-gray-400"
                   placeholder="Your Company Ltd"
                 />
               </div>
@@ -162,7 +162,7 @@ export default function ContactForm({
                 required
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all text-gray-900"
+                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#13ACB3] focus:ring-2 focus:ring-[#13ACB3]/20 transition-all text-gray-900"
               >
                 {services.map((service) => (
                   <option key={service.value} value={service.value}>
@@ -186,7 +186,7 @@ export default function ContactForm({
                 rows={4}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all resize-none text-gray-900 placeholder:text-gray-400"
+                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#13ACB3] focus:ring-2 focus:ring-[#13ACB3]/20 transition-all resize-none text-gray-900 placeholder:text-gray-400"
                 placeholder="Tell us about your project or requirements..."
               />
             </div>
@@ -194,7 +194,7 @@ export default function ContactForm({
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full inline-flex items-center justify-center px-8 py-4 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full inline-flex items-center justify-center px-8 py-4 bg-[#13ACB3] text-white font-semibold rounded-full hover:bg-[#109298] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <>

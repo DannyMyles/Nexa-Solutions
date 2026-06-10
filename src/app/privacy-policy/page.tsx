@@ -12,10 +12,10 @@ export default function PrivacyPolicyPage() {
       {/* Hero */}
       <section className="relative pt-28 pb-12 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-64 h-64 bg-[#14B8A6]/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 right-10 w-64 h-64 bg-[#13ACB3]/20 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-sm font-semibold text-[#14B8A6] uppercase tracking-wider">Legal</span>
+          <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Legal</span>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">Privacy Policy</h1>
           <p className="text-gray-600 mt-4">Last updated: {new Date().toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}</p>
         </div>
@@ -38,19 +38,19 @@ export default function PrivacyPolicyPage() {
               <p className="text-gray-600 leading-relaxed mb-4">We may collect the following categories of information:</p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span><strong>Contact Information:</strong> Name, email address, phone number, and company name provided through contact forms or demo booking requests.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span><strong>Usage Data:</strong> IP address, browser type, pages visited, and time spent on our website, collected automatically via analytics tools.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span><strong>Business Information:</strong> Information about your organization, industry, and ERP requirements shared during consultations or audits.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span><strong>Communications:</strong> Records of emails, calls, or messages exchanged as part of service delivery.</span>
                 </li>
               </ul>
@@ -61,23 +61,23 @@ export default function PrivacyPolicyPage() {
               <p className="text-gray-600 leading-relaxed mb-4">We use the information we collect to:</p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Respond to inquiries, demo requests, and audit submissions</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Deliver and improve our ERPNext implementation and support services</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Send service-related communications and project updates</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Analyze website usage to improve user experience</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Comply with applicable legal and regulatory obligations in Kenya</span>
                 </li>
               </ul>
@@ -109,25 +109,25 @@ export default function PrivacyPolicyPage() {
               <p className="text-gray-600 leading-relaxed mb-4">Under the Kenya Data Protection Act, 2019, you have the right to:</p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Access the personal data we hold about you</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Request correction of inaccurate or incomplete data</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Request erasure of your data where legally permissible</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#14B8A6] shrink-0" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-[#13ACB3] shrink-0" />
                   <span>Object to or restrict how we process your data</span>
                 </li>
               </ul>
               <p className="text-gray-600 leading-relaxed mt-4">
                 To exercise any of these rights, please contact us at{" "}
-                <a href="mailto:info@nexasolutions.com" className="text-[#14B8A6] hover:underline">
+                <a href="mailto:info@nexasolutions.com" className="text-[#13ACB3] hover:underline">
                   info@nexasolutions.com
                 </a>.
               </p>
@@ -157,13 +157,13 @@ export default function PrivacyPolicyPage() {
                 <p className="text-gray-600 text-sm">Riverside Drive, Kofisi, Nairobi, Kenya</p>
                 <p className="text-gray-600 text-sm">
                   Email:{" "}
-                  <a href="mailto:info@nexasolutions.com" className="text-[#14B8A6] hover:underline">
+                  <a href="mailto:info@nexasolutions.com" className="text-[#13ACB3] hover:underline">
                     info@nexasolutions.com
                   </a>
                 </p>
                 <p className="text-gray-600 text-sm">
                   Phone:{" "}
-                  <a href="tel:+254758269725" className="text-[#14B8A6] hover:underline">
+                  <a href="tel:+254758269725" className="text-[#13ACB3] hover:underline">
                     +254 758 269 725
                   </a>
                 </p>
@@ -175,13 +175,13 @@ export default function PrivacyPolicyPage() {
           <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
             <Link
               href="/"
-              className="inline-flex items-center justify-center px-6 py-3 bg-[#14B8A6] text-white font-semibold rounded-full hover:bg-[#0D9488] transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 bg-[#13ACB3] text-white font-semibold rounded-full hover:bg-[#109298] transition-colors"
             >
               Back to Home
             </Link>
             <Link
               href="/terms-and-conditions"
-              className="inline-flex items-center justify-center px-6 py-3 border border-[#14B8A6]/30 text-[#14B8A6] font-semibold rounded-full hover:border-[#14B8A6] hover:bg-[#14B8A6]/5 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border border-[#13ACB3]/30 text-[#13ACB3] font-semibold rounded-full hover:border-[#13ACB3] hover:bg-[#13ACB3]/5 transition-colors"
             >
               Terms &amp; Conditions
             </Link>
