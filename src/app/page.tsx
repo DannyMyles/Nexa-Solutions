@@ -161,7 +161,7 @@ export default function Home() {
   };
 
   const heroGlow: CSSProperties = {
-    background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, rgba(20,184,166,0.24) 0%, rgba(20,184,166,0.12) 18%, transparent 55%), linear-gradient(135deg, rgba(255,255,255,0.88), rgba(255,255,255,0.64))`,
+    background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, rgba(47,150,110,0.24) 0%, rgba(47,150,110,0.12) 18%, transparent 55%), linear-gradient(135deg, rgba(255,255,255,0.88), rgba(255,255,255,0.64))`,
   };
 
   return (
@@ -177,7 +177,7 @@ export default function Home() {
           className="absolute inset-0 opacity-50"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 1px 1px, rgba(20,184,166,0.09) 1px, transparent 0)",
+              "radial-gradient(circle at 1px 1px, rgba(47,150,110,0.09) 1px, transparent 0)",
             backgroundSize: "32px 32px",
           }}
         />
