@@ -196,11 +196,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/NexaGen_logo.svg"
+              src="/images/NexaGen Final Logo Concept 111.svg"
               alt="NexaGen Solutions Limited"
               width={160}
               height={48}
-              className="object-contain mix-blend-multiply h-28 w-auto"
+              className="object-contain mix-blend-multiply h-36 w-auto"
               priority
               unoptimized
             />

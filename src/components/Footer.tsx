@@ -36,11 +36,11 @@ export default function Footer() {
           <div className="flex-1 min-w-[200px] space-y-5">
             <Link href="/" className="flex items-center">
             <Image
-              src="/NexaGen_logo.svg"
+              src="/images/NexaGen Final Logo Concept 111.svg"
               alt="NexaGen Solutions Limited"
               width={160}
               height={48}
-              className="object-contain mix-blend-multiply h-24 w-auto"
+              className="object-contain mix-blend-multiply h-32 w-auto"
               priority
               unoptimized
             />
