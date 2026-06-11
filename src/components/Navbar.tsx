@@ -85,7 +85,7 @@ function SolutionsIntegrationsDropdown({
     <div className="relative" data-dropdown-root="true">
       <button
         type="button"
-        className={`text-sm font-medium inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all duration-200 ${
+        className={`text-sm font-semibold inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all duration-200 ${
           open
             ? isScrolled ? "bg-[#2F966E]/15 text-[#2F966E]" : "bg-white/15 text-white"
             : isScrolled ? "text-gray-700 hover:bg-[#2F966E]/10 hover:text-[#2F966E]" : "text-white hover:bg-white/15"
@@ -210,7 +210,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-7">
             <Link
               href="/"
-              className={`text-sm font-medium transition-colors duration-200 ${
+              className={`text-sm font-semibold transition-colors duration-200 ${
                 isActive("/") ? "text-[#2F966E]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#2F966E]"
               }`}
             >
@@ -219,7 +219,7 @@ export default function Navbar() {
 
             <Link
               href="/company"
-              className={`text-sm font-medium transition-colors duration-200 ${
+              className={`text-sm font-semibold transition-colors duration-200 ${
                 isActive("/company") ? "text-[#2F966E]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#2F966E]"
               }`}
             >
@@ -244,7 +244,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className={`text-sm font-medium transition-colors duration-200 ${
+              className={`text-sm font-semibold transition-colors duration-200 ${
                 isActive("/contact") ? "text-[#2F966E]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#2F966E]"
               }`}
             >
