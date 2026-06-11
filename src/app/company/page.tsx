@@ -142,7 +142,7 @@ export default function AboutPage() {
       {/* Why Choose Us Section */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="/images/solutions/erpsystem.jpg"
+          src="/images/ChatGPT Image Jun 10, 2026, 04_51_16 PM.png"
           alt="ERP system background"
           fill
           className="object-cover"
