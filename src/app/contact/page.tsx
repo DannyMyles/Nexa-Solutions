@@ -33,12 +33,12 @@ const contactInfo = [
   },
 ];
 
-export default function ContactPage({
+export default async function ContactPage({
   searchParams,
 }: {
-  searchParams?: { intent?: string };
+  searchParams?: Promise<{ intent?: string }>;
 }) {
-  const intent = searchParams?.intent;
+  const { intent } = (await searchParams) ?? {};
   const formTitle =
     intent === "demo" ? "Book a Guided Demo" : "Send Us a Message";
 
@@ -62,16 +62,16 @@ export default function ContactPage({
           priority
         />
         {/* Overlay: dark teal centre-spread */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#082E30]/90 via-[#0B4F54]/82 to-[#13ACB3]/45" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A2E1C]/90 via-[#1A5C42]/82 to-[#2F966E]/45" />
         {/* Subtle dot grid */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#7FD8DC] uppercase tracking-widest mb-5">
-              <span className="w-8 h-px bg-[#13ACB3]" />
+            <span className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#86D4AD] uppercase tracking-widest mb-5">
+              <span className="w-8 h-px bg-[#2F966E]" />
               Contact Us
-              <span className="w-8 h-px bg-[#13ACB3]" />
+              <span className="w-8 h-px bg-[#2F966E]" />
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Let&apos;s Build Something Together
@@ -85,19 +85,19 @@ export default function ContactPage({
                 href="tel:+254758269725"
                 className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white px-5 py-2.5 rounded-full hover:bg-white/20 transition-colors text-sm font-medium"
               >
-                <FaPhone className="w-3.5 h-3.5 text-[#13ACB3]" />
+                <FaPhone className="w-3.5 h-3.5 text-[#2F966E]" />
                 +254 758 269 725
               </a>
               <a
                 href="mailto:info@nexasolutions.com"
                 className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white px-5 py-2.5 rounded-full hover:bg-white/20 transition-colors text-sm font-medium"
               >
-                <FaEnvelope className="w-3.5 h-3.5 text-[#13ACB3]" />
+                <FaEnvelope className="w-3.5 h-3.5 text-[#2F966E]" />
                 info@nexasolutions.com
               </a>
               <Link
                 href="/contact?intent=demo"
-                className="inline-flex items-center gap-2 bg-[#13ACB3] text-white px-5 py-2.5 rounded-full hover:bg-[#109298] transition-colors text-sm font-semibold"
+                className="inline-flex items-center gap-2 bg-[#2F966E] text-white px-5 py-2.5 rounded-full hover:bg-[#267A5A] transition-colors text-sm font-semibold"
               >
                 Book a Guided Demo
               </Link>
@@ -126,7 +126,7 @@ export default function ContactPage({
 {/* Contact Info - Right Column */}
             <div className="space-y-8">
               {/* Get In Touch - Enhanced Header */}
-              <div className="relative bg-gradient-to-br from-[#13ACB3] to-[#109298] rounded-2xl p-8 text-white overflow-hidden">
+              <div className="relative bg-gradient-to-br from-[#2F966E] to-[#267A5A] rounded-2xl p-8 text-white overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
                 <div className="relative">
@@ -144,11 +144,11 @@ export default function ContactPage({
                 {contactInfo.map((info, index) => (
                   <div 
                     key={info.title} 
-                    className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-[#13ACB3] hover:shadow-lg transition-all duration-300 card-hover"
+                    className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-[#2F966E] hover:shadow-lg transition-all duration-300 card-hover"
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    <div className="w-10 h-10 bg-[#13ACB3]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-[#13ACB3] transition-colors">
-                      <info.icon className="w-5 h-5 text-[#13ACB3] group-hover:text-white transition-colors" />
+                    <div className="w-10 h-10 bg-[#2F966E]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-[#2F966E] transition-colors">
+                      <info.icon className="w-5 h-5 text-[#2F966E] group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="text-sm font-semibold text-gray-900 mb-1">
                       {info.title}
@@ -184,7 +184,7 @@ export default function ContactPage({
                 <div className="absolute bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:w-80">
                   <div className="bg-white rounded-2xl p-5 shadow-xl border border-gray-100">
                     <div className="flex items-start gap-3">
-                      <div className="bg-[#13ACB3] p-2.5 rounded-xl text-white flex-shrink-0 shadow-md">
+                      <div className="bg-[#2F966E] p-2.5 rounded-xl text-white flex-shrink-0 shadow-md">
                         <FaMapPin size={20} />
                       </div>
                       <div className="flex-1 min-w-0">
@@ -198,7 +198,7 @@ export default function ContactPage({
                           href="https://maps.google.com/?q=Riverside+Drive+Kofisi+Nairobi+Kenya" 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 bg-[#13ACB3] hover:bg-[#109298] px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-sm text-white w-full sm:w-auto justify-center"
+                          className="inline-flex items-center gap-2 bg-[#2F966E] hover:bg-[#267A5A] px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-sm text-white w-full sm:w-auto justify-center"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -213,7 +213,7 @@ export default function ContactPage({
               </div>
 
               {/* Quick Contact CTA */}
-              <div className="bg-gradient-to-br from-[#13ACB3] to-[#109298] rounded-2xl p-8 text-white">
+              <div className="bg-gradient-to-br from-[#2F966E] to-[#267A5A] rounded-2xl p-8 text-white">
                 <h3 className="text-xl font-bold mb-3">Prefer to talk directly?</h3>
                 <p className="text-white/90 mb-5 text-sm">
                   Call us now to discuss your goals—and get a clear recommended next step.
@@ -222,7 +222,7 @@ export default function ContactPage({
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
                     href="tel:+254758269725"
-                    className="flex-1 inline-flex items-center justify-center px-5 py-3 bg-white text-[#13ACB3] font-semibold rounded-xl hover:bg-gray-100 transition-colors"
+                    className="flex-1 inline-flex items-center justify-center px-5 py-3 bg-white text-[#2F966E] font-semibold rounded-xl hover:bg-gray-100 transition-colors"
                   >
                     <FaPhone className="w-4 h-4 mr-2" />
                     Call Now

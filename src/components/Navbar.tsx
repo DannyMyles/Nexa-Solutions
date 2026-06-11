@@ -87,8 +87,8 @@ function SolutionsIntegrationsDropdown({
         type="button"
         className={`text-sm font-medium inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all duration-200 ${
           open
-            ? isScrolled ? "bg-[#13ACB3]/15 text-[#13ACB3]" : "bg-white/15 text-white"
-            : isScrolled ? "text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#13ACB3]" : "text-white hover:bg-white/15"
+            ? isScrolled ? "bg-[#2F966E]/15 text-[#2F966E]" : "bg-white/15 text-white"
+            : isScrolled ? "text-gray-700 hover:bg-[#2F966E]/10 hover:text-[#2F966E]" : "text-white hover:bg-white/15"
         }`}
         aria-haspopup="menu"
         aria-expanded={open}
@@ -136,7 +136,7 @@ function SolutionsIntegrationsDropdown({
                 key={itemLabel}
                 href={href}
                 role="menuitem"
-                className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#109298]"
+                className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#2F966E]/10 hover:text-[#267A5A]"
                 onClick={(e) => {
                   e.stopPropagation();
                   setOpen(false);
@@ -211,7 +211,7 @@ export default function Navbar() {
             <Link
               href="/"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/") ? "text-[#13ACB3]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#13ACB3]"
+                isActive("/") ? "text-[#2F966E]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#2F966E]"
               }`}
             >
               Home
@@ -220,7 +220,7 @@ export default function Navbar() {
             <Link
               href="/company"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/company") ? "text-[#13ACB3]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#13ACB3]"
+                isActive("/company") ? "text-[#2F966E]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#2F966E]"
               }`}
             >
               Company
@@ -245,7 +245,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={`text-sm font-medium transition-colors duration-200 ${
-                isActive("/contact") ? "text-[#13ACB3]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#13ACB3]"
+                isActive("/contact") ? "text-[#2F966E]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#2F966E]"
               }`}
             >
               Contact
@@ -253,7 +253,7 @@ export default function Navbar() {
 
             <Link
               href="/contact?intent=demo"
-              className="px-5 py-2.5 bg-[#13ACB3] text-white text-sm font-medium rounded-full hover:bg-[#109298] transition-all duration-300 hover:shadow-lg hover:shadow-[#13ACB3]/30 whitespace-nowrap"
+              className="px-5 py-2.5 bg-[#2F966E] text-white text-sm font-medium rounded-full hover:bg-[#267A5A] transition-all duration-300 hover:shadow-lg hover:shadow-[#2F966E]/30 whitespace-nowrap"
             >
               Book a Guided Demo
             </Link>
@@ -302,7 +302,7 @@ export default function Navbar() {
                       href={link.href}
                       className={`text-base font-medium py-3 px-4 rounded-lg transition-colors ${
                         isActive(link.href)
-                          ? "bg-[#13ACB3]/10 text-[#13ACB3]"
+                          ? "bg-[#2F966E]/10 text-[#2F966E]"
                           : "text-gray-700 hover:bg-gray-100"
                       }`}
                       onClick={closeMobileMenu}
@@ -348,7 +348,7 @@ export default function Navbar() {
                           <Link
                             key={label}
                             href={`/solutions/${toCategorySlug(label)}`}
-                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#109298]"
+                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#2F966E]/10 hover:text-[#267A5A]"
                             onClick={closeMobileMenu}
                           >
                             {label}
@@ -395,7 +395,7 @@ export default function Navbar() {
                           <Link
                             key={label}
                             href={`/integrations/${toCategorySlug(label)}`}
-                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#13ACB3]/10 hover:text-[#109298]"
+                            className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-[#2F966E]/10 hover:text-[#267A5A]"
                             onClick={closeMobileMenu}
                           >
                             {label}
@@ -408,7 +408,7 @@ export default function Navbar() {
                   <div className="pt-2">
                     <Link
                       href="/contact?intent=demo"
-                      className="block px-5 py-3 bg-[#13ACB3] text-white text-base font-semibold rounded-xl text-center hover:bg-[#109298] transition-colors"
+                      className="block px-5 py-3 bg-[#2F966E] text-white text-base font-semibold rounded-xl text-center hover:bg-[#267A5A] transition-colors"
                       onClick={closeMobileMenu}
                     >
                       Book a Guided Demo

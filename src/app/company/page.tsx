@@ -39,21 +39,21 @@ export default function AboutPage() {
       <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[560px] flex items-center">
         {/* Background image */}
         <Image
-          src="/images/ChatGPT Image Jun 10, 2026, 04_51_16 PM.png"
+          src="/images/ChatGPT Image Jun 11, 2026, 04_28_19 PM.png"
           alt=""
           fill
           className="object-cover object-center"
           priority
         />
         {/* Overlay: deep teal on the left fading to transparent teal on the right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#082E30]/92 via-[#0B4F54]/80 to-[#13ACB3]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A2E1C]/92 via-[#1A5C42]/80 to-[#2F966E]/40" />
         {/* Subtle dot grid */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#7FD8DC] uppercase tracking-widest mb-5">
-              <span className="w-8 h-px bg-[#13ACB3]" />
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#86D4AD] uppercase tracking-widest mb-5">
+              <span className="w-8 h-px bg-[#2F966E]" />
               About NexaGen
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 { value: "12+", label: "Industries" },
               ].map((s) => (
                 <div key={s.label}>
-                  <div className="text-3xl font-bold text-[#13ACB3]">{s.value}</div>
+                  <div className="text-3xl font-bold text-[#2F966E]">{s.value}</div>
                   <div className="text-sm text-white/60 mt-0.5">{s.label}</div>
                 </div>
               ))}
@@ -84,8 +84,8 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
-              <div className="w-14 h-14 bg-[#13ACB3]/10 rounded-xl flex items-center justify-center mb-6">
-                <FaBullseye className="w-7 h-7 text-[#13ACB3]" />
+              <div className="w-14 h-14 bg-[#2F966E]/10 rounded-xl flex items-center justify-center mb-6">
+                <FaBullseye className="w-7 h-7 text-[#2F966E]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -97,8 +97,8 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
-              <div className="w-14 h-14 bg-[#13ACB3]/10 rounded-xl flex items-center justify-center mb-6">
-                <FaRocket className="w-7 h-7 text-[#13ACB3]" />
+              <div className="w-14 h-14 bg-[#2F966E]/10 rounded-xl flex items-center justify-center mb-6">
+                <FaRocket className="w-7 h-7 text-[#2F966E]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -116,7 +116,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Our Values</span>
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Our Values</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
               What Drives Us
             </h2>
@@ -128,8 +128,8 @@ export default function AboutPage() {
                 key={value.title}
                 className="p-6 bg-white rounded-xl text-center card-hover border border-gray-100"
               >
-                <div className="w-14 h-14 mx-auto bg-[#13ACB3]/10 rounded-xl flex items-center justify-center mb-4">
-                  <value.icon className="w-7 h-7 text-[#13ACB3]" />
+                <div className="w-14 h-14 mx-auto bg-[#2F966E]/10 rounded-xl flex items-center justify-center mb-4">
+                  <value.icon className="w-7 h-7 text-[#2F966E]" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{value.title}</h3>
                 <p className="text-gray-600 text-sm">{value.description}</p>
@@ -142,7 +142,7 @@ export default function AboutPage() {
       {/* Why Choose Us Section */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="/images/ChatGPT Image Jun 10, 2026, 04_51_16 PM.png"
+          src="/images/ChatGPT Image Jun 11, 2026, 04_28_19 PM.pngs"
           alt="ERP system background"
           fill
           className="object-cover"
@@ -152,7 +152,7 @@ export default function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Why Choose NexaGen Solutions Limited</span>
+              <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Why Choose NexaGen Solutions Limited</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">
                 Partner-level delivery for real business outcomes
               </h2>
@@ -170,7 +170,7 @@ export default function AboutPage() {
                   "Support that stays: optimization and reliability after deployment",
                 ].map((item) => (
                   <div key={item} className="flex items-center">
-                    <div className="w-5 h-5 bg-[#13ACB3] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 bg-[#2F966E] rounded-full flex items-center justify-center flex-shrink-0">
                       <FaCheck className="w-3 h-3 text-white" />
                     </div>
                     <span className="ml-3 text-gray-200">{item}</span>
@@ -181,12 +181,12 @@ export default function AboutPage() {
 
 
             <div className="relative">
-              <div className="absolute inset-0 bg-[#13ACB3]/20 rounded-3xl transform rotate-3"></div>
+              <div className="absolute inset-0 bg-[#2F966E]/20 rounded-3xl transform rotate-3"></div>
               <div className="relative bg-white rounded-3xl p-8 border border-gray-100 shadow-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Our Approach</h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#2F966E] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       1
                     </div>
                     <div className="ml-4">
@@ -196,7 +196,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#2F966E] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       2
                     </div>
                     <div className="ml-4">
@@ -206,7 +206,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#2F966E] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       3
                     </div>
                     <div className="ml-4">
@@ -216,7 +216,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#13ACB3] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="w-8 h-8 bg-[#2F966E] text-white rounded-lg flex items-center justify-center flex-shrink-0 font-bold">
                       4
                     </div>
                     <div className="ml-4">
@@ -235,7 +235,7 @@ export default function AboutPage() {
 
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#13ACB3] to-[#109298]">
+      <section className="py-20 bg-gradient-to-br from-[#2F966E] to-[#267A5A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to Work Together?
@@ -246,7 +246,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 <a
               href="mailto:info@nexasolutions.com"
-              className="inline-flex items-center px-8 py-4 bg-white text-[#13ACB3] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="inline-flex items-center px-8 py-4 bg-white text-[#2F966E] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               Contact Us
             </a>

@@ -55,34 +55,34 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="w-9 h-9 bg-[#13ACB3]/10 rounded-full flex items-center justify-center hover:bg-[#13ACB3] group transition-colors"
+                className="w-9 h-9 bg-[#2F966E]/10 rounded-full flex items-center justify-center hover:bg-[#2F966E] group transition-colors"
               >
-                <FaLinkedin className="text-[#0B6E74] group-hover:text-white w-4 h-4 transition-colors" />
+                <FaLinkedin className="text-[#1A5C42] group-hover:text-white w-4 h-4 transition-colors" />
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter / X"
-                className="w-9 h-9 bg-[#13ACB3]/10 rounded-full flex items-center justify-center hover:bg-[#13ACB3] group transition-colors"
+                className="w-9 h-9 bg-[#2F966E]/10 rounded-full flex items-center justify-center hover:bg-[#2F966E] group transition-colors"
               >
-                <FaTwitter className="text-[#0B6E74] group-hover:text-white w-4 h-4 transition-colors" />
+                <FaTwitter className="text-[#1A5C42] group-hover:text-white w-4 h-4 transition-colors" />
               </a>
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-9 h-9 bg-[#13ACB3]/10 rounded-full flex items-center justify-center hover:bg-[#13ACB3] group transition-colors"
+                className="w-9 h-9 bg-[#2F966E]/10 rounded-full flex items-center justify-center hover:bg-[#2F966E] group transition-colors"
               >
-                <FaFacebook className="text-[#0B6E74] group-hover:text-white w-4 h-4 transition-colors" />
+                <FaFacebook className="text-[#1A5C42] group-hover:text-white w-4 h-4 transition-colors" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="flex-1 min-w-[150px] space-y-3">
-            <h3 className="text-base font-semibold text-[#0B6E74]">Quick Links</h3>
+            <h3 className="text-base font-semibold text-[#1A5C42]">Quick Links</h3>
             <ul className="space-y-2.5">
               {[
                 { name: "Home", href: "/" },
@@ -91,7 +91,7 @@ export default function Footer() {
                 { name: "Book a Guided Demo", href: "/contact?intent=demo" },
               ].map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-500 hover:text-[#13ACB3] transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-500 hover:text-[#2F966E] transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -101,11 +101,11 @@ export default function Footer() {
 
           {/* Solutions */}
           <div className="flex-1 min-w-[180px] space-y-3">
-            <h3 className="text-base font-semibold text-[#0B6E74]">Solutions</h3>
+            <h3 className="text-base font-semibold text-[#1A5C42]">Solutions</h3>
             <ul className="space-y-2.5">
               {solutionLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-500 hover:text-[#13ACB3] transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-500 hover:text-[#2F966E] transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -115,11 +115,11 @@ export default function Footer() {
 
           {/* Integrations */}
           <div className="flex-1 min-w-[180px] space-y-3">
-            <h3 className="text-base font-semibold text-[#0B6E74]">Integrations</h3>
+            <h3 className="text-base font-semibold text-[#1A5C42]">Integrations</h3>
             <ul className="space-y-2.5">
               {integrationLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-500 hover:text-[#13ACB3] transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-500 hover:text-[#2F966E] transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -129,24 +129,24 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="flex-1 min-w-[220px] space-y-4">
-            <h3 className="text-base font-semibold text-[#0B6E74]">Contact Us</h3>
+            <h3 className="text-base font-semibold text-[#1A5C42]">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="text-[#13ACB3] mt-1 shrink-0" />
+                <FaMapMarkerAlt className="text-[#2F966E] mt-1 shrink-0" />
                 <span className="text-sm text-gray-500">
                   Riverside Drive, Kofisi<br />
                   Nairobi, Kenya
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <FaPhone className="text-[#13ACB3] shrink-0" />
-                <a href="tel:+254758269725" className="text-sm text-gray-500 hover:text-[#13ACB3] transition-colors">
+                <FaPhone className="text-[#2F966E] shrink-0" />
+                <a href="tel:+254758269725" className="text-sm text-gray-500 hover:text-[#2F966E] transition-colors">
                   +254 758 269 725
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <FaEnvelope className="text-[#13ACB3] shrink-0" />
-                <a href="mailto:info@nexasolutions.com" className="text-sm text-gray-500 hover:text-[#13ACB3] transition-colors">
+                <FaEnvelope className="text-[#2F966E] shrink-0" />
+                <a href="mailto:info@nexasolutions.com" className="text-sm text-gray-500 hover:text-[#2F966E] transition-colors">
                   info@nexasolutions.com
                 </a>
               </li>
@@ -155,7 +155,7 @@ export default function Footer() {
             <div className="pt-4">
               <Link
                 href="/contact?intent=demo"
-                className="inline-flex items-center px-5 py-2.5 bg-[#13ACB3] text-white text-sm font-semibold rounded-full hover:bg-[#109298] transition-colors"
+                className="inline-flex items-center px-5 py-2.5 bg-[#2F966E] text-white text-sm font-semibold rounded-full hover:bg-[#267A5A] transition-colors"
               >
                 Book a Guided Demo
               </Link>
@@ -169,10 +169,10 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} NexaGen Solutions Limited. All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
-            <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-[#13ACB3] transition-colors">
+            <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-[#2F966E] transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-and-conditions" className="text-sm text-gray-400 hover:text-[#13ACB3] transition-colors">
+            <Link href="/terms-and-conditions" className="text-sm text-gray-400 hover:text-[#2F966E] transition-colors">
               Terms &amp; Conditions
             </Link>
           </div>

@@ -101,19 +101,19 @@ export default function PosSystemPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-10 left-6 w-56 h-56 bg-[#13ACB3]/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#13ACB3]/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-6 w-56 h-56 bg-[#2F966E]/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#2F966E]/20 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Solutions</span>
+              <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Solutions</span>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/contact?intent=demo"
-                  className="inline-flex items-center justify-center rounded-full bg-[#13ACB3] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#13ACB3]/25 transition-all duration-300 hover:bg-[#109298] hover:shadow-xl"
+                  className="inline-flex items-center justify-center rounded-full bg-[#2F966E] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#2F966E]/25 transition-all duration-300 hover:bg-[#267A5A] hover:shadow-xl"
                 >
                   Book a Guided Demo
                 </Link>
@@ -146,7 +146,7 @@ export default function PosSystemPage() {
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
                   <li key={b} className="flex items-start gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4">
-                    <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#13ACB3]" />
+                    <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#2F966E]" />
                     <span className="text-gray-700">{b}</span>
                   </li>
                 ))}
@@ -156,22 +156,22 @@ export default function PosSystemPage() {
               <h3 className="text-lg font-semibold text-gray-900">Next steps</h3>
               <div className="mt-4 space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-3">
-                  <span className="font-bold text-[#13ACB3]">01</span>
+                  <span className="font-bold text-[#2F966E]">01</span>
                   <span><span className="font-semibold">Define store flow.</span> We configure products, pricing, and receipt settings.</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="font-bold text-[#13ACB3]">02</span>
+                  <span className="font-bold text-[#2F966E]">02</span>
                   <span><span className="font-semibold">Integrate with ERPNext.</span> We connect stock movement, invoicing, and payments.</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="font-bold text-[#13ACB3]">03</span>
+                  <span className="font-bold text-[#2F966E]">03</span>
                   <span><span className="font-semibold">Test and go live.</span> We validate performance and support your launch.</span>
                 </div>
               </div>
               <div className="mt-6">
                 <Link
                   href="/contact?intent=audit"
-                  className="inline-flex items-center justify-center w-full rounded-full bg-[#13ACB3] px-6 py-3.5 font-semibold text-white hover:bg-[#109298] transition-colors"
+                  className="inline-flex items-center justify-center w-full rounded-full bg-[#2F966E] px-6 py-3.5 font-semibold text-white hover:bg-[#267A5A] transition-colors"
                 >
                   Get a tailored audit
                   <FaArrowRight className="ml-2 w-4 h-4" />
@@ -186,7 +186,7 @@ export default function PosSystemPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">What&apos;s Included</span>
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">What&apos;s Included</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Key Capabilities</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               Every feature is configured around your store layout, payment methods, and product catalog.
@@ -196,10 +196,10 @@ export default function PosSystemPage() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:border-[#13ACB3]/30 hover:shadow-md transition-all duration-300"
+                className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:border-[#2F966E]/30 hover:shadow-md transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-[#13ACB3]/10 rounded-xl flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-[#13ACB3]" />
+                <div className="w-12 h-12 bg-[#2F966E]/10 rounded-xl flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-[#2F966E]" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
@@ -213,7 +213,7 @@ export default function PosSystemPage() {
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <div className="text-center">
-            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Our Clients</span>
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Our Clients</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Businesses we&apos;ve helped</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               We deliver POS solutions with clear scope, smooth rollout, and long-term support.
@@ -229,12 +229,12 @@ export default function PosSystemPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Best Fit</span>
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Best Fit</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Who it&apos;s for</h2>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {audiences.map((a) => (
-              <span key={a} className="px-5 py-2.5 rounded-full bg-[#13ACB3]/10 text-[#13ACB3] font-semibold text-sm">
+              <span key={a} className="px-5 py-2.5 rounded-full bg-[#2F966E]/10 text-[#2F966E] font-semibold text-sm">
                 {a}
               </span>
             ))}
@@ -246,7 +246,7 @@ export default function PosSystemPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Our Process</span>
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Our Process</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How we work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
               A structured approach that minimizes disruption to your daily trading operations.
@@ -256,9 +256,9 @@ export default function PosSystemPage() {
             {processSteps.map((s) => (
               <div
                 key={s.step}
-                className="relative p-6 bg-white rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#13ACB3]/30 hover:shadow-md"
+                className="relative p-6 bg-white rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#2F966E]/30 hover:shadow-md"
               >
-                <div className="text-4xl font-bold text-[#13ACB3]/20 mb-4">{s.step}</div>
+                <div className="text-4xl font-bold text-[#2F966E]/20 mb-4">{s.step}</div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
               </div>
@@ -271,7 +271,7 @@ export default function PosSystemPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#13ACB3] uppercase tracking-wider">Common Questions</span>
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Common Questions</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-3">
@@ -279,7 +279,7 @@ export default function PosSystemPage() {
               <details key={faq.q} className="group rounded-2xl border border-gray-100 bg-gray-50 p-5">
                 <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 list-none">
                   {faq.q}
-                  <span className="ml-4 shrink-0 text-[#13ACB3] transition-transform group-open:rotate-45">+</span>
+                  <span className="ml-4 shrink-0 text-[#2F966E] transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <p className="mt-3 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
               </details>
@@ -289,7 +289,7 @@ export default function PosSystemPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#13ACB3] to-[#109298]">
+      <section className="py-20 bg-gradient-to-br from-[#2F966E] to-[#267A5A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to upgrade your point of sale?</h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
@@ -298,7 +298,7 @@ export default function PosSystemPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact?intent=demo"
-              className="inline-flex items-center px-8 py-4 bg-white text-[#13ACB3] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="inline-flex items-center px-8 py-4 bg-white text-[#2F966E] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               Book a Guided Demo
               <FaArrowRight className="ml-2 w-4 h-4" />
