@@ -167,7 +167,7 @@ export default function Navbar() {
   }, []);
 
   const isActive = (href: string) => pathname === href;
-  const darkHeroPages = ["/company", "/contact"];
+  const darkHeroPages = ["/company", "/contact", "/industries", "/process"];
   const useWhiteNav = !isScrolled && darkHeroPages.some((p) => pathname === p || pathname.startsWith(p + "?"));
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { FaArrowRight, FaBuilding, FaGraduationCap, FaHospital, FaIndustry, FaLandmark, FaMoneyBillWave, FaShoppingCart, FaTractor, FaTruck, FaUserTie, FaWarehouse, FaHome } from "react-icons/fa";
 
 export const metadata: Metadata = {
@@ -195,32 +196,43 @@ export default function IndustriesPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative pt-40 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-10 left-6 w-56 h-56 bg-[#2F966E]/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#2F966E]/20 rounded-full blur-3xl" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Who We Serve</span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">
-            ERPNext built for your industry
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed mt-4 max-w-3xl mx-auto">
-            Every industry has distinct workflows, compliance requirements, and integration needs. We configure ERPNext to fit your sector — not the other way around.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              href="/contact?intent=demo"
-              className="inline-flex items-center justify-center rounded-full bg-[#2F966E] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#2F966E]/25 transition-all duration-300 hover:bg-[#267A5A] hover:shadow-xl"
-            >
-              Book a Guided Demo
-            </Link>
-            <Link
-              href="/contact?intent=audit"
-              className="inline-flex items-center justify-center rounded-full px-8 py-3.5 font-semibold border-2 border-gray-200 bg-white text-gray-700 transition-all duration-300 hover:border-[#2F966E] hover:text-[#2F966E]"
-            >
-              Request a Free Audit
-            </Link>
+      <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[520px] flex items-center">
+        <Image
+          src="/images/ChatGPT Image Jun 12, 2026, 04_53_30 PM.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A2E1C]/92 via-[#1A5C42]/80 to-[#2F966E]/40" />
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#86D4AD] uppercase tracking-widest mb-5">
+              <span className="w-8 h-px bg-[#2F966E]" />
+              Who We Serve
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              ERPNext built for<br className="hidden sm:block" /> your industry.
+            </h1>
+            <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-xl">
+              Every industry has distinct workflows, compliance requirements, and integration needs. We configure ERPNext to fit your sector — not the other way around.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/contact?intent=demo"
+                className="inline-flex items-center justify-center rounded-full bg-[#2F966E] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#2F966E]/25 transition-all duration-300 hover:bg-[#267A5A] hover:shadow-xl"
+              >
+                Book a Guided Demo
+              </Link>
+              <Link
+                href="/contact?intent=audit"
+                className="inline-flex items-center justify-center rounded-full px-8 py-3.5 font-semibold border-2 border-white/30 text-white transition-all duration-300 hover:bg-white/10"
+              >
+                Request a Free Audit
+              </Link>
+            </div>
           </div>
         </div>
       </section>

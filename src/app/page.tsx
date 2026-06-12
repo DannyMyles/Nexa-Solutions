@@ -222,10 +222,10 @@ export default function Home() {
 
           <div className="relative -mr-8 lg:-mr-16">
             <Image
-              src="/images/ChatGPT Image Jun 11, 2026, 04_25_01 PM.png"
+              src="/images/ChatGPT Image Jun 12, 2026, 04_48_04 PM.png"
               alt="ERPNext dashboard preview"
-              width={1200}
-              height={860}
+              width={1400}
+              height={960}
               className="h-auto w-full object-cover"
               priority
             />
