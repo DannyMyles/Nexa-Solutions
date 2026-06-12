@@ -5,7 +5,7 @@ import {
   FaPaperPlane,
   FaCheck,
 } from "react-icons/fa";
-import { services } from "@/data/services";
+import { serviceGroups } from "@/data/services";
 
 type ContactFormProps = {
   initialService?: string;
@@ -164,10 +164,15 @@ export default function ContactForm({
                 onChange={handleChange}
                 className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#2F966E] focus:ring-2 focus:ring-[#2F966E]/20 transition-all text-gray-900"
               >
-                {services.map((service) => (
-                  <option key={service.value} value={service.value}>
-                    {service.label}
-                  </option>
+                <option value="">Select a service</option>
+                {serviceGroups.map((group) => (
+                  <optgroup key={group.group} label={group.group}>
+                    {group.options.map((s) => (
+                      <option key={s.value} value={s.value}>
+                        {s.label}
+                      </option>
+                    ))}
+                  </optgroup>
                 ))}
               </select>
             </div>
