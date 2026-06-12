@@ -66,9 +66,9 @@ export default function AboutPage() {
             {/* Stats row */}
             <div className="flex flex-wrap gap-8">
               {[
-                { value: "50+", label: "Clients Served" },
+                { value: "10+", label: "Clients Served" },
                 { value: "5+", label: "Years Experience" },
-                { value: "12+", label: "Industries" },
+                { value: "5+", label: "Industries" },
               ].map((s) => (
                 <div key={s.label}>
                   <div className="text-3xl font-bold text-[#2F966E]">{s.value}</div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
 
               <div className="space-y-4">
                 {[
-                  "Proven expertise: 50+ clients served across 12+ industries in East Africa",
+                  "Proven expertise: 10+ clients served across 5+ industries in East Africa",
                   "Tailored solutions—not one-size-fits-all configurations",
                   "Audit-first scoping to reduce risk, waste, and costly rework",
                   "Structured delivery across setup, migration, training, and go-live",

@@ -5,7 +5,7 @@ import { FaArrowRight, FaBuilding, FaGraduationCap, FaHospital, FaIndustry, FaLa
 export const metadata: Metadata = {
   title: "Industries We Serve | NexaGen Solutions Limited",
   description:
-    "NexaGen Solutions delivers ERPNext implementations across 12+ industries in Kenya and East Africa — tailored to your sector's workflows, compliance, and integration needs.",
+    "NexaGen Solutions delivers ERPNext implementations across 5+ industries in Kenya and East Africa — tailored to your sector's workflows, compliance, and integration needs.",
 };
 
 const industries = [

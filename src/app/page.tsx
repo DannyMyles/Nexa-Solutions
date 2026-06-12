@@ -405,8 +405,8 @@ export default function Home() {
               <div className="relative rounded-[2rem] border border-gray-100 bg-white p-6 shadow-2xl">
                 <div className="grid gap-4 sm:grid-cols-2">
                   {[
-                    { value: "50+", label: "Clients served" },
-                    { value: "12+", label: "Industries served" },
+                    { value: "10+", label: "Clients served" },
+                    { value: "5+", label: "Industries served" },
                     { value: "5+", label: "Years experience" },
                     { value: "1", label: "Partner for all stages" },
                   ].map((stat) => (
