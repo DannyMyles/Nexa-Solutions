@@ -87,6 +87,8 @@ export default function Footer() {
               {[
                 { name: "Home", href: "/" },
                 { name: "About Us", href: "/company" },
+                { name: "Industries", href: "/industries" },
+                { name: "How We Work", href: "/process" },
                 { name: "Contact", href: "/contact" },
                 { name: "Book a Guided Demo", href: "/contact?intent=demo" },
               ].map((link) => (

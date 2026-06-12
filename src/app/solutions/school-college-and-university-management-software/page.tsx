@@ -70,7 +70,7 @@ const features = [
 ];
 
 const clients = [
-  { name: "Sunrise Academy", description: "Secondary School", logo: "SA" },
+  { name: "Sunrise Academy", description: "Secondary School", logo: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=96&h=96&q=80" },
   { name: "Green Valley Farms", description: "Agriculture", logo: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=96&h=96&q=80" },
   { name: "CGM Logistics", description: "Transportation", logo: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=96&h=96&q=80" },
   { name: "Sunrise Healthcare", description: "Medical Services", logo: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=96&h=96&q=80" },
@@ -283,6 +283,34 @@ export default function SchoolCollegeUniversityManagementSoftwarePage() {
                 </summary>
                 <p className="mt-3 text-gray-600 leading-relaxed text-sm">{faq.a}</p>
               </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Integrations */}
+      <section className="py-14 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Pair With</span>
+            <h2 className="text-2xl font-bold text-gray-900 mt-2">Recommended integrations for schools &amp; institutions</h2>
+            <p className="text-gray-500 mt-2 text-sm">Automate fee collection, attendance, and payroll so your admin team focuses on education.</p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Auto-match M-Pesa fee payments to student invoices" },
+              { label: "Biometric Data Integration", href: "/integrations/biometric-data-integration", desc: "Sync fingerprint attendance for students and staff" },
+              { label: "HR & Payroll Software", href: "/solutions/hr-and-payroll-software", desc: "Manage teaching staff payroll within the same system" },
+            ].map((i) => (
+              <Link
+                key={i.label}
+                href={i.href}
+                className="flex flex-col items-start gap-1 px-6 py-4 rounded-2xl border border-gray-200 bg-gray-50 hover:border-[#2F966E] hover:bg-[#2F966E]/5 transition-all duration-200 min-w-[220px]"
+              >
+                <span className="font-semibold text-gray-900 text-sm">{i.label}</span>
+                <span className="text-xs text-gray-500">{i.desc}</span>
+                <span className="mt-1 text-xs font-semibold text-[#2F966E]">Learn more →</span>
+              </Link>
             ))}
           </div>
         </div>

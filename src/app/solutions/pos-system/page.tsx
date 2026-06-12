@@ -288,6 +288,34 @@ export default function PosSystemPage() {
         </div>
       </section>
 
+      {/* Related Integrations */}
+      <section className="py-14 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Pair With</span>
+            <h2 className="text-2xl font-bold text-gray-900 mt-2">Recommended integrations for POS</h2>
+            <p className="text-gray-500 mt-2 text-sm">Connect your POS to mobile payments, KRA compliance, and bank reconciliation.</p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Accept and auto-reconcile M-Pesa till payments" },
+              { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration", desc: "Issue KRA-compliant receipts on every sale" },
+              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Match end-of-day POS settlements to your bank" },
+            ].map((i) => (
+              <Link
+                key={i.label}
+                href={i.href}
+                className="flex flex-col items-start gap-1 px-6 py-4 rounded-2xl border border-gray-200 bg-gray-50 hover:border-[#2F966E] hover:bg-[#2F966E]/5 transition-all duration-200 min-w-[220px]"
+              >
+                <span className="font-semibold text-gray-900 text-sm">{i.label}</span>
+                <span className="text-xs text-gray-500">{i.desc}</span>
+                <span className="mt-1 text-xs font-semibold text-[#2F966E]">Learn more →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#2F966E] to-[#267A5A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

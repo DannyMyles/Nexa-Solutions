@@ -204,18 +204,17 @@ export default function Home() {
 
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-
               <Link
                 href="/contact?intent=demo"
-                className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#2F966E] hover:text-[#2F966E]"
+                className="inline-flex items-center justify-center rounded-full bg-[#2F966E] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#2F966E]/25 transition-all duration-300 hover:bg-[#267A5A] hover:shadow-xl"
               >
                 Book a Guided Demo
               </Link>
               <Link
-                href="/solutions/accounting-software"
-                className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold border border-[#2F966E] text-gray-700 transition-colors hover:text-[#2F966E]"
+                href="/company"
+                className="inline-flex items-center justify-center rounded-full px-6 py-3.5 font-semibold border-2 border-gray-200 bg-white text-gray-700 transition-all duration-300 hover:border-[#2F966E] hover:text-[#2F966E]"
               >
-                Explore Services
+                About Us
               </Link>
             </div>
 
@@ -309,7 +308,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-900 mb-5">Software Solutions</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  "ERP Software Popular",
+                  "ERPNext Implementation",
                   "Accounting Software",
                   "HR & Payroll Software",
                   "Inventory Management",
@@ -406,8 +405,8 @@ export default function Home() {
               <div className="relative rounded-[2rem] border border-gray-100 bg-white p-6 shadow-2xl">
                 <div className="grid gap-4 sm:grid-cols-2">
                   {[
-                    { value: "10+", label: "Projects completed" },
-                    { value: "5+", label: "Industries served" },
+                    { value: "50+", label: "Clients served" },
+                    { value: "12+", label: "Industries served" },
                     { value: "5+", label: "Years experience" },
                     { value: "1", label: "Partner for all stages" },
                   ].map((stat) => (
@@ -419,12 +418,11 @@ export default function Home() {
                 </div>
 
                 <div className="mt-6 rounded-[1.5rem] bg-gradient-to-br from-[#2F966E] to-[#267A5A] p-6 text-white">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">Conversion focus</p>
-                  <h3 className="mt-3 text-xl font-bold">Turn uncertainty into a roadmap with our delivery process.</h3>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">How we start</p>
+                  <h3 className="mt-3 text-xl font-bold">Every engagement begins with a free discovery call.</h3>
                   <p className="mt-3 text-sm leading-relaxed text-white/90">
-                    You’ll get clear scope, risks, and opportunities—so pricing is easier to trust and your team knows the next step.
+                    We map your current workflows, identify the highest-impact areas, and give you a clear roadmap — before any commitment.
                   </p>
-
                 </div>
               </div>
             </div>
@@ -564,7 +562,7 @@ export default function Home() {
                 href="/contact?intent=demo"
                 className="inline-flex items-center gap-2 text-[#2F966E] font-semibold text-sm hover:gap-3 transition-all"
               >
-                Need to start demo?
+                Book a guided demo
                 <FaArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
@@ -621,25 +619,89 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="bg-gray-50 py-20">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#2F966E]">Client Stories</span>
+            <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">What our clients say</h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-600 max-w-2xl mx-auto">
+              Real outcomes from businesses that chose NexaGen Solutions for their ERPNext implementation.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "We went from three separate spreadsheets to one system handling procurement, inventory, and invoicing — with M-Pesa payments reconciled automatically. The audit NexaGen did before scoping saved us from over-building.",
+                name: "James Mwangi",
+                title: "Operations Director",
+                company: "Prime Distributors Ltd",
+                industry: "Wholesale Distribution",
+                initials: "JM",
+              },
+              {
+                quote: "The implementation was honest about what it would take. They audited our workflows first, identified only the integrations we actually needed, and go-live was smooth. Our finance team was fully operational within two weeks.",
+                name: "Dr. Amina Hassan",
+                title: "Finance Manager",
+                company: "Sunrise Healthcare",
+                industry: "Healthcare",
+                initials: "AH",
+              },
+              {
+                quote: "We needed KRA eTIMS compliance before our tax audit and NexaGen delivered it on time. Every invoice now carries the correct tax codes and QR codes automatically — the process runs without anyone touching it.",
+                name: "Peter Kamau",
+                title: "Chief Executive Officer",
+                company: "Elite Retail Group",
+                industry: "Retail",
+                initials: "PK",
+              },
+            ].map((t) => (
+              <div key={t.name} className="bg-white rounded-2xl border border-gray-100 p-7 shadow-sm flex flex-col">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-amber-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  ))}
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed flex-1 italic">&ldquo;{t.quote}&rdquo;</p>
+                <div className="mt-6 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#2F966E] flex items-center justify-center text-white text-sm font-bold shrink-0">
+                    {t.initials}
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-gray-900">{t.name}</p>
+                    <p className="text-xs text-gray-500">{t.title}, {t.company}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">
           <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#2F966E]">
-            Ready to move faster?
+            Let&apos;s get started
           </span>
           <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-            Let&apos;s turn your ERPNext plan into a clear, conversion-ready roadmap.
+            See how ERPNext can work for your business — in a live, guided demo.
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-gray-600">
-            If you want a tailored assessment, start with an audit. If you want to feel the product, try the demo.
-            Either way, the next step is simple.
+            We tailor every demo to your industry and workflows. No slides, no sales pitch — just the system doing what you need it to do.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/contact?intent=demo"
-              className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#2F966E] hover:text-[#2F966E]"
+              className="inline-flex items-center justify-center rounded-full bg-[#2F966E] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#2F966E]/25 transition-all duration-300 hover:bg-[#267A5A] hover:shadow-xl"
             >
               Book a Guided Demo
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full border-2 border-gray-200 bg-white px-6 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:border-[#2F966E] hover:text-[#2F966E]"
+            >
+              Talk to Us First
             </Link>
           </div>
         </div>

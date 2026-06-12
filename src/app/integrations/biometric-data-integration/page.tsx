@@ -92,7 +92,7 @@ export default function BiometricDataIntegrationPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900">What we implement</h2>
               <p className="text-gray-600 mt-3 leading-relaxed">
-                Integration work delivered with clear data mapping, secure authentication, and production-ready monitoring.
+                Biometric punch data flows directly into ERPNext attendance records, eliminating manual timesheets and ensuring payroll is always based on verified clock-in data.
               </p>
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
@@ -207,6 +207,34 @@ export default function BiometricDataIntegrationPage() {
           </div>
         </div>
       </section>
+      {/* Works Great With */}
+      <section className="py-14 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Works Great With</span>
+            <h2 className="text-2xl font-bold text-gray-900 mt-2">Solutions that benefit from biometric integration</h2>
+            <p className="text-gray-500 mt-2 text-sm">Biometric data is most powerful when it feeds directly into HR, payroll, and institutional management.</p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              { label: "HR & Payroll Software", href: "/solutions/hr-and-payroll-software", desc: "Auto-populate timesheets and payroll from punch data" },
+              { label: "School Management Software", href: "/solutions/school-college-and-university-management-software", desc: "Track student and staff attendance automatically" },
+              { label: "Hospital Management System", href: "/solutions/hospital-management-system", desc: "Log staff shifts and duty hours with precision" },
+            ].map((i) => (
+              <Link
+                key={i.label}
+                href={i.href}
+                className="flex flex-col items-start gap-1 px-6 py-4 rounded-2xl border border-gray-200 bg-gray-50 hover:border-[#2F966E] hover:bg-[#2F966E]/5 transition-all duration-200 min-w-[220px]"
+              >
+                <span className="font-semibold text-gray-900 text-sm">{i.label}</span>
+                <span className="text-xs text-gray-500">{i.desc}</span>
+                <span className="mt-1 text-xs font-semibold text-[#2F966E]">Learn more →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#2F966E] to-[#267A5A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

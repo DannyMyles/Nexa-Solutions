@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
 import { FaCheck, FaAward, FaUsers, FaRocket, FaBullseye } from "react-icons/fa";
 
@@ -89,10 +90,9 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                To empower businesses with streamlined, efficient, and scalable ERP solutions that 
-                drive operational excellence and sustainable growth. We are committed to simplifying 
-                business processes through technology, enabling our clients to focus on what they 
-                do best — growing their businesses.
+                To make enterprise-grade ERP accessible to every growing business in Kenya and East Africa.
+                We do this by combining deep ERPNext expertise with honest scoping, practical training,
+                and support that stays — so our clients always know what their system is doing and why.
               </p>
             </div>
 
@@ -102,10 +102,10 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">
-                To be the leading ERPNext implementation partner in East Africa, recognized for 
-                delivering innovative solutions that transform businesses and create lasting value. 
-                We aim to make enterprise-grade ERP accessible to businesses of all sizes, from 
-                startups to large enterprises.
+                To become the most trusted ERPNext partner across East Africa — recognized not just
+                for technical delivery, but for the clarity, reliability, and long-term business value
+                we bring to every client relationship. We believe the best ERP is one your team
+                actually uses and understands.
               </p>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function AboutPage() {
       {/* Why Choose Us Section */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="/images/ChatGPT Image Jun 11, 2026, 04_28_19 PM.pngs"
+          src="/images/ChatGPT Image Jun 11, 2026, 04_28_19 PM.png"
           alt="ERP system background"
           fill
           className="object-cover"
@@ -163,7 +163,7 @@ export default function AboutPage() {
 
               <div className="space-y-4">
                 {[
-                  "Proven expertise: 10+ implementations and hands-on ERPNext delivery",
+                  "Proven expertise: 50+ clients served across 12+ industries in East Africa",
                   "Tailored solutions—not one-size-fits-all configurations",
                   "Audit-first scoping to reduce risk, waste, and costly rework",
                   "Structured delivery across setup, migration, training, and go-live",
@@ -238,25 +238,25 @@ export default function AboutPage() {
       <section className="py-20 bg-gradient-to-br from-[#2F966E] to-[#267A5A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Ready to Work Together?
+            Ready to See It in Action?
           </h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Get in touch with us today to discuss how we can help transform your business with ERPNext.
+            Book a guided demo tailored to your industry, or reach out directly — we&apos;ll answer
+            your questions and help you decide if ERPNext is the right fit.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a
-              href="mailto:info@nexasolutions.com"
+            <Link
+              href="/contact?intent=demo"
               className="inline-flex items-center px-8 py-4 bg-white text-[#2F966E] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Contact Us
-            </a>
-
-            <a
-              href="/solutions/accounting-software"
+              Book a Guided Demo
+            </Link>
+            <Link
+              href="/contact"
               className="inline-flex items-center px-8 py-4 bg-white/20 text-white font-semibold rounded-full hover:bg-white/30 transition-all duration-300 hover:shadow-lg"
             >
-              View Services
-            </a>
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>

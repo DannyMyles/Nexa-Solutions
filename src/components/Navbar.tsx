@@ -226,6 +226,15 @@ export default function Navbar() {
               Company
             </Link>
 
+            <Link
+              href="/industries"
+              className={`text-sm font-semibold transition-colors duration-200 ${
+                isActive("/industries") ? "text-[#2F966E]" : useWhiteNav ? "text-white hover:text-white/80" : "text-gray-700 hover:text-[#2F966E]"
+              }`}
+            >
+              Industries
+            </Link>
+
             <SolutionsIntegrationsDropdown
               label="Solutions"
               items={solutions}
@@ -295,6 +304,8 @@ export default function Navbar() {
                   {[
                     { name: "Home", href: "/" },
                     { name: "Company", href: "/company" },
+                    { name: "Industries", href: "/industries" },
+                    { name: "How We Work", href: "/process" },
                     { name: "Contact", href: "/contact" },
                   ].map((link) => (
                     <Link

@@ -40,12 +40,18 @@ export default async function ContactPage({
 }) {
   const { intent } = (await searchParams) ?? {};
   const formTitle =
-    intent === "demo" ? "Book a Guided Demo" : "Send Us a Message";
+    intent === "demo"
+      ? "Book a Guided Demo"
+      : intent === "audit"
+      ? "Request a Free Audit"
+      : "Send Us a Message";
 
   const formDescription =
     intent === "demo"
       ? "Tell us a bit about your workflow. We’ll arrange a guided demo tailored to how your team operates."
-      : "Fill out the form below and we’ll get back to you as soon as possible.";
+      : intent === "audit"
+      ? "Share your current setup and pain points. We’ll map your workflows and return a clear, no-obligation recommendations report."
+      : "Have a question or want to discuss your ERP needs? Fill out the form and we’ll get back to you within one business day.";
 
 
 
