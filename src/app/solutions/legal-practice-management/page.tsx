@@ -13,7 +13,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Legal Practice Management | NexaGen Solutions Limited",
+  title: "Legal Practice Management Software Kenya | NexaGen Solutions Limited",
   description:
     "Manage matters, clients, time billing, and compliance for law firms and legal departments with ERPNext.",
 };

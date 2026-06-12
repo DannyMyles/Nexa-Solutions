@@ -13,7 +13,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Inventory and Warehouse Management | NexaGen Solutions Limited",
+  title: "Inventory & Warehouse Management Software Kenya | NexaGen Solutions Limited",
   description:
     "Streamline stock control with ERPNext. Improve accuracy, automate movements, and keep your warehouse operations audit-ready.",
 };

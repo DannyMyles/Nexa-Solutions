@@ -14,9 +14,16 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Hospital Management System | NexaGen Solutions Limited",
+  title: "Hospital Management System in Kenya | NexaGen Solutions Limited",
   description:
-    "Improve operational visibility across patients, services, billing, inventory, and approvals.",
+    "ERPNext hospital management system in Kenya — patient billing, pharmacy inventory, staff scheduling, insurance claims, and NHIF compliance for Kenyan healthcare facilities.",
+  keywords: ["hospital management system Kenya", "HMS Kenya", "healthcare ERP Kenya", "patient billing Kenya", "pharmacy management Kenya"],
+  openGraph: {
+    title: "Hospital Management System in Kenya | NexaGen Solutions Limited",
+    description: "ERPNext HMS in Kenya — patient billing, pharmacy, staff scheduling, NHIF compliance.",
+    url: "https://www.nexasolutions.co.ke/solutions/hospital-management-system",
+    type: "website",
+  },
 };
 
 const item = {

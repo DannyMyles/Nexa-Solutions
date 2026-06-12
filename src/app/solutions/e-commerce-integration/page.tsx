@@ -13,7 +13,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "E-commerce Integration | NexaGen Solutions Limited",
+  title: "E-commerce Integration Kenya | NexaGen Solutions Limited",
   description:
     "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
 };

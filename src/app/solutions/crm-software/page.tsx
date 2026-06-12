@@ -14,7 +14,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "CRM Software | NexaGen Solutions Limited",
+  title: "CRM Software in Kenya | NexaGen Solutions Limited",
   description:
     "Track leads and customers end-to-end with pipelines, follow-ups, and actionable sales reporting.",
 };

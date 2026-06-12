@@ -5,9 +5,9 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Biometric Data Integration | NexaGen Solutions Limited",
+  title: "Biometric Attendance Integration ERPNext Kenya | NexaGen Solutions Limited",
   description:
-    "Sync biometric attendance data with HR and payroll workflows in a controlled and reliable manner.",
+    "Sync biometric attendance data with ERPNext HR and payroll in Kenya — ZKTeco and Anviz device integration, automatic timesheet generation, and payroll-ready attendance feeds.",
 };
 
 const item = {

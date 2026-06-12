@@ -13,9 +13,16 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "POS System | NexaGen Solutions Limited",
+  title: "POS System in Kenya | NexaGen Solutions Limited",
   description:
-    "Implement a reliable POS integrated with ERPNext for real-time sales, stock movement, and financial reporting.",
+    "ERPNext POS system for Kenyan retailers — M-Pesa, cash, and card payments, KRA eTIMS-compliant receipts, real-time stock updates, and multi-branch reporting.",
+  keywords: ["POS system Kenya", "point of sale Kenya", "M-Pesa POS Kenya", "KRA eTIMS POS", "retail POS Nairobi"],
+  openGraph: {
+    title: "POS System in Kenya | NexaGen Solutions Limited",
+    description: "ERPNext POS in Kenya — M-Pesa payments, KRA eTIMS receipts, real-time stock, multi-branch.",
+    url: "https://www.nexasolutions.co.ke/solutions/pos-system",
+    type: "website",
+  },
 };
 
 const item = {

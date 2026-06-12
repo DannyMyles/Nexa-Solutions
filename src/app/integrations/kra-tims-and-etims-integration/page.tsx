@@ -5,9 +5,16 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "KRA TIMS & eTIMS Integration | NexaGen Solutions Limited",
+  title: "KRA eTIMS ERPNext Integration Kenya | NexaGen Solutions Limited",
   description:
-    "Integrate ERPNext with KRA TIMS and eTIMS workflows to ensure full tax compliance and reporting accuracy.",
+    "Automate KRA eTIMS invoice submission from ERPNext in Kenya — tax-compliant receipts, QR codes, TIMS integration, and audit-ready compliance reporting.",
+  keywords: ["KRA eTIMS integration Kenya", "KRA TIMS ERPNext", "eTIMS compliance Kenya", "KRA invoice Kenya", "ERPNext KRA integration"],
+  openGraph: {
+    title: "KRA eTIMS ERPNext Integration Kenya | NexaGen Solutions Limited",
+    description: "Automate KRA eTIMS submission from ERPNext in Kenya — compliant receipts, QR codes, audit-ready.",
+    url: "https://www.nexasolutions.co.ke/integrations/kra-tims-and-etims-integration",
+    type: "website",
+  },
 };
 
 const item = {

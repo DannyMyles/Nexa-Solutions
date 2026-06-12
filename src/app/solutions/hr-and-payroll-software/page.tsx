@@ -14,9 +14,16 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "HR and Payroll Software | NexaGen Solutions Limited",
+  title: "HR & Payroll Software in Kenya | NexaGen Solutions Limited",
   description:
-    "Streamline HR operations and payroll in one system with transparent approvals and structured leave and attendance.",
+    "ERPNext HR and payroll software in Kenya — NHIF, NSSF, PAYE compliance, biometric attendance, leave management, and automated payroll processing for Nairobi businesses.",
+  keywords: ["HR software Kenya", "payroll software Kenya", "NHIF NSSF PAYE Kenya", "ERPNext HR payroll Kenya", "HR system Nairobi"],
+  openGraph: {
+    title: "HR & Payroll Software in Kenya | NexaGen Solutions Limited",
+    description: "ERPNext HR and payroll in Kenya — NHIF, NSSF, PAYE compliance, biometric attendance, automated payroll.",
+    url: "https://www.nexasolutions.co.ke/solutions/hr-and-payroll-software",
+    type: "website",
+  },
 };
 
 const item = {

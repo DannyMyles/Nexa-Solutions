@@ -5,9 +5,16 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "M-Pesa Integration | NexaGen Solutions Limited",
+  title: "M-Pesa ERPNext Integration Kenya | NexaGen Solutions Limited",
   description:
-    "Automate payments and reconciliation between your business operations and M-Pesa.",
+    "Automate M-Pesa payments and reconciliation in ERPNext for Kenyan businesses — Daraja API, STK Push, Paybill, and real-time settlement reconciliation.",
+  keywords: ["M-Pesa ERPNext integration", "M-Pesa integration Kenya", "Daraja API ERPNext", "M-Pesa reconciliation Kenya", "STK Push ERPNext"],
+  openGraph: {
+    title: "M-Pesa ERPNext Integration Kenya | NexaGen Solutions Limited",
+    description: "Automate M-Pesa payments in ERPNext — Daraja API, STK Push, Paybill, real-time reconciliation.",
+    url: "https://www.nexasolutions.co.ke/integrations/mpesa-integration",
+    type: "website",
+  },
 };
 
 const item = {

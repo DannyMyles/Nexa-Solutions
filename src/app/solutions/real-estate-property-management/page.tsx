@@ -13,9 +13,16 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Real Estate Property Management | NexaGen Solutions Limited",
+  title: "Real Estate Property Management Software Kenya | NexaGen Solutions Limited",
   description:
-    "Manage properties, tenants, leases, and maintenance with an integrated ERPNext system built for real estate operations.",
+    "ERPNext real estate management in Kenya — tenant rent collection via M-Pesa, lease management, maintenance workflows, and KRA-compliant invoicing for Kenyan landlords.",
+  keywords: ["real estate software Kenya", "property management Kenya", "M-Pesa rent collection", "landlord software Kenya", "property ERP Kenya"],
+  openGraph: {
+    title: "Real Estate Property Management Software Kenya | NexaGen Solutions Limited",
+    description: "ERPNext property management in Kenya — M-Pesa rent, leases, maintenance, KRA invoicing.",
+    url: "https://www.nexasolutions.co.ke/solutions/real-estate-property-management",
+    type: "website",
+  },
 };
 
 const item = {

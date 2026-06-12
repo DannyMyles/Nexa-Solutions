@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Bank Reconciliation Integration | NexaGen Solutions Limited",
+  title: "Bank Reconciliation Integration Kenya | NexaGen Solutions Limited",
   description:
     "Reduce manual reconciliation with automated bank statement import and smart transaction matching.",
 };

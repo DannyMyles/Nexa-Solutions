@@ -14,16 +14,23 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Accounting Software | NexaGen Solutions Limited",
+  title: "Accounting Software in Kenya | NexaGen Solutions Limited",
   description:
-    "Modern accounting workflows with ERPNext: structured ledgers, accurate reporting, and automated reconciliation.",
+    "ERPNext accounting software in Kenya — structured ledgers, automated M-Pesa and bank reconciliation, KRA-compliant reporting, and full audit trails for Nairobi and East Africa businesses.",
+  keywords: ["accounting software Kenya", "ERPNext accounting Kenya", "bookkeeping software Nairobi", "KRA compliant accounting", "M-Pesa reconciliation ERPNext"],
+  openGraph: {
+    title: "Accounting Software in Kenya | NexaGen Solutions Limited",
+    description: "ERPNext accounting software in Kenya — structured ledgers, M-Pesa reconciliation, KRA-compliant reporting.",
+    url: "https://www.nexasolutions.co.ke/solutions/accounting-software",
+    type: "website",
+  },
 };
 
 const item = {
   slug: "accounting-software",
   label: "Accounting Software",
   description:
-    "Modern accounting workflows with ERPNext: structured ledgers, accurate reporting, and automated reconciliation.",
+    "ERPNext accounting software in Kenya — structured ledgers, automated M-Pesa and bank reconciliation, KRA-compliant reporting, and full audit trails for Nairobi and East Africa businesses.",
   bullets: [
     "Chart of Accounts setup",
     "Invoices, payments & journal workflows",

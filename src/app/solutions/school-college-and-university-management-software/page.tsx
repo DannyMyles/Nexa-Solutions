@@ -13,9 +13,16 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "School, College & University Management Software | NexaGen Solutions Limited",
+  title: "School Management Software Kenya | NexaGen Solutions Limited",
   description:
-    "Manage student enrollment, academics, fees, and administration for schools, colleges, and universities with ERPNext.",
+    "ERPNext school and university management software in Kenya — M-Pesa fee collection, student records, staff payroll, biometric attendance, and NHIF compliance.",
+  keywords: ["school management software Kenya", "university management Kenya", "school ERP Kenya", "M-Pesa school fees Kenya", "student management system Kenya"],
+  openGraph: {
+    title: "School Management Software Kenya | NexaGen Solutions Limited",
+    description: "ERPNext school management in Kenya — M-Pesa fees, student records, payroll, biometric attendance.",
+    url: "https://www.nexasolutions.co.ke/solutions/school-college-and-university-management-software",
+    type: "website",
+  },
 };
 
 const item = {

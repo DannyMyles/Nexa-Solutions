@@ -6,17 +6,40 @@ import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import BackToTop from "@/components/BackToTop";
 import CookieBanner from "@/components/CookieBanner";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "NexaGen Solutions Limited | ERPNext Implementation in Kenya",
+  metadataBase: new URL("https://www.nexasolutions.co.ke"),
+  title: {
+    default: "NexaGen Solutions Limited | ERPNext Implementation in Kenya",
+    template: "%s | NexaGen Solutions Limited",
+  },
   description:
-    "NexaGen Solutions Limited helps Kenyan businesses implement ERPNext with clear service packages, tailored demos, and practical support.",
-  keywords:
-    "ERPNext, Frappe, ERP solutions, business automation, Kenya, Nairobi, audit, demo, ERP pricing",
+    "NexaGen Solutions Limited — trusted ERPNext implementation partner in Kenya. We deliver accounting, HR, payroll, M-Pesa integration, KRA eTIMS, and full ERP systems for businesses across East Africa.",
+  keywords: [
+    "ERPNext Kenya",
+    "ERPNext implementation Kenya",
+    "Frappe Kenya",
+    "ERP software Kenya",
+    "ERP Nairobi",
+    "M-Pesa ERPNext integration",
+    "KRA eTIMS integration",
+    "accounting software Kenya",
+    "HR payroll software Kenya",
+    "hospital management system Kenya",
+    "business automation Kenya",
+    "NexaGen Solutions",
+  ],
+  authors: [{ name: "NexaGen Solutions Limited" }],
+  creator: "NexaGen Solutions Limited",
+  publisher: "NexaGen Solutions Limited",
+  alternates: {
+    canonical: "https://www.nexasolutions.co.ke",
+  },
   openGraph: {
     title: "NexaGen Solutions Limited | ERPNext Implementation in Kenya",
     description:
-      "Trusted ERPNext implementors helping businesses across East Africa gain full control of their operations with tailored ERP, integrations, and long-term support.",
+      "Trusted ERPNext implementation partner in Kenya — accounting, HR & payroll, M-Pesa, KRA eTIMS, and full ERP systems tailored for East African businesses.",
     url: "https://www.nexasolutions.co.ke",
     siteName: "NexaGen Solutions Limited",
     locale: "en_KE",
@@ -26,7 +49,18 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NexaGen Solutions Limited | ERPNext Implementation in Kenya",
     description:
-      "Trusted ERPNext implementors helping businesses across East Africa gain full control of their operations.",
+      "Trusted ERPNext implementation partner in Kenya — accounting, HR, M-Pesa, KRA eTIMS, and full ERP systems for East African businesses.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -38,6 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="font-sans antialiased" suppressHydrationWarning>
+        <JsonLd />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

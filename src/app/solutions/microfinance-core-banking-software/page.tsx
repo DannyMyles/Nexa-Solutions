@@ -14,9 +14,16 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Microfinance Core Banking Software | NexaGen Solutions Limited",
+  title: "Microfinance Core Banking Software Kenya | NexaGen Solutions Limited",
   description:
-    "Support microfinance processes including loan management, collections, and reporting aligned to operational realities.",
+    "ERPNext microfinance core banking software in Kenya — loan management, CBK compliance, M-Pesa repayment collection, and client account management for licensed MFIs.",
+  keywords: ["microfinance software Kenya", "core banking Kenya", "CBK compliant software", "loan management Kenya", "MFI software Kenya"],
+  openGraph: {
+    title: "Microfinance Core Banking Software Kenya | NexaGen Solutions Limited",
+    description: "ERPNext microfinance in Kenya — loan management, CBK compliance, M-Pesa repayments.",
+    url: "https://www.nexasolutions.co.ke/solutions/microfinance-core-banking-software",
+    type: "website",
+  },
 };
 
 const item = {
