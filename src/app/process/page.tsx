@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaArrowRight,
   FaCalendarAlt,
@@ -157,22 +158,30 @@ export default function ProcessPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative pt-40 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-10 left-6 w-56 h-56 bg-[#2F966E]/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#2F966E]/20 rounded-full blur-3xl" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#2F966E]/15 bg-white/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#2F966E] shadow-sm">
-              <FaCalendarAlt className="w-3 h-3" />
+      <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[520px] flex items-center">
+        <Image
+          src="/images/ChatGPT Image Jun 12, 2026, 04_53_30 PM.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A2E1C]/92 via-[#1A5C42]/80 to-[#2F966E]/40" />
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#86D4AD] uppercase tracking-widest mb-5">
+              <span className="w-8 h-px bg-[#2F966E]" />
               Our Methodology
-            </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-4">How we deliver your ERPNext implementation</h1>
-            <p className="text-lg text-gray-600 leading-relaxed mt-4">
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              How we deliver your<br className="hidden sm:block" /> ERPNext implementation.
+            </h1>
+            <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-xl">
               A transparent, five-phase process — from the first discovery call to long-term support. No surprises, no vague scope, no handover-and-goodbye.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact?intent=demo"
                 className="inline-flex items-center justify-center rounded-full bg-[#2F966E] px-8 py-3.5 font-semibold text-white shadow-lg shadow-[#2F966E]/25 transition-all duration-300 hover:bg-[#267A5A] hover:shadow-xl"
@@ -181,7 +190,7 @@ export default function ProcessPage() {
               </Link>
               <Link
                 href="/contact?intent=audit"
-                className="inline-flex items-center justify-center rounded-full px-8 py-3.5 font-semibold border-2 border-gray-200 bg-white text-gray-700 transition-all duration-300 hover:border-[#2F966E] hover:text-[#2F966E]"
+                className="inline-flex items-center justify-center rounded-full px-8 py-3.5 font-semibold border-2 border-white/30 text-white transition-all duration-300 hover:bg-white/10"
               >
                 Request a Free Audit
               </Link>
