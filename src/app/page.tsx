@@ -188,7 +188,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#2F966E]/15 bg-white/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#2F966E] shadow-sm backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-[#2F966E]" />
-              ERPNext & Frappe implementation partner
+              Business Systems Implementation Partner
             </div>
 
             <h1 className="mt-6 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
@@ -198,7 +198,7 @@ export default function Home() {
 
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
                 We help you simplify operations, scale faster, and gain full control of your business processes—
-                with ERPNext, tailored workflows, and long-term support.
+                with modern business systems, tailored workflows, and long-term support.
               </p>
 
 
@@ -257,7 +257,7 @@ export default function Home() {
               ERP that runs your business—clearly, consistently, and fast.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600">
-              We align ERPNext configuration, integrations, and support around outcomes you can measure from day one.
+              We align our systems, integrations, and support around outcomes you can measure from day one.
             </p>
 
           </div>
@@ -384,7 +384,7 @@ export default function Home() {
 
               <div className="mt-8 space-y-4">
                 {[
-                  "Proven expertise in ERPNext + Frappe implementations—built for real-world workflows.",
+                  "Proven expertise in business systems implementation — built for real-world workflows.",
                   "Tailored solutions (no one-size-fits-all templates).",
                   "Audit-first scoping to reduce risk, waste, and expensive rework.",
                   "Long-term support mindset: training, optimization, and reliability.",
@@ -577,7 +577,7 @@ export default function Home() {
             <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Who we serve</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Industries we support</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We&apos;ve implemented ERPNext across a wide range of sectors, each with distinct workflows and compliance requirements.
+              We&apos;ve deployed business systems across a wide range of sectors, each with distinct workflows and compliance requirements.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -610,7 +610,7 @@ export default function Home() {
             <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Our Clients</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Organizations We&apos;ve Partnered With</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Trusted by businesses across Kenya to deliver ERPNext with clear scope and long-term support.
+              Trusted by businesses across Kenya to deliver effective business systems with clear scope and long-term support.
             </p>
           </div>
         </div>
@@ -626,7 +626,7 @@ export default function Home() {
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#2F966E]">Client Stories</span>
             <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">What our clients say</h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600 max-w-2xl mx-auto">
-              Real outcomes from businesses that chose NexaGen Solutions for their ERPNext implementation.
+              Real outcomes from businesses that chose NexaGen Solutions for their business systems.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -684,7 +684,7 @@ export default function Home() {
             Let&apos;s get started
           </span>
           <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-            See how ERPNext can work for your business — in a live, guided demo.
+            See how the right system can work for your business — in a live, guided demo.
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-gray-600">
             We tailor every demo to your industry and workflows. No slides, no sales pitch — just the system doing what you need it to do.

@@ -46,7 +46,7 @@ export default function Footer() {
             />
           </Link>
             <p className="text-sm leading-relaxed text-gray-500">
-              Trusted ERPNext implementors. We deliver end-to-end ERP solutions
+              Trusted business systems partner. We deliver end-to-end solutions
               that transform operations across industries — with compliance built in from day one.
             </p>
             <div className="flex space-x-3">

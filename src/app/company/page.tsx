@@ -61,7 +61,7 @@ export default function AboutPage() {
               Simplify operations.<br className="hidden sm:block" /> Scale faster.<br className="hidden sm:block" /> Stay in control.
             </h1>
             <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-xl">
-              We&apos;re your technology partner for ERPNext and Frappe implementations — practical systems, clear scope, tailored workflows, and support that keeps improving after go-live.
+              We&apos;re your business systems partner — practical systems, clear scope, tailored workflows, and support that keeps improving after go-live. Our implementations are built on ERPNext and Frappe.
             </p>
             {/* Stats row */}
             <div className="flex flex-wrap gap-8">

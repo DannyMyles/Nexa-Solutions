@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "ERPNext implementation Kenya",
     "Frappe Kenya",
     "ERP software Kenya",
-    "ERP Nairobi",
+    "ERP Kenya",
     "M-Pesa ERPNext integration",
     "KRA eTIMS integration",
     "accounting software Kenya",

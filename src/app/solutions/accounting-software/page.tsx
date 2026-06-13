@@ -16,8 +16,8 @@ import ClientCarousel from "@/components/ClientCarousel";
 export const metadata: Metadata = {
   title: "Accounting Software in Kenya | NexaGen Solutions Limited",
   description:
-    "ERPNext accounting software in Kenya — structured ledgers, automated M-Pesa and bank reconciliation, KRA-compliant reporting, and full audit trails for Nairobi and East Africa businesses.",
-  keywords: ["accounting software Kenya", "ERPNext accounting Kenya", "bookkeeping software Nairobi", "KRA compliant accounting", "M-Pesa reconciliation ERPNext"],
+    "ERPNext accounting software in Kenya — structured ledgers, automated M-Pesa and bank reconciliation, KRA-compliant reporting, and full audit trails for businesses across Kenya and East Africa.",
+  keywords: ["accounting software Kenya", "ERPNext accounting Kenya", "bookkeeping software Kenya", "KRA compliant accounting", "M-Pesa reconciliation ERPNext"],
   openGraph: {
     title: "Accounting Software in Kenya | NexaGen Solutions Limited",
     description: "ERPNext accounting software in Kenya — structured ledgers, M-Pesa reconciliation, KRA-compliant reporting.",
@@ -30,7 +30,7 @@ const item = {
   slug: "accounting-software",
   label: "Accounting Software",
   description:
-    "ERPNext accounting software in Kenya — structured ledgers, automated M-Pesa and bank reconciliation, KRA-compliant reporting, and full audit trails for Nairobi and East Africa businesses.",
+    "ERPNext accounting software in Kenya — structured ledgers, automated M-Pesa and bank reconciliation, KRA-compliant reporting, and full audit trails for businesses across Kenya and East Africa.",
   bullets: [
     "Chart of Accounts setup",
     "Invoices, payments & journal workflows",

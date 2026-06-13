@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "POS System in Kenya | NexaGen Solutions Limited",
   description:
     "ERPNext POS system for Kenyan retailers — M-Pesa, cash, and card payments, KRA eTIMS-compliant receipts, real-time stock updates, and multi-branch reporting.",
-  keywords: ["POS system Kenya", "point of sale Kenya", "M-Pesa POS Kenya", "KRA eTIMS POS", "retail POS Nairobi"],
+  keywords: ["POS system Kenya", "point of sale Kenya", "M-Pesa POS Kenya", "KRA eTIMS POS", "retail POS Kenya"],
   openGraph: {
     title: "POS System in Kenya | NexaGen Solutions Limited",
     description: "ERPNext POS in Kenya — M-Pesa payments, KRA eTIMS receipts, real-time stock, multi-branch.",

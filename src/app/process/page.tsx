@@ -176,7 +176,7 @@ export default function ProcessPage() {
               Our Methodology
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              How we deliver your<br className="hidden sm:block" /> ERPNext implementation.
+              How we deliver your<br className="hidden sm:block" /> business system.
             </h1>
             <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-xl">
               A transparent, five-phase process — from the first discovery call to long-term support. No surprises, no vague scope, no handover-and-goodbye.
@@ -304,7 +304,7 @@ export default function ProcessPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to start your implementation?</h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            The first step is a free discovery call — we&apos;ll map your workflows and give you a clear picture of what ERPNext can do for your business.
+            The first step is a free discovery call — we&apos;ll map your workflows and give you a clear picture of what the right system can do for your business.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

@@ -44,7 +44,7 @@ const industries = [
     icon: FaHospital,
     name: "Healthcare",
     description:
-      "Patient billing, insurance claims, pharmacy inventory, and staff payroll — structured and connected within a single ERPNext environment.",
+      "Patient billing, insurance claims, pharmacy inventory, and staff payroll — structured and connected within a single integrated environment.",
     challenges: ["Patient billing & insurance", "Pharmacy stock control", "Staff shift management", "Regulatory compliance"],
     solutions: [
       { label: "Hospital Management System", href: "/solutions/hospital-management-system" },
@@ -214,10 +214,10 @@ export default function IndustriesPage() {
               Who We Serve
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              ERPNext built for<br className="hidden sm:block" /> your industry.
+              Business systems built for<br className="hidden sm:block" /> your industry.
             </h1>
             <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-xl">
-              Every industry has distinct workflows, compliance requirements, and integration needs. We configure ERPNext to fit your sector — not the other way around.
+              Every industry has distinct workflows, compliance requirements, and integration needs. We configure our systems to fit your sector — not the other way around.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
@@ -312,7 +312,7 @@ export default function IndustriesPage() {
             Don&apos;t see your industry listed?
           </h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            ERPNext is flexible enough for almost any business model. Tell us what you do and we&apos;ll show you how it fits.
+            Our solutions are flexible enough for almost any business model. Tell us what you do and we&apos;ll show you how it fits.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
