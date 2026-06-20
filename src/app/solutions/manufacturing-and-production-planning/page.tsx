@@ -120,7 +120,7 @@ export default function ManufacturingAndProductionPlanningPage() {
             </div>
             <div className="relative -mr-8 lg:-mr-16">
               <Image
-                src="/images/solutions/manufacturing.jpeg"
+                src="/images/solutions/manufancturing.png"
                 alt="Manufacturing and Production Planning"
                 width={900}
                 height={620}
