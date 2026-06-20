@@ -10,10 +10,10 @@ export default function WhatsAppWidget() {
 
   const getMessage = () => {
     if (!selectedService) {
-      return "Hello! I have a question about your services.";
+      return "Hello NexaGen! I have a question about your services.";
     }
     const service = services.find((s) => s.value === selectedService);
-    return `Hello! I'm interested in ${service?.label || "your services"}.`;
+    return `Hello NexaGen! I'm interested in ${service?.label || "your services"}.`;
   };
 
   const handleClick = () => {
