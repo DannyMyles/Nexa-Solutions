@@ -398,7 +398,7 @@ export default function Home() {
                   {[
                     { value: "10+", label: "Clients served" },
                     { value: "5+", label: "Industries served" },
-                    { value: "5+", label: "Years experience" },
+                    { value: "5+", label: "Projects Delivered" },
                     { value: "1", label: "Partner for all stages" },
                   ].map((stat) => (
                     <div key={stat.label} className="rounded-2xl bg-gray-50 p-5 text-center">

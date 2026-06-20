@@ -67,7 +67,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-8">
               {[
                 { value: "10+", label: "Clients Served" },
-                { value: "5+", label: "Years Experience" },
+                { value: "5+", label: "Projects Delivered" },
                 { value: "5+", label: "Industries" },
               ].map((s) => (
                 <div key={s.label}>

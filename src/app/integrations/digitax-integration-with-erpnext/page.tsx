@@ -138,38 +138,57 @@ export default function DigitaxIntegrationWithErpnextPage() {
       </section>
 
       {/* How it works */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">The Process</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How it works</h2>
+            <span className="inline-flex items-center gap-2 text-xs font-semibold text-[#2F966E] uppercase tracking-[0.2em] bg-[#2F966E]/10 px-4 py-1.5 rounded-full">The Process</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">How it works</h2>
+            <p className="text-gray-500 mt-3 max-w-xl mx-auto text-base">From kickoff to a live, fully automated integration in three clear steps.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {howItWorks.map((step, i) => (
-              <div key={step.title} className="p-8 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
-                <div className="w-12 h-12 bg-[#2F966E] rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">{i + 1}</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
-              </div>
-            ))}
+
+          <div className="relative">
+            {/* Connecting line — desktop only */}
+            <div className="hidden md:block absolute top-11 left-[calc(16.67%+2.5rem)] right-[calc(16.67%+2.5rem)] h-px bg-gradient-to-r from-transparent via-[#2F966E]/40 to-transparent" />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+              {howItWorks.map((step, i) => (
+                <div key={step.title} className="flex flex-col items-center text-center group">
+                  {/* Step bubble */}
+                  <div className="relative z-10 w-[5.5rem] h-[5.5rem] rounded-2xl bg-white border-2 border-[#2F966E]/20 shadow-lg shadow-[#2F966E]/10 flex flex-col items-center justify-center mb-6 group-hover:border-[#2F966E] group-hover:shadow-[#2F966E]/20 transition-all duration-300">
+                    <span className="text-[10px] font-bold text-[#2F966E]/50 uppercase tracking-widest leading-none">Step</span>
+                    <span className="text-4xl font-black text-[#2F966E] leading-none mt-0.5">{i + 1}</span>
+                  </div>
+                  {/* Card */}
+                  <div className="bg-white rounded-3xl border border-gray-100 px-6 py-7 shadow-sm w-full flex-1 group-hover:shadow-md group-hover:border-[#2F966E]/20 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">{step.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Business impact */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Results</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Business impact</h2>
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold text-[#2F966E] uppercase tracking-[0.2em] bg-[#2F966E]/10 px-4 py-1.5 rounded-full">Results</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">Business impact</h2>
+            <p className="text-gray-500 mt-3 max-w-xl mx-auto text-base">Measurable outcomes from businesses that have deployed this integration.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {impact.map((stat) => (
-              <div key={stat.label} className="p-8 bg-gradient-to-br from-[#2F966E]/5 to-[#2F966E]/10 rounded-2xl border border-[#2F966E]/20 text-center">
-                <div className="text-4xl font-bold text-[#2F966E] mb-2">{stat.value}</div>
-                <div className="text-gray-700 font-semibold">{stat.label}</div>
-              </div>
-            ))}
+
+          <div className="rounded-3xl bg-white border border-gray-100 shadow-xl overflow-hidden">
+            <div className="h-1 bg-gradient-to-r from-[#2F966E] via-emerald-400 to-[#2F966E]" />
+            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+              {impact.map((stat) => (
+                <div key={stat.label} className="px-10 py-12">
+                  <div className="text-3xl sm:text-4xl font-black text-[#2F966E] leading-none mb-3">{stat.value}</div>
+                  <div className="text-gray-500 text-sm leading-relaxed">{stat.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
