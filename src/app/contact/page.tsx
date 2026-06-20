@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: FaPhone,
     title: "Call Us",
-    details: ["+254 758 269 725", "+254 716 357 560"],
+    details: ["+254 758 269 725", "+254 716 357 560", "+254 708 355 982"],
   },
   {
     icon: FaEnvelope,
