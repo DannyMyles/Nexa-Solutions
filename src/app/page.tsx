@@ -430,8 +430,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* REDESIGNED HOW WE WORK SECTION */}
-            {/* REDESIGNED HOW WE WORK SECTION - NO GREEN LINE */}
+      {/* How we work */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           {/* Section Header */}

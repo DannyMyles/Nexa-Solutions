@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services | NexaGen Solutions Limited",
+  title: "Services",
   description:
     "ERPNext implementation, customization, integration, and ongoing support services for businesses across Kenya and East Africa.",
 };

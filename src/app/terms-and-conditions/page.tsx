@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | NexaGen Solutions Limited",
+  title: "Terms & Conditions",
   description: "Terms and conditions governing the use of NexaGen Solutions services and website.",
 };
 

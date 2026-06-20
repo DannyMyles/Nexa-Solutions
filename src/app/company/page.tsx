@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import { FaCheck, FaAward, FaUsers, FaRocket, FaBullseye } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "About Us | NexaGen Solutions Limited",
-  description: "Learn about NexaGen Solutions Limited - your trusted ERPNext implementors in Kenya. Discover our mission, team, and why choose us.",
+  title: "About Us",
+  description: "Learn about NexaGen Solutions Limited — your trusted ERPNext implementation partner in Kenya. Discover our mission, values, and why businesses choose us.",
 };
 
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
         {/* Background image */}
         <Image
           src="/images/ChatGPT Image Jun 11, 2026, 04_28_19 PM.png"
-          alt=""
+          alt="NexaGen Solutions team working on ERP implementation"
           fill
           className="object-cover object-center"
           priority
@@ -133,7 +133,7 @@ export default function AboutPage() {
               We Are <span className="text-[#2F966E]">NICE</span>
             </h2>
             <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm text-gray-500">
-              <span><span className="font-bold text-[#2F966E]">N</span>eed-Focused</span>
+              <span><span className="font-bold text-[#2F966E]">N</span>eed-Centric</span>
               <span><span className="font-bold text-[#2F966E]">I</span>nnovation</span>
               <span><span className="font-bold text-[#2F966E]">C</span>ollaboration</span>
               <span><span className="font-bold text-[#2F966E]">E</span>xcellence</span>

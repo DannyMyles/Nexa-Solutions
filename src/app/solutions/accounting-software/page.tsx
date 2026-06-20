@@ -14,7 +14,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Accounting Software in Kenya | NexaGen Solutions Limited",
+  title: "Accounting Software in Kenya",
   description:
     "ERPNext accounting software in Kenya — structured ledgers, automated M-Pesa and bank reconciliation, KRA-compliant reporting, and full audit trails for businesses across Kenya and East Africa.",
   keywords: ["accounting software Kenya", "ERPNext accounting Kenya", "bookkeeping software Kenya", "KRA compliant accounting", "M-Pesa reconciliation ERPNext"],

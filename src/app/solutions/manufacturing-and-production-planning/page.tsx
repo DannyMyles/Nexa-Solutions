@@ -13,7 +13,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Manufacturing & Production Planning Software Kenya | NexaGen Solutions Limited",
+  title: "Manufacturing & Production Planning Software Kenya",
   description:
     "Plan, schedule, and execute manufacturing workflows with ERPNext: production planning, BOMs, quality checkpoints, and reporting.",
 };

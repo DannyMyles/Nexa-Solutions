@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaWhatsapp, FaMapPin } fr
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | NexaGen Solutions Limited",
+  title: "Contact Us",
   description: "Get in touch with NexaGen Solutions Limited for ERPNext implementation services. Contact us at Riverside Drive, Kofisi, Nairobi.",
 };
 

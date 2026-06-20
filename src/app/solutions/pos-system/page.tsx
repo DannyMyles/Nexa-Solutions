@@ -13,7 +13,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "POS System in Kenya | NexaGen Solutions Limited",
+  title: "POS System in Kenya",
   description:
     "ERPNext POS system for Kenyan retailers — M-Pesa, cash, and card payments, KRA eTIMS-compliant receipts, real-time stock updates, and multi-branch reporting.",
   keywords: ["POS system Kenya", "point of sale Kenya", "M-Pesa POS Kenya", "KRA eTIMS POS", "retail POS Kenya"],

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaArrowRight, FaBuilding, FaGraduationCap, FaHospital, FaIndustry, FaLandmark, FaMoneyBillWave, FaShoppingCart, FaTractor, FaTruck, FaUserTie, FaWarehouse, FaHome } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Industries We Serve | NexaGen Solutions Limited",
+  title: "Industries We Serve",
   description:
     "NexaGen Solutions delivers ERPNext implementations across 5+ industries in Kenya and East Africa — tailored to your sector's workflows, compliance, and integration needs.",
 };
@@ -192,7 +192,7 @@ export default function IndustriesPage() {
       <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[520px] flex items-center">
         <Image
           src="/images/ChatGPT Image Jun 12, 2026, 04_53_30 PM.png"
-          alt=""
+          alt="Business operations across industries served by NexaGen Solutions"
           fill
           className="object-cover object-center"
           priority

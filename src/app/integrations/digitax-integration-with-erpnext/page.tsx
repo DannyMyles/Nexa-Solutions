@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "DigiTax ERPNext Integration Kenya | NexaGen Solutions Limited",
+  title: "DigiTax ERPNext Integration Kenya",
   description:
     "Connect ERPNext to DigiTax for compliant e-invoicing in Kenya — automated eTIMS submission, tax configuration, and KRA compliance reporting for Kenyan businesses.",
 };

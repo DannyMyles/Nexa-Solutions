@@ -14,7 +14,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "HR & Payroll Software in Kenya | NexaGen Solutions Limited",
+  title: "HR & Payroll Software in Kenya",
   description:
     "ERPNext HR and payroll software in Kenya — NHIF, NSSF, PAYE compliance, biometric attendance, leave management, and automated payroll processing for businesses across Kenya.",
   keywords: ["HR software Kenya", "payroll software Kenya", "NHIF NSSF PAYE Kenya", "ERPNext HR payroll Kenya", "HR system Kenya"],

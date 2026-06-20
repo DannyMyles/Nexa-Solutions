@@ -13,7 +13,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Learning Management System Kenya | NexaGen Solutions Limited",
+  title: "Learning Management System Kenya",
   description:
     "ERPNext learning management system in Kenya — M-Pesa fee collection, student records, staff payroll, biometric attendance, and NHIF compliance.",
   keywords: ["learning management system Kenya", "LMS Kenya", "school ERP Kenya", "M-Pesa school fees Kenya", "student management system Kenya"],

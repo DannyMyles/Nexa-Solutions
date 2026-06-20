@@ -14,7 +14,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Microfinance Core Banking Software Kenya | NexaGen Solutions Limited",
+  title: "Microfinance Core Banking Software Kenya",
   description:
     "ERPNext microfinance core banking software in Kenya — loan management, CBK compliance, M-Pesa repayment collection, and client account management for licensed MFIs.",
   keywords: ["microfinance software Kenya", "core banking Kenya", "CBK compliant software", "loan management Kenya", "MFI software Kenya"],

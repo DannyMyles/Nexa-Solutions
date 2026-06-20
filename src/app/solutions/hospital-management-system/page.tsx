@@ -14,7 +14,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Hospital Management System in Kenya | NexaGen Solutions Limited",
+  title: "Hospital Management System in Kenya",
   description:
     "ERPNext hospital management system in Kenya — patient billing, pharmacy inventory, staff scheduling, insurance claims, and NHIF compliance for Kenyan healthcare facilities.",
   keywords: ["hospital management system Kenya", "HMS Kenya", "healthcare ERP Kenya", "patient billing Kenya", "pharmacy management Kenya"],

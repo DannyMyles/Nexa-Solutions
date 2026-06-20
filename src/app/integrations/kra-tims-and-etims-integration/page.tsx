@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "KRA eTIMS ERPNext Integration Kenya | NexaGen Solutions Limited",
+  title: "KRA eTIMS ERPNext Integration Kenya",
   description:
     "Automate KRA eTIMS invoice submission from ERPNext in Kenya — tax-compliant receipts, QR codes, TIMS integration, and audit-ready compliance reporting.",
   keywords: ["KRA eTIMS integration Kenya", "KRA TIMS ERPNext", "eTIMS compliance Kenya", "KRA invoice Kenya", "ERPNext KRA integration"],

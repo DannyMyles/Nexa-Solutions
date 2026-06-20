@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "How We Work | NexaGen Solutions Limited",
+  title: "How We Work",
   description:
     "A transparent look at how NexaGen Solutions delivers ERPNext implementations — from the first discovery call through go-live and long-term support.",
 };

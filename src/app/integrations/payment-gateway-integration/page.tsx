@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Payment Gateway Integration Kenya | NexaGen Solutions Limited",
+  title: "Payment Gateway Integration Kenya",
   description:
     "Connect PayPal, Stripe, Flutterwave, and Pesapal to ERPNext in Kenya — automated payment reconciliation, real-time invoice updates, and multi-gateway support.",
 };

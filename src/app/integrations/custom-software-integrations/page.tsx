@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Custom Software Integrations Kenya | NexaGen Solutions Limited",
+  title: "Custom Software Integrations Kenya",
   description:
     "Bespoke ERPNext integration development in Kenya — custom APIs, webhooks, data transformation, and integration with any system that has an API or data export.",
 };

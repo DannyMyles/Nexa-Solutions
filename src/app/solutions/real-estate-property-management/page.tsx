@@ -13,7 +13,7 @@ import {
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "Real Estate Property Management Software Kenya | NexaGen Solutions Limited",
+  title: "Real Estate Property Management Software Kenya",
   description:
     "ERPNext real estate management in Kenya — tenant rent collection via M-Pesa, lease management, maintenance workflows, and KRA-compliant invoicing for Kenyan landlords.",
   keywords: ["real estate software Kenya", "property management Kenya", "M-Pesa rent collection", "landlord software Kenya", "property ERP Kenya"],
