@@ -373,7 +373,7 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#2F966E]">
-                Why Choose Nexa
+                Why Choose NexaGen
               </span>
               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
                 Your ERP partner—not a vendor.

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | NexaGen Solutions Limited",
-  description: "How Nexa Solutions collects, uses, and protects your personal information.",
+  description: "How NexaGen Solutions collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -127,8 +127,8 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p className="text-gray-600 leading-relaxed mt-4">
                 To exercise any of these rights, please contact us at{" "}
-                <a href="mailto:info@nexasolutions.com" className="text-[#2F966E] hover:underline">
-                  info@nexasolutions.com
+                <a href="mailto:info@nexagensolutions.com" className="text-[#2F966E] hover:underline">
+                  info@nexagensolutions.com
                 </a>.
               </p>
             </div>
@@ -157,8 +157,8 @@ export default function PrivacyPolicyPage() {
                 <p className="text-gray-600 text-sm">Riverside Drive, Kofisi, Nairobi, Kenya</p>
                 <p className="text-gray-600 text-sm">
                   Email:{" "}
-                  <a href="mailto:info@nexasolutions.com" className="text-[#2F966E] hover:underline">
-                    info@nexasolutions.com
+                  <a href="mailto:info@nexagensolutions.com" className="text-[#2F966E] hover:underline">
+                    info@nexagensolutions.com
                   </a>
                 </p>
                 <p className="text-gray-600 text-sm">

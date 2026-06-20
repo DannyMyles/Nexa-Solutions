@@ -90,9 +90,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                To make enterprise-grade ERP accessible to every growing business in Kenya and East Africa.
-                We do this by combining deep ERPNext expertise with honest scoping, practical training,
-                and support that stays — so our clients always know what their system is doing and why.
+                To make enterprise-grade ERP accessible to growing businesses across Kenya and Africa by delivering ERPNext solutions backed by honest scoping, practical training, and dependable long-term support. We empower our clients to understand, trust, and fully utilize their systems.
               </p>
             </div>
 
@@ -102,13 +100,27 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">
-                To become the most trusted ERPNext partner across East Africa — recognized not just
-                for technical delivery, but for the clarity, reliability, and long-term business value
-                we bring to every client relationship. We believe the best ERP is one your team
-                actually uses and understands.
+                To become one of the most trusted ERPNext partners across Africa — helping organizations achieve sustainable growth through successful ERP adoption and digital transformation, while being recognized not only for technical excellence but also for the clarity, reliability, and long-term business value we bring to every client relationship.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Punch Line Section */}
+      <section className="py-16 bg-[#2F966E]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm font-semibold text-white/70 uppercase tracking-widest mb-3">Our Philosophy</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">ERP Implementation Done Right.</h2>
+          <p className="text-white/90 text-lg leading-relaxed mb-3">
+            The best ERP is one your team actually uses and understands.
+          </p>
+          <p className="text-white/80 text-base leading-relaxed mb-2">
+            That&apos;s why we focus on practical implementation, user adoption, and ongoing support — not just go-live dates.
+          </p>
+          <p className="text-white/70 text-base italic">
+            An ERP system only creates value if people actually adopt it.
+          </p>
         </div>
       </section>
 

@@ -120,9 +120,9 @@ export default function ManufacturingAndProductionPlanningPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/open source.jpg"
+                  src="/images/solutions/manufacturing.jpeg"
                   alt="Manufacturing and Production Planning"
                   fill
                   className="object-contain"
@@ -300,7 +300,6 @@ export default function ManufacturingAndProductionPlanningPage() {
             {[
               { label: "Inventory & Warehouse Management", href: "/solutions/inventory-and-warehouse-management", desc: "Track raw materials, WIP, and finished goods" },
               { label: "Accounting Software", href: "/solutions/accounting-software", desc: "Post production costs to your P&L automatically" },
-              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Match supplier payments to purchase orders" },
             ].map((i) => (
               <Link
                 key={i.label}

@@ -218,7 +218,7 @@ export default function BiometricDataIntegrationPage() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               { label: "HR & Payroll Software", href: "/solutions/hr-and-payroll-software", desc: "Auto-populate timesheets and payroll from punch data" },
-              { label: "School Management Software", href: "/solutions/school-college-and-university-management-software", desc: "Track student and staff attendance automatically" },
+              { label: "Learning Management System", href: "/solutions/learning-management-system", desc: "Track student and staff attendance automatically" },
               { label: "Hospital Management System", href: "/solutions/hospital-management-system", desc: "Log staff shifts and duty hours with precision" },
             ].map((i) => (
               <Link

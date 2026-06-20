@@ -1,112 +1,108 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import {
   FaArrowRight,
-  FaUserTie,
+  FaUserGraduate,
+  FaBook,
+  FaMoneyBillWave,
   FaCalendarAlt,
-  FaMoneyCheckAlt,
-  FaBriefcase,
-  FaStar,
+  FaBookOpen,
   FaChartBar,
 } from "react-icons/fa";
 import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
-  title: "HR & Payroll Software in Kenya | NexaGen Solutions Limited",
+  title: "Learning Management System Kenya | NexaGen Solutions Limited",
   description:
-    "ERPNext HR and payroll software in Kenya — NHIF, NSSF, PAYE compliance, biometric attendance, leave management, and automated payroll processing for businesses across Kenya.",
-  keywords: ["HR software Kenya", "payroll software Kenya", "NHIF NSSF PAYE Kenya", "ERPNext HR payroll Kenya", "HR system Kenya"],
+    "ERPNext learning management system in Kenya — M-Pesa fee collection, student records, staff payroll, biometric attendance, and NHIF compliance.",
+  keywords: ["learning management system Kenya", "LMS Kenya", "school ERP Kenya", "M-Pesa school fees Kenya", "student management system Kenya"],
   openGraph: {
-    title: "HR & Payroll Software in Kenya | NexaGen Solutions Limited",
-    description: "ERPNext HR and payroll in Kenya — NHIF, NSSF, PAYE compliance, biometric attendance, automated payroll.",
-    url: "https://www.nexasolutions.co.ke/solutions/hr-and-payroll-software",
+    title: "Learning Management System Kenya | NexaGen Solutions Limited",
+    description: "ERPNext learning management system in Kenya — M-Pesa fees, student records, payroll, biometric attendance.",
+    url: "https://www.nexasolutions.co.ke/solutions/learning-management-system",
     type: "website",
   },
 };
 
 const item = {
-  slug: "hr-and-payroll-software",
-  label: "HR and Payroll Software",
+  label: "Learning Management System",
   description:
-    "Streamline HR operations and payroll in one system with transparent approvals and structured leave and attendance.",
+    "Manage student enrollment, academics, fees, and administration for schools, colleges, and universities with ERPNext.",
   bullets: [
-    "Employee records & HR policies",
-    "Payroll run automation",
-    "Leave/attendance workflows",
-    "HR reports for decision-making",
+    "Student enrollment and records management",
+    "Fee billing and collections",
+    "Academic scheduling and results",
+    "Staff HR and payroll integration",
   ],
 };
 
 const features = [
   {
-    icon: FaUserTie,
-    title: "Employee Records & Onboarding",
+    icon: FaUserGraduate,
+    title: "Student Enrollment & Records",
     description:
-      "Digital employee files with contract management, document storage, and structured onboarding checklists for every new hire.",
+      "End-to-end enrollment workflows, student profiles, guardian contacts, and complete academic history in a single system.",
+  },
+  {
+    icon: FaBook,
+    title: "Academic Management",
+    description:
+      "Course setup, class scheduling, grade entry, transcript generation, and promotion workflows for all levels.",
+  },
+  {
+    icon: FaMoneyBillWave,
+    title: "Fee Management & Collections",
+    description:
+      "Automated fee invoicing by term and program, M-Pesa integration for payments, and outstanding balance tracking.",
   },
   {
     icon: FaCalendarAlt,
-    title: "Leave & Attendance Tracking",
+    title: "Timetabling & Attendance",
     description:
-      "Policy-based leave allocation, multi-level approval workflows, and optional biometric integration for accurate attendance.",
+      "Visual timetable builder, teacher allocation, and student attendance tracking with absentee alerts for parents.",
   },
   {
-    icon: FaMoneyCheckAlt,
-    title: "Payroll Automation",
+    icon: FaBookOpen,
+    title: "Library Management",
     description:
-      "Automated salary processing with earnings, deductions, PAYE, NHIF, NSSF, and Housing Levy calculations built in.",
-  },
-  {
-    icon: FaBriefcase,
-    title: "Benefits Administration",
-    description:
-      "Track medical covers, insurance, pension contributions, and welfare benefits with individual employee visibility.",
-  },
-  {
-    icon: FaStar,
-    title: "Performance Appraisals",
-    description:
-      "Structured goal setting, mid-year reviews, and annual appraisal workflows that link performance to compensation.",
+      "Book catalog, borrowing and return workflows, fine management, and inventory tracking for institutional libraries.",
   },
   {
     icon: FaChartBar,
-    title: "HR Reporting & Analytics",
+    title: "Administration & Reporting",
     description:
-      "Headcount reports, payroll cost summaries, leave utilization, and turnover dashboards for management decisions.",
+      "Enrollment trends, fee collection reports, academic performance dashboards, and staff management for institutional oversight.",
   },
 ];
 
 const clients = [
-  { name: "CGM Logistics", description: "Transportation", logo: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=96&h=96&q=80" },
-  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=96&h=96&q=80" },
-  { name: "Spices Restaurant", description: "Food & Beverage", logo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Sunrise Academy", description: "Secondary School", logo: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=96&h=96&q=80" },
   { name: "Green Valley Farms", description: "Agriculture", logo: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "CGM Logistics", description: "Transportation", logo: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=96&h=96&q=80" },
   { name: "Sunrise Healthcare", description: "Medical Services", logo: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=96&h=96&q=80" },
+  { name: "Creams on Cakes", description: "Bakery & Confectionery", logo: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=96&h=96&q=80" },
   { name: "Elite Retail", description: "Fashion & Retail", logo: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=96&h=96&q=80" },
   { name: "Prime Distributors", description: "Wholesale", logo: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=96&h=96&q=80" },
 ];
 
 const processSteps = [
-  { step: "01", title: "Discovery", description: "We map your HR policies, payroll rules, and approval hierarchies." },
-  { step: "02", title: "Design", description: "We design the payroll structure, leave policies, and reporting dashboards." },
-  { step: "03", title: "Implement", description: "We configure, migrate employee data, train HR teams, and go live." },
-  { step: "04", title: "Support", description: "We provide statutory updates, system upgrades, and ongoing HR guidance." },
+  { step: "01", title: "Discovery", description: "We map your academic structure, fee schedules, and administration workflows." },
+  { step: "02", title: "Design", description: "We design the student system, fee engine, and reporting dashboards." },
+  { step: "03", title: "Implement", description: "We configure, migrate student data, train admin staff, and go live." },
+  { step: "04", title: "Support", description: "We provide ongoing upgrades, new-term configuration, and system support." },
 ];
 
-const audiences = ["SMEs (10–500 Employees)", "Manufacturers & Factories", "Retail Chains", "Schools & Institutions", "NGOs & Government Contractors"];
+const audiences = ["Primary & Secondary Schools", "Colleges & Technical Institutes", "Universities", "Religious & Private Schools", "Education Groups"];
 
 const faqs = [
-  { q: "Does it handle NSSF, NHIF, and PAYE deductions?", a: "Yes — all Kenyan statutory deductions are configured and calculated automatically." },
-  { q: "Can we manage multiple payroll groups?", a: "Yes — payroll components, pay frequencies, and employee groups are fully configurable." },
-  { q: "Does it support leave approval workflows?", a: "Yes — leave requests, manager approvals, and balance tracking are all managed in the system." },
-  { q: "Can it generate P9A forms?", a: "Yes — we configure P9A and other KRA-required payroll reports as part of the implementation." },
+  { q: "Can it manage multiple academic years simultaneously?", a: "Yes — parallel academic year configurations are supported without data overlap." },
+  { q: "Does it handle fee waivers and scholarships?", a: "Yes — discount rules and scholarship allocations are configurable per student or cohort." },
+  { q: "Can parents receive fee statements by email?", a: "Yes — automated fee statements and payment reminders are sent by email on a configured schedule." },
+  { q: "Does it integrate with the payroll module for staff?", a: "Yes — staff HR and payroll are natively integrated within the same ERPNext system." },
 ];
 
-export default function HrAndPayrollSoftwarePage() {
-  if (!item?.slug) notFound();
-
+export default function LearningManagementSystemPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
@@ -116,8 +112,8 @@ export default function HrAndPayrollSoftwarePage() {
           <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#2F966E]/20 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-2xl">
               <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Solutions</span>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
@@ -131,10 +127,10 @@ export default function HrAndPayrollSoftwarePage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-[4/5]">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/hr_system.png"
-                  alt="HR and Payroll Software"
+                  src="/images/solutions/learning_managemet.jpeg"
+                  alt="Learning Management System"
                   fill
                   className="object-contain"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -152,7 +148,7 @@ export default function HrAndPayrollSoftwarePage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900">What we deliver</h2>
               <p className="text-gray-600 mt-3 leading-relaxed">
-                A complete HR and payroll system on ERPNext with Kenyan statutory compliance built in from day one.
+                An integrated education management system on ERPNext connecting students, academics, fees, and administration.
               </p>
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
@@ -168,15 +164,15 @@ export default function HrAndPayrollSoftwarePage() {
               <div className="mt-4 space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#2F966E]">01</span>
-                  <span>We review your payroll structure, leave policies, and HR workflows.</span>
+                  <span>We review your academic structure, fee schedules, and administration workflows.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#2F966E]">02</span>
-                  <span>We design the payroll engine, salary components, and approval flows.</span>
+                  <span>We design the student system, fee engine, and HR integrations.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-[#2F966E]">03</span>
-                  <span>We implement, migrate employee data, train your HR team, and go live.</span>
+                  <span>We implement, migrate student records, train staff, and support go-live.</span>
                 </div>
               </div>
               <div className="mt-6">
@@ -200,7 +196,7 @@ export default function HrAndPayrollSoftwarePage() {
             <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">What&apos;s Included</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Key Capabilities</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Every HR module is configured around your workforce structure, not a generic template.
+              Every module is configured around your institution&apos;s academic structure and operational needs.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -225,9 +221,9 @@ export default function HrAndPayrollSoftwarePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <div className="text-center">
             <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Our Clients</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Companies we&apos;ve helped</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">Institutions we&apos;ve helped</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We deliver HR solutions with clear scope, smooth rollout, and long-term support.
+              We deliver education management solutions with clear scope, smooth rollout, and long-term support.
             </p>
           </div>
         </div>
@@ -260,7 +256,7 @@ export default function HrAndPayrollSoftwarePage() {
             <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Our Process</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">How we work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              A structured methodology that ensures payroll accuracy and team adoption from day one.
+              A structured methodology that ensures minimal disruption to the academic calendar during implementation.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -304,13 +300,14 @@ export default function HrAndPayrollSoftwarePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Pair With</span>
-            <h2 className="text-2xl font-bold text-gray-900 mt-2">Recommended integrations for HR &amp; payroll</h2>
-            <p className="text-gray-500 mt-2 text-sm">These integrations are commonly deployed alongside the HR and payroll module.</p>
+            <h2 className="text-2xl font-bold text-gray-900 mt-2">Recommended integrations for schools &amp; institutions</h2>
+            <p className="text-gray-500 mt-2 text-sm">Automate fee collection, attendance, and payroll so your admin team focuses on education.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              { label: "Biometric Data Integration", href: "/integrations/biometric-data-integration", desc: "Sync fingerprint attendance to payroll" },
-              { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Pay salaries and track via M-Pesa" },
+              { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Auto-match M-Pesa fee payments to student invoices" },
+              { label: "Biometric Data Integration", href: "/integrations/biometric-data-integration", desc: "Sync fingerprint attendance for students and staff" },
+              { label: "HR & Payroll Software", href: "/solutions/hr-and-payroll-software", desc: "Manage teaching staff payroll within the same system" },
             ].map((i) => (
               <Link
                 key={i.label}
@@ -329,9 +326,9 @@ export default function HrAndPayrollSoftwarePage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-[#2F966E] to-[#267A5A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to streamline your HR operations?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to modernize your institution?</h2>
           <p className="text-white/90 text-lg mb-10 leading-relaxed">
-            Start with a tailored audit or see the platform in action — we&apos;ll shape the engagement around your HR team&apos;s needs.
+            Start with a tailored audit or see the platform in action — we&apos;ll shape the engagement around your institution&apos;s needs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

@@ -131,9 +131,9 @@ export default function MicrofinanceCoreBankingSoftwarePage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/banking.jpeg"
+                  src="/images/solutions/microfinance.jpeg"
                   alt="Microfinance Core Banking Software"
                   fill
                   className="object-contain"
@@ -310,7 +310,6 @@ export default function MicrofinanceCoreBankingSoftwarePage() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Automate loan disbursements and repayments" },
-              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Match settlement files to loan ledger entries" },
               { label: "Payment Gateway Integration", href: "/integrations/payment-gateway-integration", desc: "Accept card and mobile repayments online" },
             ].map((i) => (
               <Link

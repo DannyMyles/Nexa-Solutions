@@ -18,7 +18,7 @@ export default function JsonLd() {
         },
         image: "https://www.nexasolutions.co.ke/images/NexaGen Final Logo Concept 111.svg",
         telephone: "+254758269725",
-        email: "info@nexasolutions.co.ke",
+        email: "info@nexagensolutions.co.ke",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Riverside Drive, Kofisi",

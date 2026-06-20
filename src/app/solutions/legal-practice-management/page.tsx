@@ -120,9 +120,9 @@ export default function LegalPracticeManagementPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/erpsystem.jpg"
+                  src="/images/solutions/legal_softwarel.jpeg"
                   alt="Legal Practice Management"
                   fill
                   className="object-contain"
@@ -299,7 +299,6 @@ export default function LegalPracticeManagementPage() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               { label: "Accounting Software", href: "/solutions/accounting-software", desc: "Separate office and trust ledgers in one system" },
-              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Reconcile client trust disbursements automatically" },
               { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration", desc: "Ensure all fee notes are VAT-compliant" },
             ].map((i) => (
               <Link

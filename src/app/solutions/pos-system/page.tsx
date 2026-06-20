@@ -127,9 +127,9 @@ export default function PosSystemPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/pos.webp"
+                  src="/images/solutions/POS_system.jpeg"
                   alt="POS System"
                   fill
                   className="object-contain"
@@ -307,7 +307,6 @@ export default function PosSystemPage() {
             {[
               { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Accept and auto-reconcile M-Pesa till payments" },
               { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration", desc: "Issue KRA-compliant receipts on every sale" },
-              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Match end-of-day POS settlements to your bank" },
             ].map((i) => (
               <Link
                 key={i.label}

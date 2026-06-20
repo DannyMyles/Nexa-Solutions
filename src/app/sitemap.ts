@@ -14,13 +14,12 @@ const solutions = [
   "pos-system",
   "real-estate-property-management",
   "legal-practice-management",
-  "school-college-and-university-management-software",
+  "learning-management-system",
 ];
 
 const integrations = [
   "mpesa-integration",
   "kra-tims-and-etims-integration",
-  "bank-reconciliation-integration",
   "biometric-data-integration",
   "custom-software-integrations",
   "digitax-integration-with-erpnext",

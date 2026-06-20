@@ -20,9 +20,7 @@ const industries = [
       { label: "Manufacturing & Production Planning", href: "/solutions/manufacturing-and-production-planning" },
       { label: "Inventory & Warehouse Management", href: "/solutions/inventory-and-warehouse-management" },
     ],
-    integrations: [
-      { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration" },
-    ],
+    integrations: [],
   },
   {
     icon: FaShoppingCart,
@@ -62,7 +60,7 @@ const industries = [
       "Fee collection via M-Pesa, student records, staff payroll, and biometric attendance — giving institutions full visibility from admissions to accounts.",
     challenges: ["Fee management & reminders", "Student records", "Staff payroll compliance", "Biometric attendance"],
     solutions: [
-      { label: "School, College & University Management", href: "/solutions/school-college-and-university-management-software" },
+      { label: "Learning Management System", href: "/solutions/learning-management-system" },
       { label: "HR & Payroll Software", href: "/solutions/hr-and-payroll-software" },
     ],
     integrations: [
@@ -111,7 +109,6 @@ const industries = [
       { label: "Accounting Software", href: "/solutions/accounting-software" },
     ],
     integrations: [
-      { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration" },
       { label: "M-Pesa Integration", href: "/integrations/mpesa-integration" },
     ],
   },
@@ -126,7 +123,6 @@ const industries = [
       { label: "Accounting Software", href: "/solutions/accounting-software" },
     ],
     integrations: [
-      { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration" },
       { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration" },
     ],
   },
@@ -141,7 +137,6 @@ const industries = [
       { label: "Accounting Software", href: "/solutions/accounting-software" },
     ],
     integrations: [
-      { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration" },
       { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration" },
     ],
   },
@@ -172,7 +167,6 @@ const industries = [
     ],
     integrations: [
       { label: "M-Pesa Integration", href: "/integrations/mpesa-integration" },
-      { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration" },
     ],
   },
   {
@@ -186,7 +180,6 @@ const industries = [
       { label: "Accounting Software", href: "/solutions/accounting-software" },
     ],
     integrations: [
-      { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration" },
       { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration" },
     ],
   },

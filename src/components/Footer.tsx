@@ -13,7 +13,7 @@ const solutionLinks = [
   { name: "Accounting Software", href: "/solutions/accounting-software" },
   { name: "HR & Payroll", href: "/solutions/hr-and-payroll-software" },
   { name: "CRM Software", href: "/solutions/crm-software" },
-  { name: "POS System", href: "/solutions/pos-point-of-sale-system" },
+  { name: "POS System", href: "/solutions/pos-system" },
   { name: "Hospital Management", href: "/solutions/hospital-management-system" },
   { name: "Real Estate", href: "/solutions/real-estate-property-management" },
 ];
@@ -21,7 +21,6 @@ const solutionLinks = [
 const integrationLinks = [
   { name: "M-Pesa Integration", href: "/integrations/mpesa-integration" },
   { name: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration" },
-  { name: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration" },
   { name: "Payment Gateways", href: "/integrations/payment-gateway-integration" },
   { name: "Biometric Integration", href: "/integrations/biometric-data-integration" },
 ];
@@ -148,8 +147,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-[#2F966E] shrink-0" />
-                <a href="mailto:info@nexasolutions.com" className="text-sm text-gray-500 hover:text-[#2F966E] transition-colors">
-                  info@nexasolutions.com
+                <a href="mailto:info@nexagensolutions.com" className="text-sm text-gray-500 hover:text-[#2F966E] transition-colors">
+                  info@nexagensolutions.com
                 </a>
               </li>
             </ul>

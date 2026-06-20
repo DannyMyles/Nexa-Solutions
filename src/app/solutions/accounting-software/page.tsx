@@ -131,9 +131,9 @@ export default function AccountingSoftwarePage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/accounting.png"
+                  src="/images/solutions/accounting_software.png"
                   alt="Accounting Software"
                   fill
                   className="object-contain"
@@ -310,7 +310,6 @@ export default function AccountingSoftwarePage() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration", desc: "Auto-submit VAT invoices to KRA" },
-              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Auto-match bank statements to transactions" },
               { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Reconcile M-Pesa payments in real time" },
             ].map((i) => (
               <Link

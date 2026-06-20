@@ -127,9 +127,9 @@ export default function RealEstatePropertyManagementPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/realestate.webp"
+                  src="/images/solutions/real_estate.jpeg"
                   alt="Real Estate Property Management"
                   fill
                   className="object-contain"
@@ -306,7 +306,6 @@ export default function RealEstatePropertyManagementPage() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Auto-match M-Pesa rent payments to tenant invoices" },
-              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Reconcile rent receipts against your bank statement" },
               { label: "KRA eTIMS Integration", href: "/integrations/kra-tims-and-etims-integration", desc: "Issue VAT-compliant invoices to commercial tenants" },
             ].map((i) => (
               <Link

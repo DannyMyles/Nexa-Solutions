@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | NexaGen Solutions Limited",
-  description: "Terms and conditions governing the use of Nexa Solutions services and website.",
+  description: "Terms and conditions governing the use of NexaGen Solutions services and website.",
 };
 
 export default function TermsAndConditionsPage() {
@@ -136,8 +136,8 @@ export default function TermsAndConditionsPage() {
                 <p className="text-gray-600 text-sm">Riverside Drive, Kofisi, Nairobi, Kenya</p>
                 <p className="text-gray-600 text-sm">
                   Email:{" "}
-                  <a href="mailto:info@nexasolutions.com" className="text-[#2F966E] hover:underline">
-                    info@nexasolutions.com
+                  <a href="mailto:info@nexagensolutions.com" className="text-[#2F966E] hover:underline">
+                    info@nexagensolutions.com
                   </a>
                 </p>
                 <p className="text-gray-600 text-sm">

@@ -120,9 +120,9 @@ export default function EcommerceIntegrationPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/ecomerce.webp"
+                  src="/images/solutions/ecomerce_system.jpeg"
                   alt="E-commerce Integration"
                   fill
                   className="object-contain"

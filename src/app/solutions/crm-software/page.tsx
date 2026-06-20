@@ -124,9 +124,9 @@ export default function CrmSoftwarePage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/crm.svg"
+                  src="/images/solutions/customer_relations.png"
                   alt="CRM Software"
                   fill
                   className="object-contain"

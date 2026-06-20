@@ -226,7 +226,7 @@ export default function MpesaIntegrationPage() {
             {[
               { label: "Accounting Software", href: "/solutions/accounting-software", desc: "Reconcile all M-Pesa receipts to your ledger" },
               { label: "Real Estate Management", href: "/solutions/real-estate-property-management", desc: "Auto-match tenant M-Pesa rent payments" },
-              { label: "School Management Software", href: "/solutions/school-college-and-university-management-software", desc: "Collect school fees via M-Pesa automatically" },
+              { label: "Learning Management System", href: "/solutions/learning-management-system", desc: "Collect school fees via M-Pesa automatically" },
             ].map((i) => (
               <Link
                 key={i.label}

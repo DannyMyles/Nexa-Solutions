@@ -131,9 +131,9 @@ export default function HospitalManagementSystemPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-3xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/erpsystem.jpg"
+                  src="/images/solutions/hospital_managementl.jpeg"
                   alt="Hospital Management System"
                   fill
                   className="object-contain"

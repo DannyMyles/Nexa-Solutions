@@ -120,9 +120,9 @@ export default function InventoryAndWarehouseManagementPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
+              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
                 <Image
-                  src="/images/solutions/erp.jpeg"
+                  src="/images/solutions/inventory_managemnt.jpeg"
                   alt="Inventory and Warehouse Management"
                   fill
                   className="object-contain"
@@ -300,7 +300,6 @@ export default function InventoryAndWarehouseManagementPage() {
             {[
               { label: "E-commerce Integration", href: "/solutions/e-commerce-integration", desc: "Push real-time stock levels to your online store" },
               { label: "M-Pesa Integration", href: "/integrations/mpesa-integration", desc: "Reconcile supplier and customer mobile payments" },
-              { label: "Bank Reconciliation", href: "/integrations/bank-reconciliation-integration", desc: "Match purchase payments to supplier invoices" },
             ].map((i) => (
               <Link
                 key={i.label}

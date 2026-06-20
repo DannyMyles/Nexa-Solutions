@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: FaEnvelope,
     title: "Email Us",
-    details: ["info@nexasolutions.com", "support@nexasolutions.com"],
+    details: ["info@nexagensolutions.com", "support@nexagensolutions.com"],
   },
   {
     icon: FaClock,
@@ -95,11 +95,11 @@ export default async function ContactPage({
                 +254 758 269 725
               </a>
               <a
-                href="mailto:info@nexasolutions.com"
+                href="mailto:info@nexagensolutions.com"
                 className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white px-5 py-2.5 rounded-full hover:bg-white/20 transition-colors text-sm font-medium"
               >
                 <FaEnvelope className="w-3.5 h-3.5 text-[#2F966E]" />
-                info@nexasolutions.com
+                info@nexagensolutions.com
               </a>
               <Link
                 href="/contact?intent=demo"

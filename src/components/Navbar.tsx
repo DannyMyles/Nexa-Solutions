@@ -23,7 +23,6 @@ const solutions = [
 const integrations = [
   "DigiTax Integration with ERPNext",
   "Mpesa Integration",
-  "Bank Reconciliation Integration",
   "Biometric Data Integration",
   "Custom Software Integrations",
   "KRA TIMS & eTIMS Integration",
