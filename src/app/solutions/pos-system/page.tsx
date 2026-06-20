@@ -35,6 +35,7 @@ const item = {
     "Receipts, invoices, and payment records",
     "Revenue, product, and margin reporting",
   ],
+  pills: ["Fast Checkout", "Real-time Stock", "M-Pesa & Card", "Sales Reports"],
 };
 
 const features = [
@@ -106,17 +107,24 @@ export default function PosSystemPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative pt-40 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+      <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-10 left-6 w-56 h-56 bg-[#2F966E]/20 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#2F966E]/20 rounded-full blur-3xl" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="relative mx-auto grid max-w-7xl gap-8 px-5 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:px-8">
             <div>
               <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Solutions</span>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">{item.label}</h1>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">{item.description}</p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {item.pills.map((tag) => (
+                  <span key={tag} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 border border-gray-200 text-sm font-medium text-gray-700 shadow-sm">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#2F966E]" />
+                    {tag}
+                  </span>
+                ))}
+              </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/contact?intent=demo"
@@ -126,18 +134,16 @@ export default function PosSystemPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-[4/5]">
-                <Image
-                  src="/images/solutions/POS_system.jpeg"
-                  alt="POS System"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
+            <div className="relative -mr-8 lg:-mr-16">
+              <Image
+                src="/images/solutions/POS_system.jpeg"
+                alt="POS System"
+                width={900}
+                height={620}
+                className="h-auto w-full rounded-3xl object-cover"
+                priority
+              />
             </div>
-          </div>
         </div>
       </section>
 
@@ -146,10 +152,8 @@ export default function PosSystemPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">What we deliver</h2>
-              <p className="text-gray-600 mt-3 leading-relaxed">
-                A POS that works inside ERPNext so every sale instantly updates stock, triggers invoicing, and feeds your finance reports.
-              </p>
+              <h2 className="text-2xl font-bold text-gray-900">A retail-ready POS — connected to your stock and finance in real time</h2>
+              <p className="text-gray-600 mt-3 leading-relaxed">Every sale updates inventory and triggers the right accounting entry automatically. No manual syncing, no end-of-day data gaps.</p>
               <ul className="mt-6 space-y-3">
                 {item.bullets.map((b) => (
                   <li key={b} className="flex items-start gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4">

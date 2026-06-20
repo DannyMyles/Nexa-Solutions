@@ -16,15 +16,13 @@ interface ClientCarouselProps {
 function ClientCard({ client }: { client: Client }) {
   return (
     <div className="shrink-0 w-64 group cursor-default">
-      <div className="relative w-full h-44 rounded-2xl overflow-hidden bg-gray-100 shadow-sm group-hover:shadow-xl transition-all duration-300">
+      <div className="relative w-full h-44 overflow-hidden">
         <img
           src={client.logo}
           alt={client.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
         />
       </div>
-      <p className="mt-3 text-sm font-semibold text-gray-900 truncate">{client.name}</p>
-      <p className="text-xs text-gray-400 truncate">{client.description}</p>
     </div>
   );
 }
