@@ -73,7 +73,7 @@ export default function BiometricDataIntegrationPage() {
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden bg-inherit aspect-square">
                 <Image
-                  src="/images/solutions/biometrics.jpeg"
+                  src="/images/solutions/Biometrics.png"
                   alt="Biometric Data Integration"
                   fill
                   className="object-contain"
