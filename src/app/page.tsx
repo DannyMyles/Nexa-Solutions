@@ -100,13 +100,6 @@ const industries = [
   { icon: FaWarehouse, name: "Warehousing", backgroundImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 
-const clients = [
-  { name: "Crystal Fresh", description: "", logo: "/images/companies/Crystal Fresh.jpeg" },
-  { name: "International Safety Training Centre", description: "", logo: "/images/companies/International Safety Training Centre.webp" },
-  { name: "Kecode Limited", description: "", logo: "/images/companies/kecode limited.jpeg" },
-  { name: "Shaphil Baby Shop", description: "", logo: "/images/companies/Shaphil Baby Shop.jpeg" },
-  { name: "Ujuzi Ware", description: "", logo: "/images/companies/Ujuzi ware.jpeg" },
-];
 
 // Redesigned process flow with more detail and visual approach
 const processSteps = [
@@ -612,7 +605,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full px-4 sm:px-8">
-          <ClientCarousel clients={clients} autoPlay autoPlayInterval={4000} />
+          <ClientCarousel />
         </div>
       </section>
 

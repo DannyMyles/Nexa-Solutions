@@ -1,19 +1,14 @@
 "use client";
 
-interface Client {
-  name: string;
-  description: string;
-  logo: string;
-}
+const clients = [
+  { name: "Crystal Fresh", logo: "/images/companies/Crystal Fresh.jpeg" },
+  { name: "International Safety Training Centre", logo: "/images/companies/International Safety Training Centre.webp" },
+  { name: "Kecode Limited", logo: "/images/companies/kecode limited.jpeg" },
+  { name: "Shaphil Baby Shop", logo: "/images/companies/Shaphil Baby Shop.jpeg" },
+  { name: "Ujuzi Ware", logo: "/images/companies/Ujuzi ware.jpeg" },
+];
 
-interface ClientCarouselProps {
-  clients: Client[];
-  autoPlay?: boolean;
-  autoPlayInterval?: number;
-  variant?: "default" | "full-width";
-}
-
-function ClientCard({ client }: { client: Client }) {
+function ClientCard({ client }: { client: { name: string; logo: string } }) {
   return (
     <div className="shrink-0 w-64 group cursor-default">
       <div className="relative w-full h-44 overflow-hidden">
@@ -27,9 +22,7 @@ function ClientCard({ client }: { client: Client }) {
   );
 }
 
-export default function ClientCarousel({ clients }: ClientCarouselProps) {
-  // Duplicate once for seamless loop. Each card is ~276px wide × 7 unique items = ~1932px,
-  // wider than any desktop viewport, so no duplicate is visible at the same time.
+export default function ClientCarousel() {
   const items = [...clients, ...clients];
 
   return (
