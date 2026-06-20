@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const values = [
   {
     icon: FaBullseye,
-    title: "Need-Focused",
+    title: "Need-Centric",
     description: "We start by deeply understanding each client's needs, tailoring every solution to their specific business context.",
   },
   {
