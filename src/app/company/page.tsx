@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 const values = [
   {
     icon: FaBullseye,
-    title: "Client-Centricity",
-    description: "We put our clients at the center of everything we do, tailoring solutions to their unique needs.",
+    title: "Need-Focused",
+    description: "We start by deeply understanding each client's needs, tailoring every solution to their specific business context.",
   },
   {
-    icon: FaAward,
-    title: "Excellence",
-    description: "We strive for excellence in every project, maintaining the highest standards of quality and professionalism.",
+    icon: FaRocket,
+    title: "Innovation",
+    description: "We embrace innovation and continuously evolve our solutions to meet changing business needs.",
   },
   {
     icon: FaUsers,
@@ -27,9 +27,9 @@ const values = [
     description: "We work closely with our clients as partners, fostering long-term relationships built on trust.",
   },
   {
-    icon: FaRocket,
-    title: "Innovation",
-    description: "We embrace innovation and continuously evolve our solutions to meet changing business needs.",
+    icon: FaAward,
+    title: "Excellence",
+    description: "We strive for excellence in every project, maintaining the highest standards of quality and professionalism.",
   },
 ];
 
@@ -130,8 +130,14 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <span className="text-sm font-semibold text-[#2F966E] uppercase tracking-wider">Our Values</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-              What Drives Us
+              We Are <span className="text-[#2F966E]">NICE</span>
             </h2>
+            <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm text-gray-500">
+              <span><span className="font-bold text-[#2F966E]">N</span>eed-Focused</span>
+              <span><span className="font-bold text-[#2F966E]">I</span>nnovation</span>
+              <span><span className="font-bold text-[#2F966E]">C</span>ollaboration</span>
+              <span><span className="font-bold text-[#2F966E]">E</span>xcellence</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
