@@ -73,7 +73,7 @@ export default function PaymentGatewayIntegrationPage() {
             </div>
             <div className="relative -mr-8 lg:-mr-16">
               <Image
-                src="/images/solutions/erpsystem.jpg"
+                src="/images/solutions/payment_gate.png"
                 alt="Payment Gateway Integration"
                 width={900}
                 height={620}
