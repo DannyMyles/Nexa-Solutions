@@ -26,7 +26,9 @@ const integrations = [
   "Biometric Data Integration",
   "Custom Software Integrations",
   "KRA TIMS & eTIMS Integration",
-  "Payment Gateway Integration (PayPal, Stripe, etc.)",
+  "Payment Gateway Integration",
+  "Gava Connect Integration",
+  "NTSA Integration",
 ];
 
 function toCategorySlug(label: string) {
