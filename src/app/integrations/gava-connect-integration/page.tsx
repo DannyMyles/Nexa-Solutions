@@ -123,9 +123,10 @@ export default function GavaConnectIntegrationPage() {
               alt="Gava Connect KRA API Integration with ERPNext"
               width={900}
               height={620}
-              className="h-auto w-full rounded-3xl object-cover"
+              className="h-auto w-full rounded-xl object-cover"
               priority
             />
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-50/50 to-transparent rounded-xl pointer-events-none" />
           </div>
         </div>
       </section>
