@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Real Estate Property Management Software Kenya | NexaGen Solutions Limited",
     description: "ERPNext property management in Kenya — M-Pesa rent, leases, maintenance, KRA invoicing.",
-    url: "https://www.nexasolutions.co.ke/solutions/real-estate-property-management",
+    url: "https://nexagensolutions.com/solutions/real-estate-property-management",
     type: "website",
   },
 };

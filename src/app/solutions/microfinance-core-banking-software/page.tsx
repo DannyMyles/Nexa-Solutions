@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Microfinance Core Banking Software Kenya | NexaGen Solutions Limited",
     description: "ERPNext microfinance in Kenya — loan management, CBK compliance, M-Pesa repayments.",
-    url: "https://www.nexasolutions.co.ke/solutions/microfinance-core-banking-software",
+    url: "https://nexagensolutions.com/solutions/microfinance-core-banking-software",
     type: "website",
   },
 };

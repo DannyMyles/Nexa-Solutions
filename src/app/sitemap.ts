@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://www.nexasolutions.co.ke";
+const BASE = "https://nexagensolutions.com";
 
 const solutions = [
   "accounting-software",

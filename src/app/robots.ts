@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://www.nexasolutions.co.ke/sitemap.xml",
-    host: "https://www.nexasolutions.co.ke",
+    sitemap: "https://nexagensolutions.com/sitemap.xml",
+    host: "https://nexagensolutions.com",
   };
 }

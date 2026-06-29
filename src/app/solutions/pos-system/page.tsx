@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "POS System in Kenya | NexaGen Solutions Limited",
     description: "ERPNext POS in Kenya — M-Pesa payments, KRA eTIMS receipts, real-time stock, multi-branch.",
-    url: "https://www.nexasolutions.co.ke/solutions/pos-system",
+    url: "https://nexagensolutions.com/solutions/pos-system",
     type: "website",
   },
 };

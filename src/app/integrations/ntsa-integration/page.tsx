@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NTSA ERPNext Integration Kenya | NexaGen Solutions Limited",
     description: "Real-time NTSA vehicle and driver verification built directly into ERPNext for Kenyan fleet and transport businesses.",
-    url: "https://www.nexasolutions.co.ke/integrations/ntsa-integration",
+    url: "https://nexagensolutions.com/integrations/ntsa-integration",
     type: "website",
   },
 };

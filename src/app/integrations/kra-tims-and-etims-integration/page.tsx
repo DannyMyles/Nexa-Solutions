@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KRA eTIMS ERPNext Integration Kenya | NexaGen Solutions Limited",
     description: "Automate KRA eTIMS submission from ERPNext in Kenya — compliant receipts, QR codes, audit-ready.",
-    url: "https://www.nexasolutions.co.ke/integrations/kra-tims-and-etims-integration",
+    url: "https://nexagensolutions.com/integrations/kra-tims-and-etims-integration",
     type: "website",
   },
 };

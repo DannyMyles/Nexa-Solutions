@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hospital Management System in Kenya | NexaGen Solutions Limited",
     description: "ERPNext HMS in Kenya — patient billing, pharmacy, staff scheduling, NHIF compliance.",
-    url: "https://www.nexasolutions.co.ke/solutions/hospital-management-system",
+    url: "https://nexagensolutions.com/solutions/hospital-management-system",
     type: "website",
   },
 };

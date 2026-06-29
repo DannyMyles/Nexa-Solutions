@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HR & Payroll Software in Kenya | NexaGen Solutions Limited",
     description: "ERPNext HR and payroll in Kenya — NHIF, NSSF, PAYE compliance, biometric attendance, automated payroll.",
-    url: "https://www.nexasolutions.co.ke/solutions/hr-and-payroll-software",
+    url: "https://nexagensolutions.com/solutions/hr-and-payroll-software",
     type: "website",
   },
 };

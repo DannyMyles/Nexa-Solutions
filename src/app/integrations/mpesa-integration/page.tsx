@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "M-Pesa ERPNext Integration Kenya | NexaGen Solutions Limited",
     description: "Automate M-Pesa payments in ERPNext — Daraja API, STK Push, Paybill, real-time reconciliation.",
-    url: "https://www.nexasolutions.co.ke/integrations/mpesa-integration",
+    url: "https://nexagensolutions.com/integrations/mpesa-integration",
     type: "website",
   },
 };

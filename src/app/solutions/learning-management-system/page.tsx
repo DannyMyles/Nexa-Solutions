@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Learning Management System Kenya | NexaGen Solutions Limited",
     description: "ERPNext learning management system in Kenya — M-Pesa fees, student records, payroll, biometric attendance.",
-    url: "https://www.nexasolutions.co.ke/solutions/learning-management-system",
+    url: "https://nexagensolutions.com/solutions/learning-management-system",
     type: "website",
   },
 };

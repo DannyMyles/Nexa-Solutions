@@ -4,19 +4,19 @@ export default function JsonLd() {
     "@graph": [
       {
         "@type": ["Organization", "LocalBusiness"],
-        "@id": "https://www.nexasolutions.co.ke/#organization",
+        "@id": "https://nexagensolutions.com/#organization",
         name: "NexaGen Solutions Limited",
         alternateName: "NexaGen Solutions",
         description:
           "Trusted ERPNext and Frappe implementation partner helping businesses across Kenya and East Africa gain full control of their operations with tailored ERP, integrations, and long-term support.",
-        url: "https://www.nexasolutions.co.ke",
+        url: "https://nexagensolutions.com",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.nexasolutions.co.ke/images/NexaGen Final Logo Concept 111.svg",
+          url: "https://nexagensolutions.com/images/NexaGen Final Logo Concept 111.svg",
           width: 200,
           height: 60,
         },
-        image: "https://www.nexasolutions.co.ke/images/NexaGen Final Logo Concept 111.svg",
+        image: "https://nexagensolutions.com/images/NexaGen Final Logo Concept 111.svg",
         telephone: "+254758269725",
         email: "info@nexagensolutions.co.ke",
         address: {
@@ -59,11 +59,11 @@ export default function JsonLd() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.nexasolutions.co.ke/#website",
-        url: "https://www.nexasolutions.co.ke",
+        "@id": "https://nexagensolutions.com/#website",
+        url: "https://nexagensolutions.com",
         name: "NexaGen Solutions Limited",
         description: "ERPNext implementation partner in Kenya — solutions, integrations, and long-term support.",
-        publisher: { "@id": "https://www.nexasolutions.co.ke/#organization" },
+        publisher: { "@id": "https://nexagensolutions.com/#organization" },
         inLanguage: "en-KE",
       },
     ],

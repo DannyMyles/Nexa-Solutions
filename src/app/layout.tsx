@@ -9,7 +9,7 @@ import CookieBanner from "@/components/CookieBanner";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.nexasolutions.co.ke"),
+  metadataBase: new URL("https://nexagensolutions.com"),
   title: {
     default: "NexaGen Solutions Limited | ERPNext Implementation in Kenya",
     template: "%s | NexaGen Solutions Limited",
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
   creator: "NexaGen Solutions Limited",
   publisher: "NexaGen Solutions Limited",
   alternates: {
-    canonical: "https://www.nexasolutions.co.ke",
+    canonical: "https://nexagensolutions.com",
   },
   openGraph: {
     title: "NexaGen Solutions Limited | ERPNext Implementation in Kenya",
     description:
       "Trusted ERPNext implementation partner in Kenya — accounting, HR & payroll, M-Pesa, KRA eTIMS, and full ERP systems tailored for East African businesses.",
-    url: "https://www.nexasolutions.co.ke",
+    url: "https://nexagensolutions.com",
     siteName: "NexaGen Solutions Limited",
     locale: "en_KE",
     type: "website",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gava Connect ERPNext Integration Kenya | NexaGen Solutions Limited",
     description: "Real-time KRA PIN and TCC verification built directly into ERPNext via Kenya's Gava Connect API platform.",
-    url: "https://www.nexasolutions.co.ke/integrations/gava-connect-integration",
+    url: "https://nexagensolutions.com/integrations/gava-connect-integration",
     type: "website",
   },
 };

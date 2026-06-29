@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Accounting Software in Kenya | NexaGen Solutions Limited",
     description: "ERPNext accounting software in Kenya — structured ledgers, M-Pesa reconciliation, KRA-compliant reporting.",
-    url: "https://www.nexasolutions.co.ke/solutions/accounting-software",
+    url: "https://nexagensolutions.com/solutions/accounting-software",
     type: "website",
   },
 };
