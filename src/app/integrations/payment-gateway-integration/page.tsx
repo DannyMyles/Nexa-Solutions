@@ -3,11 +3,14 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Payment Gateway Integration Kenya",
   description:
     "Connect PayPal, Stripe, Flutterwave, and Pesapal to ERPNext in Kenya — automated payment reconciliation, real-time invoice updates, and multi-gateway support.",
+  alternates: { canonical: "https://nexagensolutions.com/integrations/payment-gateway-integration" },
 };
 
 const item = {
@@ -50,6 +53,8 @@ export default function PaymentGatewayIntegrationPage() {
 
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Integrations", path: "/services" }, { name: item.label, path: `/integrations/${item.slug}` }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">

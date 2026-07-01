@@ -3,11 +3,14 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Custom Software Integrations Kenya",
   description:
     "Bespoke ERPNext integration development in Kenya — custom APIs, webhooks, data transformation, and integration with any system that has an API or data export.",
+  alternates: { canonical: "https://nexagensolutions.com/integrations/custom-software-integrations" },
 };
 
 const item = {
@@ -50,6 +53,8 @@ export default function CustomSoftwareIntegrationsPage() {
 
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Integrations", path: "/services" }, { name: item.label, path: `/integrations/${item.slug}` }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">

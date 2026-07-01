@@ -4,9 +4,16 @@ import Image from "next/image";
 import { FaArrowRight, FaBuilding, FaGraduationCap, FaHospital, FaIndustry, FaLandmark, FaMoneyBillWave, FaShoppingCart, FaTractor, FaTruck, FaUserTie, FaWarehouse, FaHome } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Industries We Serve",
-  description:
-    "NexaGen Solutions delivers ERPNext implementations across 5+ industries in Kenya and East Africa — tailored to your sector's workflows, compliance, and integration needs.",
+  title: "Industries We Serve | ERPNext Implementation Kenya",
+  description: "NexaGen Solutions delivers ERPNext implementations across manufacturing, healthcare, retail, logistics, education, and more — tailored to each sector's workflows and compliance needs in Kenya.",
+  keywords: ["ERPNext manufacturing Kenya", "ERPNext healthcare Kenya", "ERPNext retail Kenya", "ERP for logistics Kenya", "industry ERP Kenya", "sector-specific ERP Kenya"],
+  alternates: { canonical: "https://nexagensolutions.com/industries" },
+  openGraph: {
+    title: "Industries We Serve | ERPNext Implementation Kenya",
+    description: "ERPNext solutions tailored for manufacturing, healthcare, retail, logistics, education, and more — deployed across Kenya and East Africa.",
+    url: "https://nexagensolutions.com/industries",
+    type: "website",
+  },
 };
 
 const industries = [

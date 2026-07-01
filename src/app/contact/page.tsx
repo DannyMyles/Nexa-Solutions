@@ -5,8 +5,16 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaWhatsapp, FaMapPin } fr
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Get in touch with NexaGen Solutions Limited for ERPNext implementation services. Contact us at Riverside Drive, Kofisi, Nairobi.",
+  title: "Contact NexaGen Solutions | ERPNext Implementation Kenya",
+  description: "Get in touch with NexaGen Solutions Limited for ERPNext implementation, integrations, and business systems. Based in Nairobi, serving businesses across Kenya and East Africa.",
+  keywords: ["contact ERPNext implementor Kenya", "NexaGen Solutions contact", "ERPNext consultation Kenya", "ERP demo Kenya", "Nairobi ERP partner"],
+  alternates: { canonical: "https://nexagensolutions.com/contact" },
+  openGraph: {
+    title: "Contact NexaGen Solutions | ERPNext Implementation Kenya",
+    description: "Book a free discovery call or guided demo with NexaGen Solutions — ERPNext implementation partner in Nairobi, Kenya.",
+    url: "https://nexagensolutions.com/contact",
+    type: "website",
+  },
 };
 
 

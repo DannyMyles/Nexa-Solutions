@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import {
   FaArrowRight,
   FaUserPlus,
@@ -15,8 +17,15 @@ import ClientCarousel from "@/components/ClientCarousel";
 
 export const metadata: Metadata = {
   title: "CRM Software in Kenya",
-  description:
-    "Track leads and customers end-to-end with pipelines, follow-ups, and actionable sales reporting.",
+  description: "ERPNext CRM software in Kenya — track leads, manage sales pipelines, automate follow-ups, and generate actionable sales reports for your business.",
+  keywords: ["CRM software Kenya", "ERPNext CRM Kenya", "sales pipeline software Kenya", "lead management Kenya", "customer relationship management Kenya"],
+  alternates: { canonical: "https://nexagensolutions.com/solutions/crm-software" },
+  openGraph: {
+    title: "CRM Software in Kenya | NexaGen Solutions Limited",
+    description: "ERPNext CRM in Kenya — lead pipelines, sales automation, follow-up workflows, and CRM reporting for Kenyan businesses.",
+    url: "https://nexagensolutions.com/solutions/crm-software",
+    type: "website",
+  },
 };
 
 const item = {
@@ -94,6 +103,8 @@ export default function CrmSoftwarePage() {
 
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Solutions", path: "/services" }, { name: item.label, path: `/solutions/${item.slug}` }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">

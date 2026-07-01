@@ -16,9 +16,16 @@ import {
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "How We Work",
-  description:
-    "A transparent look at how NexaGen Solutions delivers ERPNext implementations — from the first discovery call through go-live and long-term support.",
+  title: "How We Implement ERPNext | NexaGen Solutions Process",
+  description: "A transparent look at how NexaGen Solutions delivers ERPNext implementations in Kenya — from discovery and audit through go-live, training, and long-term support.",
+  keywords: ["ERPNext implementation process Kenya", "ERP implementation steps", "ERPNext go-live Kenya", "NexaGen Solutions process", "how ERP implementation works Kenya"],
+  alternates: { canonical: "https://nexagensolutions.com/process" },
+  openGraph: {
+    title: "How We Implement ERPNext | NexaGen Solutions Process",
+    description: "Discovery, design, implementation, and long-term support — how NexaGen Solutions delivers ERPNext for Kenyan businesses.",
+    url: "https://nexagensolutions.com/process",
+    type: "website",
+  },
 };
 
 const phases = [

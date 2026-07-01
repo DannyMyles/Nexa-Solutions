@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import {
   FaArrowRight,
   FaGavel,
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
   title: "Legal Practice Management Software Kenya",
   description:
     "Manage matters, clients, time billing, and compliance for law firms and legal departments with ERPNext.",
+  alternates: { canonical: "https://nexagensolutions.com/solutions/legal-practice-management" },
 };
 
 const item = {
@@ -90,6 +93,8 @@ const faqs = [
 export default function LegalPracticeManagementPage() {
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Solutions", path: "/services" }, { name: "Legal Practice Management", path: "/solutions/legal-practice-management" }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">

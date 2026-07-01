@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Gava Connect ERPNext Integration Kenya | KRA API",
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
     url: "https://nexagensolutions.com/integrations/gava-connect-integration",
     type: "website",
   },
+  alternates: { canonical: "https://nexagensolutions.com/integrations/gava-connect-integration" },
 };
 
 const item = {
@@ -89,6 +92,8 @@ export default function GavaConnectIntegrationPage() {
 
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Integrations", path: "/services" }, { name: item.label, path: `/integrations/${item.slug}` }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">

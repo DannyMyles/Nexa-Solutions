@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import {
   FaArrowRight,
   FaUserTie,
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     url: "https://nexagensolutions.com/solutions/hr-and-payroll-software",
     type: "website",
   },
+  alternates: { canonical: "https://nexagensolutions.com/solutions/hr-and-payroll-software" },
 };
 
 const item = {
@@ -101,6 +104,8 @@ export default function HrAndPayrollSoftwarePage() {
 
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Solutions", path: "/services" }, { name: item.label, path: `/solutions/${item.slug}` }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">

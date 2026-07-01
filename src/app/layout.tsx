@@ -7,6 +7,7 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 import BackToTop from "@/components/BackToTop";
 import CookieBanner from "@/components/CookieBanner";
 import JsonLd from "@/components/JsonLd";
+import StickyContactBar from "@/components/StickyContactBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nexagensolutions.com"),
@@ -19,8 +20,13 @@ export const metadata: Metadata = {
   keywords: [
     "ERPNext Kenya",
     "ERPNext implementation Kenya",
+    "ERPNext implementors Kenya",
+    "ERPNext partner Kenya",
+    "ERPNext consultant Kenya",
     "Frappe Kenya",
+    "Frappe implementation Kenya",
     "ERP software Kenya",
+    "ERP implementation Kenya",
     "ERP Kenya",
     "M-Pesa ERPNext integration",
     "KRA eTIMS integration",
@@ -28,6 +34,7 @@ export const metadata: Metadata = {
     "HR payroll software Kenya",
     "hospital management system Kenya",
     "business automation Kenya",
+    "ERP implementation partner Kenya",
     "NexaGen Solutions",
   ],
   authors: [{ name: "NexaGen Solutions Limited" }],
@@ -70,13 +77,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className="font-sans antialiased" suppressHydrationWarning>
         <JsonLd />
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen pb-18 sm:pb-0">{children}</main>
         <Footer />
         <WhatsAppWidget />
+        <StickyContactBar />
         <BackToTop />
         <CookieBanner />
       </body>

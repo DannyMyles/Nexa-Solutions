@@ -30,6 +30,7 @@ export default function ContactForm({
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -45,12 +46,37 @@ export default function ContactForm({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch(
+        "https://erp.nexagensolutions.com/api/method/nexagen_ui.nexagen_ui.api.v1.website.submit_contact_form",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            data: {
+              full_name: formData.name,
+              email_address: formData.email,
+              phone_number: formData.phone,
+              company_name: formData.company,
+              service: formData.service,
+              message: formData.message,
+            },
+          }),
+        }
+      );
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      if (!res.ok) {
+        throw new Error("Submission failed. Please try again.");
+      }
+
+      setIsSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -195,6 +221,12 @@ export default function ContactForm({
                 placeholder="Tell us about your project or requirements..."
               />
             </div>
+
+            {error && (
+              <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                {error}
+              </p>
+            )}
 
             <button
               type="submit"

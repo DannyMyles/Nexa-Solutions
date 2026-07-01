@@ -45,15 +45,21 @@ export default function JsonLd() {
             closes: "17:00",
           },
         ],
+        sameAs: [
+          "https://www.linkedin.com/in/nexagen-solutions-2518b441a/",
+          "https://x.com/nexagensolution",
+        ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "ERPNext Implementation Services",
           itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "ERPNext Implementation" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "M-Pesa Integration" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "KRA eTIMS Integration" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HR & Payroll Software" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Accounting Software" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "ERPNext Implementation", url: "https://nexagensolutions.com/services" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "M-Pesa Integration", url: "https://nexagensolutions.com/integrations/mpesa-integration" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "KRA eTIMS Integration", url: "https://nexagensolutions.com/integrations/kra-tims-and-etims-integration" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "HR & Payroll Software", url: "https://nexagensolutions.com/solutions/hr-and-payroll-software" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Accounting Software", url: "https://nexagensolutions.com/solutions/accounting-software" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hospital Management System", url: "https://nexagensolutions.com/solutions/hospital-management-system" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "CRM Software", url: "https://nexagensolutions.com/solutions/crm-software" } },
           ],
         },
       },
@@ -65,6 +71,14 @@ export default function JsonLd() {
         description: "ERPNext implementation partner in Kenya — solutions, integrations, and long-term support.",
         publisher: { "@id": "https://nexagensolutions.com/#organization" },
         inLanguage: "en-KE",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: "https://nexagensolutions.com/contact?q={search_term_string}",
+          },
+          "query-input": "required name=search_term_string",
+        },
       },
     ],
   };

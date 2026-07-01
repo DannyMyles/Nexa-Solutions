@@ -4,8 +4,16 @@ import { Metadata } from "next";
 import { FaCheck, FaAward, FaUsers, FaRocket, FaBullseye } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "Learn about NexaGen Solutions Limited — your trusted ERPNext implementation partner in Kenya. Discover our mission, values, and why businesses choose us.",
+  title: "About NexaGen Solutions | ERPNext Implementation Partner in Kenya",
+  description: "NexaGen Solutions Limited is a trusted ERPNext and Frappe implementation partner based in Nairobi, Kenya. Learn about our mission, values, and why businesses across East Africa choose us.",
+  keywords: ["NexaGen Solutions", "ERPNext partner Kenya", "Frappe implementor Kenya", "ERP implementation partner Nairobi", "ERPNext consultant Kenya"],
+  alternates: { canonical: "https://nexagensolutions.com/company" },
+  openGraph: {
+    title: "About NexaGen Solutions | ERPNext Implementation Partner in Kenya",
+    description: "Trusted ERPNext and Frappe implementation partner in Nairobi, Kenya — serving businesses across East Africa with tailored ERP, integrations, and long-term support.",
+    url: "https://nexagensolutions.com/company",
+    type: "website",
+  },
 };
 
 

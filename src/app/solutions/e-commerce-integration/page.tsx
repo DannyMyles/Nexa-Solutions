@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import {
   FaArrowRight,
   FaShoppingCart,
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
   title: "E-commerce Integration Kenya",
   description:
     "Connect your online store with ERPNext so orders, inventory, and finance stay synchronized end-to-end.",
+  alternates: { canonical: "https://nexagensolutions.com/solutions/e-commerce-integration" },
 };
 
 const item = {
@@ -90,6 +93,8 @@ const faqs = [
 export default function EcommerceIntegrationPage() {
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Solutions", path: "/services" }, { name: "E-commerce Integration", path: "/solutions/e-commerce-integration" }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">

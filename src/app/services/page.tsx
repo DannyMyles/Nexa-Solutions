@@ -11,9 +11,16 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "ERPNext implementation, customization, integration, and ongoing support services for businesses across Kenya and East Africa.",
+  title: "ERPNext Implementation Services in Kenya | NexaGen Solutions",
+  description: "ERPNext implementation, customization, integration, and ongoing support services for businesses across Kenya and East Africa. From audit to go-live and beyond.",
+  keywords: ["ERPNext implementation services Kenya", "Frappe customization Kenya", "ERP integration Kenya", "ERPNext support Kenya", "business systems implementation Kenya"],
+  alternates: { canonical: "https://nexagensolutions.com/services" },
+  openGraph: {
+    title: "ERPNext Implementation Services in Kenya | NexaGen Solutions",
+    description: "ERPNext implementation, customization, integration, and long-term support — tailored for Kenyan and East African businesses.",
+    url: "https://nexagensolutions.com/services",
+    type: "website",
+  },
 };
 
 const services = [

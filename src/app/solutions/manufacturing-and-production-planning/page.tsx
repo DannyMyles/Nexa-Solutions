@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import {
   FaArrowRight,
   FaSitemap,
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
   title: "Manufacturing & Production Planning Software Kenya",
   description:
     "Plan, schedule, and execute manufacturing workflows with ERPNext: production planning, BOMs, quality checkpoints, and reporting.",
+  alternates: { canonical: "https://nexagensolutions.com/solutions/manufacturing-and-production-planning" },
 };
 
 const item = {
@@ -90,6 +93,8 @@ const faqs = [
 export default function ManufacturingAndProductionPlanningPage() {
   return (
     <div className="flex flex-col">
+      <BreadcrumbJsonLd crumbs={[{ name: "Solutions", path: "/services" }, { name: "Manufacturing and Production Planning", path: "/solutions/manufacturing-and-production-planning" }]} />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">
