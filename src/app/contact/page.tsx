@@ -66,7 +66,7 @@ export default async function ContactPage({
   return (
     <div className="flex flex-col">
 {/* Hero Section */}
-      <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[500px] flex items-center">
+      <section className="relative pt-24 pb-16 lg:pt-48 lg:pb-36 overflow-hidden min-h-[500px] flex items-center">
         {/* Background image */}
         <Image
           src="/images/contact-team.jpg"

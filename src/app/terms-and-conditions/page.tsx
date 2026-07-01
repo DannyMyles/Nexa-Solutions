@@ -10,7 +10,7 @@ export default function TermsAndConditionsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="relative pt-40 pb-12 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+      <section className="relative pt-24 pb-12 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 right-10 w-64 h-64 bg-[#2F966E]/20 rounded-full blur-3xl" />
         </div>

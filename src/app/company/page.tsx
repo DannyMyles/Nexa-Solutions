@@ -45,7 +45,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
 {/* Hero Section */}
-      <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[560px] flex items-center">
+      <section className="relative pt-24 pb-16 lg:pt-48 lg:pb-36 overflow-hidden min-h-[560px] flex items-center">
         {/* Background image */}
         <Image
           src="/images/ChatGPT Image Jun 11, 2026, 04_28_19 PM.png"

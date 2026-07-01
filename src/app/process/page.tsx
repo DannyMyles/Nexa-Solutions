@@ -165,7 +165,7 @@ export default function ProcessPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative pt-40 pb-28 lg:pt-48 lg:pb-36 overflow-hidden min-h-[520px] flex items-center">
+      <section className="relative pt-24 pb-16 lg:pt-48 lg:pb-36 overflow-hidden min-h-[520px] flex items-center">
         <Image
           src="/images/ChatGPT Image Jun 12, 2026, 04_53_30 PM.png"
           alt=""

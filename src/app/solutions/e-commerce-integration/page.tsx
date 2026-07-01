@@ -96,7 +96,7 @@ export default function EcommerceIntegrationPage() {
       <BreadcrumbJsonLd crumbs={[{ name: "Solutions", path: "/services" }, { name: "E-commerce Integration", path: "/solutions/e-commerce-integration" }]} />
       <FaqJsonLd faqs={faqs} />
       {/* Hero */}
-      <section className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+      <section className="relative overflow-hidden pt-24 pb-14 md:pt-44 md:pb-28 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-10 left-6 w-56 h-56 bg-[#2F966E]/20 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-4 w-72 h-72 bg-[#2F966E]/20 rounded-full blur-3xl" />

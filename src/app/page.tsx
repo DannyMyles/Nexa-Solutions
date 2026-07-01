@@ -158,7 +158,7 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       <section
-        className="relative overflow-hidden pt-40 pb-20 md:pt-44 md:pb-28"
+        className="relative overflow-hidden pt-24 pb-14 md:pt-44 md:pb-28"
         onPointerMove={handleMove}
         onPointerLeave={() => setSpotlight({ x: 54, y: 36 })}
       >
@@ -396,7 +396,7 @@ export default function Home() {
               <div className="relative rounded-[2rem] border border-gray-100 bg-white p-6 shadow-2xl">
                 <div className="grid gap-4 sm:grid-cols-2">
                   {[
-                    { value: "10+", label: "Clients served" },
+                    { value: "5+", label: "Clients served" },
                     { value: "5+", label: "Industries served" },
                     { value: "5+", label: "Projects Delivered" },
                     { value: "1", label: "Partner for all stages" },
@@ -623,27 +623,27 @@ export default function Home() {
             {[
               {
                 quote: "We went from three separate spreadsheets to one system handling procurement, inventory, and invoicing — with M-Pesa payments reconciled automatically. The audit NexaGen did before scoping saved us from over-building.",
-                name: "James Mwangi",
+                name: "Operations Director",
                 title: "Operations Director",
-                company: "Prime Distributors Ltd",
-                industry: "Wholesale Distribution",
-                initials: "JM",
+                company: "Crystal Fresh",
+                industry: "Food & Beverages",
+                initials: "CF",
               },
               {
                 quote: "The implementation was honest about what it would take. They audited our workflows first, identified only the integrations we actually needed, and go-live was smooth. Our finance team was fully operational within two weeks.",
-                name: "Dr. Amina Hassan",
+                name: "Finance Manager",
                 title: "Finance Manager",
-                company: "Sunrise Healthcare",
-                industry: "Healthcare",
-                initials: "AH",
+                company: "International Safety Training Centre",
+                industry: "Training & Education",
+                initials: "IS",
               },
               {
                 quote: "We needed KRA eTIMS compliance before our tax audit and NexaGen delivered it on time. Every invoice now carries the correct tax codes and QR codes automatically — the process runs without anyone touching it.",
-                name: "Peter Kamau",
+                name: "Chief Executive Officer",
                 title: "Chief Executive Officer",
-                company: "Elite Retail Group",
+                company: "Shaphil Baby Shop",
                 industry: "Retail",
-                initials: "PK",
+                initials: "SB",
               },
             ].map((t) => (
               <div key={t.name} className="bg-white rounded-2xl border border-gray-100 p-7 shadow-sm flex flex-col">
@@ -658,8 +658,8 @@ export default function Home() {
                     {t.initials}
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-gray-900">{t.name}</p>
-                    <p className="text-xs text-gray-500">{t.title}, {t.company}</p>
+                    <p className="text-sm font-bold text-gray-900">{t.company}</p>
+                    <p className="text-xs text-gray-500">{t.title} · {t.industry}</p>
                   </div>
                 </div>
               </div>
