@@ -44,14 +44,13 @@ export default function WhatsAppWidget() {
 
       <button
         onClick={handleClick}
-        className="flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
+        className="flex items-center justify-center w-11 h-11 sm:w-16 sm:h-16 bg-[#25D366] text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
         aria-label="Chat on WhatsApp"
       >
         <div className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></div>
 
         <FaWhatsapp
-          size={36}
-          className="relative transition-transform duration-300 group-hover:scale-110"
+          className="relative transition-transform duration-300 group-hover:scale-110 w-5 h-5 sm:w-9 sm:h-9"
         />
 
         <div className="absolute right-full mr-4 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">

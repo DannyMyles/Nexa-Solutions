@@ -188,8 +188,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-md py-3"
-          : "bg-transparent py-5"
+          ? "bg-white/95 backdrop-blur-md shadow-md py-2 sm:py-3"
+          : "bg-transparent py-2 sm:py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -201,7 +201,7 @@ export default function Navbar() {
               alt="NexaGen Solutions Limited"
               width={160}
               height={48}
-              className="object-contain mix-blend-multiply h-36 w-auto"
+              className="object-contain mix-blend-multiply h-14 sm:h-20 md:h-28 w-auto"
               priority
               unoptimized
             />
